@@ -1,0 +1,2 @@
+ServerType,VirtualMachineName,ImageName,Size,UserName,Password,ServiceName,ReservedIP,VirtualNetworkName,SubnetName,StaticIP,StorageAccount,Location,Disks,DiskSize
+Windows,Testvm001,Windows Server 2008 R2 SP1,Standard_D1,azure-admin,Comnet@123,TestVMCSscripttest,,RegVNet2,VLAN3,10.11.2.10,reg2storage,East Asia,2,10

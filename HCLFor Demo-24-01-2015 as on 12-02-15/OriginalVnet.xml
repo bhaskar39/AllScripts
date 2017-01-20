@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NetworkConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/ServiceHosting/2011/07/NetworkConfiguration">
+  <VirtualNetworkConfiguration>
+    <Dns>
+      <DnsServers>
+        <DnsServer name="DNS" IPAddress="10.10.0.4" />
+        <DnsServer name="dns0001" IPAddress="10.0.0.4" />
+        <DnsServer name="dns0002" IPAddress="10.0.0.5" />
+        <DnsServer name="DNS2" IPAddress="4.2.2.2" />
+        <DnsServer name="TestDNS" IPAddress="10.11.0.4" />
+      </DnsServers>
+    </Dns>
+    <LocalNetworkSites>
+      <LocalNetworkSite name="localnetdemo1">
+        <AddressSpace>
+          <AddressPrefix>172.16.0.0/16</AddressPrefix>
+        </AddressSpace>
+        <VPNGatewayAddress>8.8.7.7</VPNGatewayAddress>
+      </LocalNetworkSite>
+      <LocalNetworkSite name="RegVNet1">
+        <AddressSpace>
+          <AddressPrefix>10.10.0.0/16</AddressPrefix>
+        </AddressSpace>
+        <VPNGatewayAddress>23.101.19.8</VPNGatewayAddress>
+      </LocalNetworkSite>
+      <LocalNetworkSite name="RegVNet2">
+        <AddressSpace>
+          <AddressPrefix>10.11.0.0/23</AddressPrefix>
+        </AddressSpace>
+        <VPNGatewayAddress>23.101.0.77</VPNGatewayAddress>
+      </LocalNetworkSite>
+    </LocalNetworkSites>
+    <VirtualNetworkSites>
+      <VirtualNetworkSite name="ASRVNET" Location="East US">
+        <AddressSpace>
+          <AddressPrefix>172.16.0.0/16</AddressPrefix>
+        </AddressSpace>
+        <Subnets>
+          <Subnet name="Subnet-1">
+            <AddressPrefix>172.16.0.0/19</AddressPrefix>
+          </Subnet>
+        </Subnets>
+      </VirtualNetworkSite>
+      <VirtualNetworkSite name="AzureEnvTest" Location="East US">
+        <AddressSpace>
+          <AddressPrefix>10.0.0.0/8</AddressPrefix>
+        </AddressSpace>
+        <Subnets>
+          <Subnet name="Subnet-1">
+            <AddressPrefix>10.0.0.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="Subnet-2">
+            <AddressPrefix>10.0.1.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="Subnet-3">
+            <AddressPrefix>10.0.2.0/24</AddressPrefix>
+          </Subnet>
+        </Subnets>
+      </VirtualNetworkSite>
+      <VirtualNetworkSite name="MigrationAccvNet" Location="East US">
+        <AddressSpace>
+          <AddressPrefix>10.0.0.0/26</AddressPrefix>
+        </AddressSpace>
+        <Subnets>
+          <Subnet name="Frontend">
+            <AddressPrefix>10.0.0.0/27</AddressPrefix>
+          </Subnet>
+          <Subnet name="BackEnd">
+            <AddressPrefix>10.0.0.32/27</AddressPrefix>
+          </Subnet>
+        </Subnets>
+      </VirtualNetworkSite>
+      <VirtualNetworkSite name="nukvnet" AffinityGroup="nukaffinity">
+        <AddressSpace>
+          <AddressPrefix>10.0.0.0/16</AddressPrefix>
+        </AddressSpace>
+        <Subnets>
+          <Subnet name="Subnet-1">
+            <AddressPrefix>10.0.0.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="Subnet-2">
+            <AddressPrefix>10.0.1.0/24</AddressPrefix>
+          </Subnet>
+        </Subnets>
+      </VirtualNetworkSite>
+      <VirtualNetworkSite name="OpenVPN" Location="North Europe">
+        <AddressSpace>
+          <AddressPrefix>10.0.0.0/8</AddressPrefix>
+        </AddressSpace>
+        <Subnets>
+          <Subnet name="Subnet-1">
+            <AddressPrefix>10.0.0.0/24</AddressPrefix>
+          </Subnet>
+        </Subnets>
+      </VirtualNetworkSite>
+      <VirtualNetworkSite name="RegVNet1" Location="Southeast Asia">
+        <AddressSpace>
+          <AddressPrefix>10.10.0.0/16</AddressPrefix>
+          <AddressPrefix>10.20.0.0/16</AddressPrefix>
+        </AddressSpace>
+        <Subnets>
+          <Subnet name="vlan1">
+            <AddressPrefix>10.10.0.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="vlan2">
+            <AddressPrefix>10.10.1.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="Subnet-1">
+            <AddressPrefix>10.20.0.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="Subnet-2">
+            <AddressPrefix>10.20.1.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="GatewaySubnet">
+            <AddressPrefix>10.10.255.0/29</AddressPrefix>
+          </Subnet>
+        </Subnets>
+        <Gateway>
+          <ConnectionsToLocalNetwork>
+            <LocalNetworkSiteRef name="RegVNet2">
+              <Connection type="IPsec" />
+            </LocalNetworkSiteRef>
+          </ConnectionsToLocalNetwork>
+        </Gateway>
+      </VirtualNetworkSite>
+      <VirtualNetworkSite name="RegVNet2" Location="East Asia">
+        <AddressSpace>
+          <AddressPrefix>10.11.0.0/16</AddressPrefix>
+        </AddressSpace>
+        <Subnets>
+          <Subnet name="VLAN1">
+            <AddressPrefix>10.11.0.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="VLAN2">
+            <AddressPrefix>10.11.1.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="VLAN3">
+            <AddressPrefix>10.11.2.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="GatewaySubnet">
+            <AddressPrefix>10.11.255.0/29</AddressPrefix>
+          </Subnet>
+        </Subnets>
+        <DnsServersRef>
+          <DnsServerRef name="TestDNS" />
+          <DnsServerRef name="DNS2" />
+        </DnsServersRef>
+        <Gateway>
+          <ConnectionsToLocalNetwork>
+            <LocalNetworkSiteRef name="RegVNet1">
+              <Connection type="IPsec" />
+            </LocalNetworkSiteRef>
+          </ConnectionsToLocalNetwork>
+        </Gateway>
+      </VirtualNetworkSite>
+      <VirtualNetworkSite name="TestingVnet" Location="North Europe">
+        <AddressSpace>
+          <AddressPrefix>10.0.0.0/16</AddressPrefix>
+        </AddressSpace>
+        <Subnets>
+          <Subnet name="Subnet-1">
+            <AddressPrefix>10.0.0.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="Subnet-2">
+            <AddressPrefix>10.0.1.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="Subnet-3">
+            <AddressPrefix>10.0.2.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="Subnet-4">
+            <AddressPrefix>10.0.3.6/26</AddressPrefix>
+          </Subnet>
+          <Subnet name="Subnet-5">
+            <AddressPrefix>10.0.3.64/26</AddressPrefix>
+          </Subnet>
+        </Subnets>
+      </VirtualNetworkSite>
+      <VirtualNetworkSite name="virtualnetdemo1" Location="North Europe">
+        <AddressSpace>
+          <AddressPrefix>10.0.0.0/16</AddressPrefix>
+        </AddressSpace>
+        <Subnets>
+          <Subnet name="Subnet-1">
+            <AddressPrefix>10.0.0.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="Subnet-2">
+            <AddressPrefix>10.0.1.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="Subnet-3">
+            <AddressPrefix>10.0.2.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="GatewaySubnet">
+            <AddressPrefix>10.0.3.0/29</AddressPrefix>
+          </Subnet>
+        </Subnets>
+        <DnsServersRef>
+          <DnsServerRef name="dns0001" />
+        </DnsServersRef>
+        <Gateway>
+          <ConnectionsToLocalNetwork>
+            <LocalNetworkSiteRef name="localnetdemo1">
+              <Connection type="IPsec" />
+            </LocalNetworkSiteRef>
+          </ConnectionsToLocalNetwork>
+        </Gateway>
+      </VirtualNetworkSite>
+    </VirtualNetworkSites>
+  </VirtualNetworkConfiguration>
+</NetworkConfiguration>

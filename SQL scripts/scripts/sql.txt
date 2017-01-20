@@ -1,0 +1,546 @@
+--drop table #jobstst
+--drop table #jobst
+--drop table #jobstss
+--drop table #DBSTATS
+Use master
+
+set nocount on
+set concat_null_yields_null OFF
+
+DECLARE			@DBStatus			VARCHAR(8000),
+                @dbsummary          VARCHAR(8000),
+				@BackupCheck		VARCHAR(8000),
+				@LowDiskSpace		VARCHAR(8000),
+				@DBFileStats		VARCHAR(8000),
+				@FailedJobs			VARCHAR(8000),
+				@LowDBSpace			VARCHAR(8000),
+				@DiskSpace		VARCHAR(8000),
+				@JobStatus			VARCHAR(8000),
+				@InstanceName       VARCHAR(500),
+                @FinalXML			VARCHAR(8000),
+				@serverDetails		VARCHAR(8000),
+				@sqlErrorMsg		varchar(2000),
+				@sqlErrorXML		varchar(2000),
+				--@sqlErrorNo			INT,
+                @st varchar(20),
+                @uptime varchar(100),@edition varchar(30),@jcnt int,@totaldbsummary varchar(8000)
+
+--drop  table #jobst
+declare @a int
+select @a=datediff(mi,crdate,getdate()) from sysdatabases where name='tempdb'
+SELECT @uptime=@uptime+'<uptime time="'+cast(@a/24/60 AS varchar(5)) +' day(s) '+ CAST(@a/60%24 AS varchar(5))+' hour(s) '+CAST(@a%60 AS varchar(5))+' minute(s)'+'" />'
+
+select @edition=cast(serverproperty('edition') as varchar(30))
+Create table #jobstst(jobname varchar(100),LRD varchar(25),NRD varchar(25))
+				Create  table #jobst
+				(
+				job_id uniqueidentifier,LRD int,LRT int,NRD int,NRT int,NRSC int,RTR int,RS int,RSID varchar(100),
+				runnig int,CST int,CRA int,state int)
+Create table #jobstss (jobname varchar(100),Lastrunstatus varchar(12),TR int,su int,fa int)
+
+				Create table #jobsts (job_id uniqueidentifier,jobname varchar(100),runstatus int)
+				
+if @edition<>'Express Edition'
+
+
+	 BEGIN
+
+
+			create table #state(st varchar(20))
+			insert into #state Exec master.dbo.xp_servicecontrol 'QUERYSTATE', 'SQLServerAgent'
+			select @st=st from #state
+			drop table #state
+
+			if @st='Running.'
+			BEGIN
+				select @sqlErrorMsg=@sqlErrorMsg+'' 
+				select @jcnt=count(*) from msdb..sysjobs SJ where SJ.enabled=1 
+
+				
+
+				Insert into #jobst EXECUTE master.dbo.xp_sqlagent_enum_jobs 1, ''
+
+				insert into #jobstst
+				select CAST(SJ.name AS VARCHAR(100))-- AS [Job Name]
+				,CAST(isnull(stuff(stuff(SJH.LRD,(len(SJH.LRD)-1),0,'-'),(len(SJH.LRD)-3),0,'-')+ ' ' +stuff(stuff(SJH.LRT,(len(SJH.LRT)-1),0,':'),(len(SJH.LRT)-3),0,':'),'N/A') AS VARCHAR(25))-- AS LastRunDate
+				,CAST(isnull(stuff(stuff(SJH.NRD,(len(SJH.NRD)-1),0,'-'),(len(SJH.NRD)-3),0,'-')+ ' ' +stuff(stuff(SJH.NRT,(len(SJH.NRT)-1),0,':'),(len(SJH.NRT)-3),0,':'),'N/A') AS VARCHAR(25)) --AS NextRunDate
+				from msdb..sysjobs SJ
+				LEFT JOIN #jobst SJH ON SJ.job_id=SJH.job_id
+				LEFT JOIN msdb..sysjobhistory SJH1 ON SJ.job_id=SJH1.job_id
+				and SJH1.instance_id=(select max(instance_id) from msdb..sysjobhistory
+											 where job_id=SJ.job_id group by job_id)
+				where --SJ.enabled=1 and
+				--and SJH1.run_status=0
+				--stuff(stuff(SJH.LRD,(len(SJH.LRD)-1),0,'-'),(len(SJH.LRD)-3),0,'-')+ ' ' +stuff(stuff(SJH.LRT,(len(SJH.LRT)-1),0,':'),(len(SJH.LRT)-3),0,':')>dateadd(dd,-1,getdate())
+				(stuff(stuff(SJH.LRD,(len(SJH.LRD)-1),0,'-'),(len(SJH.LRD)-3),0,'-')+ ' ' +
+				(CASE WHEN len(SJH.LRT)>4 THEN stuff(stuff(SJH.LRT,(len(SJH.LRT)-1),0,':'),(len(SJH.LRT)-3),0,':')
+				      WHEN len(SJH.LRT)>2 THEN stuff(stuff(SJH.LRT,(len(SJH.LRT)-1),0,':'),(len(SJH.LRT)-3),0,'00:')
+					ELSE stuff(SJH.LRT,(len(SJH.LRT)-1),0,'00:00:')END))> dateadd(dd,-1,getdate())
+				--order by SJ.Name
+				--select * from #jobstst
+
+				insert into #jobsts
+				select SJ.job_id
+				,SJ.name 
+				,SJH.run_status 
+				from msdb..sysjobhistory SJH 
+				inner join msdb..sysjobs SJ on SJH.job_id=SJ.job_id
+				where
+				step_id=0 and --len(SJH.run_time)>4 and
+				(stuff(stuff(SJH.run_date,(len(SJH.run_date)-1),0,'-'),(len(SJH.run_date)-3),0,'-')+ ' ' +
+				(CASE WHEN len(SJH.run_time)>4 THEN stuff(stuff(SJH.run_time,(len(SJH.run_time)-1),0,':'),(len(SJH.run_time)-3),0,':')
+				      WHEN len(SJH.run_time)>2 THEN stuff(stuff(SJH.run_time,(len(SJH.run_time)-1),0,':'),(len(SJH.run_time)-3),0,'00:')
+					ELSE stuff(SJH.run_time,(len(SJH.run_time)-1),0,'00:00:')END))>dateadd(dd,-1,getdate())
+				--stuff(stuff(SJH.run_date,(len(SJH.run_date)-1),0,'-'),(len(SJH.run_date)-3),0,'-')+ ' ' +stuff(stuff(SJH.run_time,(len(SJH.run_time)-1),0,':'),(len(SJH.run_time)-3),0,':')>dateadd(dd,-1,getdate())
+				--drop table #jobsts
+				--select * from #jobsts
+				insert into #jobstss
+				select X.jobname
+				,CASE SJH.run_status WHEN 0 THEN 'FAILED'
+									 WHEN 1 THEN 'SUCCESS'
+									 END LastRunstatus
+				,(sum(success)+sum(failed)) [TotalRuns],sum(success) Success,sum(failed) Failed from
+				(
+				select job_id,jobname
+				,count(jobname) as success,0 as failed 
+				from #jobsts where runstatus=1
+				group by job_id,jobname,runstatus
+				UNION
+				select job_id,
+				jobname
+				,0 as success,count(jobname) as failed 
+				from #jobsts where runstatus=0
+				group by job_id,jobname,runstatus
+				)X
+				LEFT JOIN msdb..sysjobhistory SJH ON X.job_id=SJH.job_id
+				where SJH.instance_id=(select max(instance_id) from msdb..sysjobhistory
+											  where job_id=SJH.job_id group by job_id)
+
+				group by X.job_id,X.jobname,SJH.run_status
+				--select * from #jobstss
+				SELECT @JobStatus = @JobStatus + '<js jobName="'+JT1.jobname+'" lastRunStatus="'+JT1.Lastrunstatus+
+												 '" lastRunDate="'+convert(varchar(25),JT2.LRD,120)+'" nextRunDate="'+convert(varchar(25),JT2.NRD,120)+'" totalRuns="'+cast(JT1.TR as varchar(5))+
+												 '" success="'+cast(JT1.su as varchar(5))+'" failed="'+cast(JT1.fa as varchar(5) )+'" />' 
+			--SELECT JT1.jobname,convert(varchar(25),JT2.LRD,120),convert(varchar(25),JT2.NRD,120),cast(JT1.TR as varchar(5)),cast(JT1.su as varchar(5)),cast(JT1.fa as varchar(5) )
+				from #jobstss JT1
+				LEFT JOIN  #jobstst JT2
+				ON JT1.jobname=JT2.jobname
+				--order by jobname
+
+				SELECT @FailedJobs = @FailedJobs + '<fj insName="'+CAST(SERVERPROPERTY('servername') AS VARCHAR(50))+'" jobName="'+JT1.jobname+'" lastRunStatus="'+JT1.Lastrunstatus+
+												 '" lastRunDate="'+convert(varchar(25),JT2.LRD,120)+'" nextRunDate="'+convert(varchar(25),JT2.NRD,120)+'" totalRuns="'+cast(JT1.TR as varchar(5))+
+												 '" success="'+cast(JT1.su as varchar(5))+'" failed="'+cast(JT1.fa as varchar(5) )+'" />' 
+
+				from #jobstss JT1
+				LEFT JOIN  #jobstst JT2
+				ON JT1.jobname=JT2.jobname
+				WHERE JT1.Lastrunstatus='FAILED'
+
+				
+			END
+
+			ELSE
+				BEGIN
+				Select @sqlErrorMsg = @sqlErrorMsg + 'SQL server Agent is not running.Check the service status'
+				END
+END
+ELSE 
+  BEGIN
+  			Select @sqlErrorMsg = @sqlErrorMsg + 'No SQL AGENT'
+END 
+
+IF @jcnt=0
+    BEGIN 
+      SELECT '<jobStatus msg="* No enabled jobs on the SQL server" error="'+@sqlErrorMsg+'" >'
+      
+      SELECT '<js jobName="'+JT1.jobname+'" lastRunStatus="'+JT1.Lastrunstatus+
+      												 '" lastRunDate="'+convert(varchar(25),JT2.LRD,120)+'" nextRunDate="'+convert(varchar(25),JT2.NRD,120)+'" totalRuns="'+cast(JT1.TR as varchar(5))+
+      												 '" success="'+cast(JT1.su as varchar(5))+'" failed="'+cast(JT1.fa as varchar(5) )+'" />' 
+      			--SELECT JT1.jobname,convert(varchar(25),JT2.LRD,120),convert(varchar(25),JT2.NRD,120),cast(JT1.TR as varchar(5)),cast(JT1.su as varchar(5)),cast(JT1.fa as varchar(5) )
+      				from #jobstss JT1
+      				LEFT JOIN  #jobstst JT2
+      				ON JT1.jobname=JT2.jobname
+      				--order by jobname
+      SELECT '</jobStatus>'
+
+    END
+ELSE
+    BEGIN
+      SELECT '<jobStatus error="'+@sqlErrorMsg+'" >'
+      
+	SELECT '<js jobName="'+JT1.jobname+'" lastRunStatus="'+JT1.Lastrunstatus+
+	      												 '" lastRunDate="'+convert(varchar(25),JT2.LRD,120)+'" nextRunDate="'+convert(varchar(25),JT2.NRD,120)+'" totalRuns="'+cast(JT1.TR as varchar(5))+
+	      												 '" success="'+cast(JT1.su as varchar(5))+'" failed="'+cast(JT1.fa as varchar(5) )+'" />' 
+	      			--SELECT JT1.jobname,convert(varchar(25),JT2.LRD,120),convert(varchar(25),JT2.NRD,120),cast(JT1.TR as varchar(5)),cast(JT1.su as varchar(5)),cast(JT1.fa as varchar(5) )
+	      				from #jobstss JT1
+	      				LEFT JOIN  #jobstst JT2
+	      				ON JT1.jobname=JT2.jobname
+      				--order by jobname
+      
+      
+      SELECT '</jobStatus>'
+    END
+    
+				drop table #jobsts
+				drop table #jobst
+				drop table #jobstst
+				drop table #jobstss
+
+IF @FailedJobs IS NOT NULL
+BEGIN
+SELECT @FailedJobs = '<failedJobs chk="1" error="'+@sqlErrorMsg+'" >'+ @FailedJobs+ '</failedJobs>'
+END
+ELSE
+BEGIN
+ IF @jcnt=0
+    BEGIN 
+       SELECT @FailedJobs = '<failedJobs chk="0" msg="* No enabled jobs on the SQL server" error="'+@sqlErrorMsg+'" >'+ @FailedJobs+ '</failedJobs>'
+    END
+ ELSE
+    BEGIN
+       SELECT @FailedJobs = '<failedJobs chk="0" msg="* All enabled jobs executed and completed successfully without any issues" error="'+@sqlErrorMsg+'" >'+ @FailedJobs+ '</failedJobs>'
+    END
+END
+
+SELECT @DBStatus =  @DBStatus + 
+
+'<dbs databaseName="'+ CAST(name AS VARCHAR(30)) + '" Status="' + CAST(DATABASEPROPERTYEX (name ,'status' ) AS VARCHAR(10))
+
++ '" />'
+
+	from sysdatabases order by name
+
+
+Select @dbsummary=@dbsummary+'<sdb insName="'+CAST(SERVERPROPERTY('servername') AS VARCHAR(50))+'" status="'+CAST(isnull(A.[Status],'TOTAL')as varchar(10))+'" count="'+CAST(SUM(A.[Count])as varchar(3))+'" />'
+ from
+(
+select databasepropertyex(name,'status') [Status],count(*) [Count]
+from sysdatabases 
+group by databasepropertyex(name,'status')
+UNION
+Select 'ONLINE',0
+UNion
+Select 'OFFLINE',0
+
+) A
+group by A.Status
+WITH ROLLUP
+Order by Status desc
+
+Select @totaldbsummary=@totaldbsummary+'<sdb insName="'+CAST(SERVERPROPERTY('servername') AS VARCHAR(50))+'" online="'+cast((select  count(*) [Count]
+from sysdatabases 
+where databasepropertyex(name,'status')= 'ONLINE') as varchar(3))+'" offline="'+cast((select  count(*) 
+from sysdatabases 
+where databasepropertyex(name,'status')= 'OFFLINE') as varchar(3))+'" total="'+cast((select count(name) from sysdatabases) as varchar(3))+'" />'
+
+
+if @totaldbsummary IS NOT NULL
+BEGIN
+
+select @totaldbsummary= '<totaldbStatus>' +@totaldbsummary + '</totaldbStatus>'
+
+END
+
+
+if @DBStatus IS NOT NULL
+
+BEGIN
+
+select @DBStatus = '<dbStatus>' + @DBStatus + '</dbStatus>'
+
+END
+
+if @dbsummary IS NOT NULL
+
+BEGIN
+
+select @dbsummary = '<dbsummary>' + @dbsummary + '</dbsummary>'
+
+END
+
+--select @DBStatus  DBStatus
+
+
+select  @BackupCheck = @BackupCheck +'<bc databaseName="' +CAST(d.name AS VARCHAR(30))+'" type="'+CASE WHEN d.dbid>4 THEN 'USERDB' ELSE 'SYSTEMDB' END+
+'" status="'+CAST(DATABASEPROPERTYEX (name ,'status' ) AS VARCHAR(10))+
+'" recoveryMode="'+CAST(DATABASEPROPERTYEX (name ,'recovery' ) AS VARCHAR(10))+
+'" lastFullBackup="' +CASE d.name WHEN 'tempdb' THEN 'N/A' ELSE isnull(convert(varchar(25),F.LastDate,120),'N/A') END+
+'" lastLogBackup="' +CASE d.name WHEN 'tempdb' THEN 'N/A' ELSE isnull(CASE DATABASEPROPERTYEX(d.name,'Recovery') WHEN 'FULL' THEN convert(varchar(25),L.LastDate,120)
+	 ELSE 'N/A' END,'N/A') END+ '" />'
+	FROM sysdatabases d
+	left join 
+		(
+			SELECT database_name, 
+					max(backup_finish_date) LastDate 
+			FROM msdb..backupset
+			WHERE type = 'D'
+			GROUP BY database_name
+		) F ON F.database_name = d.name
+	left join 
+		(
+			SELECT database_name, 
+					MAX(backup_finish_date) LastDate 
+			FROM msdb..backupset 
+			WHERE type = 'L' 
+			GROUP BY database_name
+		) L ON L.database_name = d.name
+	   --WHERE d.name not in ('tempdb') 
+
+ 
+
+
+if @BackupCheck is Not NULL
+
+BEGIN
+SELECT @BackupCheck = '<backupCheck>' + @BackupCheck + '</backupCheck>'
+END
+
+
+
+--select @BackupCheck BackupCheck
+
+
+
+
+create table #test11(drive varchar(2),[size] float)
+insert into #test11 exec xp_fixeddrives
+
+SELECT @DiskSpace = @DiskSpace + '<ds drive="' + CAST(drive AS VARCHAR(30)) + 
+		'" freeSpaceGB="' + CAST(ROUND(([size]/1024.0),2) as varchar(10)) + '" />'
+		from  #test11
+
+SELECT @LowDiskSpace = @LowDiskSpace + '<ld insName="'+cast(serverproperty('machinename') as varchar(50))+'" drive="' + CAST(drive AS VARCHAR(30)) + 
+		'" freeSpaceGB="' + CAST(ROUND(([size]/1024.0),2) as varchar(10)) + '" />'
+		from  #test11
+WHERE [size]/1024.0<2.0 and drive not in ('X','Y')
+
+IF @DiskSpace IS NOT NULL
+	BEGIN
+	select @DiskSpace = '<discSpace>'+ @DiskSpace +  '</discSpace>'
+	END
+
+IF @LowDiskSpace IS NOT NULL
+	BEGIN
+	select @LowDiskSpace = '<lowDiscSpace chk="1" >'+ @LowDiskSpace +  '</lowDiscSpace>'
+	END
+ELSE
+BEGIN 
+select @LowDiskSpace = '<lowDiscSpace chk="0" msg="* All disk drives have enough free space(>2 GB)" >'+ @LowDiskSpace +  '</lowDiscSpace>'
+END
+--select @LowDiskSpace LowDiskSpace
+
+
+drop table #test11
+
+
+CREATE TABLE #DBSTATS (
+   dbname   sysname,
+   fn varchar(200) NULL,
+   lname    sysname,
+   usage    varchar(20),
+   [size]   decimal(9, 2) NULL ,
+   [used]   decimal(9, 2) NULL ,
+   autogrow varchar(5) NULL
+) 
+
+IF OBJECT_ID('tempdb..#temp_log') IS NOT NULL
+BEGIN
+   DROP TABLE #temp_log
+END 
+
+CREATE TABLE #temp_log
+(
+   DBname          sysname,
+   LogSize         real,
+   LogSpaceUsed    real,
+   Status          int
+) 
+
+IF OBJECT_ID('tempdb..#temp_sfs') IS NOT NULL
+BEGIN
+   DROP TABLE #temp_sfs
+END 
+
+CREATE TABLE #temp_sfs
+(
+   fileid          int,
+   filegroup       int,
+   totalextents    int,
+   usedextents     int,
+   name            varchar(1024),
+   filename        varchar(1024)
+) 
+
+DECLARE @dbname sysname
+       ,@sql varchar(8000) 
+
+IF OBJECT_ID('tempdb..#temp_db') IS NOT NULL
+BEGIN
+    DROP TABLE #temp_db
+END 
+
+SELECT name INTO #temp_db
+   FROM master.dbo.sysdatabases
+   WHERE DATABASEPROPERTY(name,'IsOffline') = 0
+   AND has_dbaccess(name) = 1
+   ORDER BY name 
+
+WHILE (1 = 1)
+BEGIN
+   SET @dbname = NULL 
+
+   SELECT TOP 1 @dbname = name
+   FROM #temp_db
+   ORDER BY name 
+
+   IF @dbname IS NULL
+      GOTO _NEXT 
+
+   SET @sql = ' USE [' + @dbname + '] 
+
+      TRUNCATE TABLE #temp_sfs 
+
+      INSERT INTO #temp_sfs
+         EXECUTE(''DBCC SHOWFILESTATS'') 
+
+      INSERT INTO #DBSTATS (dbname, lname, usage, [size], [used])
+         SELECT db_name(), name, ''Data''
+         , totalextents * 64.0 / 1024.0
+         , usedextents * 64.0 / 1024.0
+         FROM #temp_sfs 
+      
+      INSERT INTO #DBSTATS (dbname, lname, usage, [size], [used])
+         SELECT db_name(), name, ''Log'', null, null
+         FROM sysfiles
+         WHERE status & 0x40 = 0x40
+
+	  UPDATE #DBSTATS 
+		SET autogrow= ( CASE WHEN sf.growth > 0 THEN ''Yes'' ELSE ''No'' END ) 
+		FROM #DBSTATS ds INNER JOIN sysfiles sf ON ds.lname COLLATE SQL_Latin1_General_CP1_CI_AS = sf.name COLLATE SQL_Latin1_General_CP1_CI_AS
+WHERE ds.dbname='''+ @dbname+''' 
+      UPDATE #DBSTATS 
+		SET fn = filename
+		FROM #DBSTATS ds INNER JOIN sysfiles sf ON ds.lname COLLATE SQL_Latin1_General_CP1_CI_AS = sf.name COLLATE SQL_Latin1_General_CP1_CI_AS
+		WHERE ds.dbname=' +''''+ @dbname +''''
+--PRINT (@sql)
+    EXEC(@sql) 
+
+    DELETE FROM #temp_db WHERE name = @dbname
+END 
+
+_NEXT: 
+
+INSERT INTO #temp_log
+   EXECUTE ('DBCC SQLPERF(LOGSPACE)') 
+
+UPDATE #DBSTATS
+   SET size = B.LogSize
+   , used = LogSize * LogSpaceUsed / 100
+FROM #DBSTATS A
+INNER JOIN #temp_log B
+    ON (A.dbname = B.DBname)AND(A.usage = 'Log') 
+
+SELECT '<dbFileStatus>' 
+
+--SELECT @DBFileStats=@DBFileStats+
+select 
+'<dfs dbName="'+dbname+'" type="'+CASE WHEN db_id(dbname)>4 THEN 'USERDB' ELSE 'SYSTEMDB' END+'" fileType="'+usage+'" fileName="'+fn+'" totalMB="'+cast([size] as varchar(10))
+   +'" usedMB="'+cast(used as varchar(10))+'" freeMB="'+cast(([size]-used) as varchar(10))+'" usedPct="'
+   +cast((cast(used/[size]*100 AS numeric(9,2))) as varchar(10))+'" freePct="'+
+   cast((cast(100-(used/[size]*100) AS numeric(9,2))) as varchar(10))+
+	'" autoGrow="'+autogrow+'" />'
+FROM #DBSTATS
+ORDER BY dbname, usage 
+
+SELECT '</dbFileStatus>'
+--SELECT @DBFileStats
+
+select @LowDBSpace=@LowDBSpace+'<lds insName="'+CAST(SERVERPROPERTY('servername') AS VARCHAR(50))+'" dbName="'+dbname+'" type="'+CASE WHEN db_id(dbname)>4 THEN 'USERDB' ELSE 'SYSTEMDB' END+'" fileType="'+usage+'" fileName="'+fn+'" totalMB="'+cast([size] as varchar(10))
+   +'" freePct="'+
+   cast((cast(100-(used/[size]*100) AS numeric(9,2))) as varchar(10))+
+'" autoGrow="'+autogrow+'" />'
+FROM #DBSTATS
+WHERE (100-(used/[size]*100))<5 --and autogrow='No'
+ORDER BY dbname, usage 
+
+
+DROP TABLE #DBSTATS
+DROP TABLE #temp_db
+DROP TABLE #temp_sfs
+DROP TABLE #temp_log 
+
+IF @DBFileStats IS NOT NULL
+
+	BEGIN
+	SELECT @DBFileStats = '<dbFileStatus>' +  @DBFileStats + '</dbFileStatus>'
+	END
+IF @LowDBSpace IS NOT NULL
+
+	BEGIN
+	SELECT @LowDBSpace = '<lowDbSpace chk="1" >' +  @LowDBSpace + '</lowDbSpace>'
+	END
+ ELSE
+  BEGIN
+  SELECT @LowDBSpace = '<lowDbSpace chk="0" msg="* All databases have enough free space(>=5%) or autogrow enabled on their data and log files " >'+ @LowDBSpace + '</lowDbSpace>'
+  END 
+
+--drop table #FileStats 
+--drop table #logdetails 
+select @serverDetails = '<date>'+convert(varchar(25),getdate(),120)+'</date>'
+--select @InstanceName = '<date>'+convert(varchar(25),getdate(),120)+'</date>'
+
+    CREATE TABLE #tempTotal  
+      
+    (  
+    DatabaseName varchar(255),  
+    Field VARCHAR(255),  
+    Value VARCHAR(255)  
+    )  
+    CREATE TABLE #temp  
+    (  
+    ParentObject VARCHAR(255),  
+    Object VARCHAR(255),  
+    Field VARCHAR(255),  
+    Value VARCHAR(255)  
+    )  
+    EXECUTE sp_MSforeachdb '  
+    INSERT INTO #temp EXEC(''DBCC DBINFO ( ''''?'''') WITH TABLERESULTS'')  
+    INSERT INTO #tempTotal (Field, Value, DatabaseName)  
+    SELECT Field, Value, ''?'' FROM #temp  
+    TRUNCATE TABLE #temp';  
+    ;WITH cte as  
+    (  
+    SELECT  
+    ROW_NUMBER() OVER(PARTITION BY DatabaseName, Field ORDER BY Value DESC) AS rn,  
+    DatabaseName,  
+    Value  
+    FROM #tempTotal t1  
+    WHERE (Field = 'dbi_dbccLastKnownGood')  
+    )  
+    SELECT  
+    DatabaseName,  
+    Value as dbccLastKnownGood  
+    FROM cte  
+    WHERE (rn = 1)  
+    DROP TABLE #temp  
+    DROP TABLE #tempTotal  
+
+--select @FinalXML =  @serverDetails+@uptime +@JobStatus + @FailedJobs +@dbsummary+ @DBStatus + @BackupCheck  + @DBFileStats+@LowDBSpace + @DiskSpace+@LowDiskSpace
+select @serverDetails
+select @uptime 
+--select @JobStatus 
+select @FailedJobs
+select @dbsummary
+select @totaldbsummary
+select @DBStatus 
+select @BackupCheck 
+--select @DBFileStats
+select @LowDBSpace
+select @DiskSpace
+select @LowDiskSpace
+
+
+--
+--select @FinalXML
+
+

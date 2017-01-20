@@ -1,0 +1,45 @@
+#!/bin/ksh
+ps -ef | grep pmon| egrep -iv '\+ASM|#|^$|grep' | awk -F"_" '{print $3}' > /u00/jobs/db/log/up_db.lst
+for i in `cat /u00/jobs/db/log/up_db.lst`
+do
+ORACLE_SID=$i
+export ORACLE_SID
+export ORACLE_HOME=`grep ^$ORACLE_SID: /etc/oratab| awk -F: '{print $2}'`;export ORACLE_HOME
+export PATH=$ORACLE_HOME/bin:$PATH
+export ORACLE_BASE=/u00/app/oracle
+echo " $ORACLE_SID - $ORACLE_HOME "
+Dt=`date "+%Y%m%d_%H%M%S"`
+>/u00/jobs/db/log/${ORACLE_SID}_long_sql.out
+$ORACLE_HOME/bin/sqlplus -s "/ as sysdba"<<EOF > /dev/null
+spool /u00/jobs/db/log/${ORACLE_SID}_long_sql.out
+set echo off
+set head off
+set feedback off
+set feed off
+set term off
+set pages 0
+set head off
+set echo off
+set lines 250 pages 250
+select s.sid,s.serial#,s.status,s.sql_id,q.SQL_TEXT,s.last_call_et/60 STATE_MIN,to_char(s.logon_time,'DD-MON-YYYY HH24:MI:SS'),s.wait_class,s.event from v\$session s,v\$sql q where s.last_call_et/60>20 and s.type<>'BACKGROUND' and s.status='ACTIVE' and
+s.SQL_ID=q.SQL_ID order by s.last_call_et desc;
+spool off
+EOF
+TotalLines=`wc -l /u00/jobs/db/log/${ORACLE_SID}_long_sql.out | awk '{print $1}'`
+if [ $TotalLines -gt 0 ]; then
+
+    cat /u00/jobs/db/log/${ORACLE_SID}_long_sql.out |grep 616
+    if [ "$?" = "0" ]; then
+        echo " Not required to sent email"
+    else
+        echo "sending mail ================="
+mail -s " Long Running SQLs for ${ORACLE_SID} " tulasi.vanapalli@turn.com < /u00/jobs/db/log/${ORACLE_SID}_long_sql.out
+      echo "===================== Start ========================" >> /u00/jobs/db/log/${ORACLE_SID}_long_sql.details
+      date >> /u00/jobs/db/log/${ORACLE_SID}_long_sql.details
+      cat /u00/jobs/db/log/${ORACLE_SID}_long_sql.out >> /u00/jobs/db/log/${ORACLE_SID}_long_sql.details
+      echo "===================== End ==========================" >> /u00/jobs/db/log/${ORACLE_SID}_long_sql.details
+    fi
+else
+      echo " No Long Running SQLs Reported " > /u00/jobs/db/log/${ORACLE_SID}_long_sql.out
+fi
+done

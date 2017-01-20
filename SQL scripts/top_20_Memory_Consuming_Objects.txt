@@ -1,0 +1,91 @@
+Create procedure MemoryObjects
+As
+Begin
+Declare @Database varchar(100)
+---Drop temp table if exists to save a record count for all tables
+--if object_id('tempdb..##TempTable') is Not Null
+--Drop Table ##TempTable
+--Declare @DatabaseName as VARCHAR(500)
+
+CREATE TABLE ##TEMPTABLE
+(
+    Database_Id Varchar(50),
+    Object_Name Varchar(50),
+    Object_Type Varchar(20),
+	Index_Name Varchar(100),
+	Index_Type varchar(20),
+	Buffered_Page_Count tinyint,
+	Buffer_MB TinyInt,
+	Page_Type varchar(20))
+
+Declare RecordCountCursor Cursor
+
+For select top 2 db_name(database_id)
+from sys.dm_os_buffer_descriptors
+where database_id between 5 and 32766
+group by database_id
+order by count(*) desc
+
+Open RecordCountCursor
+Fetch Next From RecordCountCursor
+Into @Database
+While @@FETCH_STATUS=0
+
+Begin
+
+DECLARE @DBIn  varchar(50)
+Declare @SqlString Varchar(Max)
+SET @DBIn = @Database
+SET @SQLString = 'USE ' + @DBIn +' ;
+Set NoCount On
+INSERT INTO ##TEMPTABLE
+ SELECT TOP 25 
+ bd.database_id,
+ obj.[name] as [Object Name],
+ sysobj.type_desc as [Object Type],
+ i.[name]   as [Index Name],
+ i.[type_desc] as [Index Type],
+ COUNT_BIG(*) AS Buffered_Page_Count ,
+ COUNT_BIG(*) * 8192 / (1024 * 1024) as Buffer_MB,
+ bd.page_type as [Page Type]
+FROM sys.dm_os_buffer_descriptors AS bd 
+    INNER JOIN 
+    (
+        SELECT object_name(object_id) AS name 
+            ,index_id ,allocation_unit_id, object_id
+        FROM sys.allocation_units AS au
+            INNER JOIN sys.partitions AS p 
+                ON au.container_id = p.hobt_id 
+                    AND (au.type = 1 OR au.type = 3)
+        UNION ALL
+        SELECT object_name(object_id) AS name   
+            ,index_id, allocation_unit_id, object_id
+        FROM sys.allocation_units AS au
+            INNER JOIN sys.partitions AS p 
+                ON au.container_id = p.hobt_id 
+                    AND au.type = 2
+    ) AS obj 
+        ON bd.allocation_unit_id = obj.allocation_unit_id
+LEFT JOIN sys.indexes i on i.object_id = obj.object_id AND i.index_id = obj.index_id
+LEFT JOIN sys.objects sysobj on i.object_id = sysobj.object_id
+WHERE database_id = DB_ID()
+and sysobj.type not in (''S'',''IT'')
+GROUP BY database_id, obj.name, obj.index_id , i.[name],i.[type_desc],bd.page_type,sysobj.type_desc';
+
+
+Exec (@sqlstring)
+
+Fetch Next
+	  From RecordCountCursor
+	  into @database
+	  End
+	  Close RecordCountCursor
+	  Deallocate RecordCountCursor
+
+Select Top 20 DB_NAME(database_id) as DBNAME,Object_Name,Object_Type,Index_Name,Index_Type ,Buffered_Page_Count ,Buffer_MB ,Page_Type from ##TEMPTABLE
+Order by Buffered_Page_Count desc
+DROP TABLE ##TEMPTABLE
+
+End
+
+--Exec MemoryObjects

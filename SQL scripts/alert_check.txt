@@ -1,0 +1,41 @@
+#!/bin/ksh
+ps -ef | grep pmon| egrep -iv '\+ASM|#|^$|grep' | awk -F"_" '{print $3}' > /u00/jobs/db/log/up_db.lst
+for i in `cat /u00/jobs/db/log/up_db.lst`
+do
+ORACLE_SID=$i
+export ORACLE_SID
+export ORACLE_HOME=`grep ^$ORACLE_SID: /etc/oratab| awk -F: '{print $2}'`;export ORACLE_HOME
+export PATH=$ORACLE_HOME/bin:$PATH
+export ORACLE_BASE=/u00/app/oracle
+echo " $ORACLE_SID - $ORACLE_HOME "
+Dt=`date "+%Y%m%d_%H%M%S"`
+$ORACLE_HOME/bin/sqlplus -s "/ as sysdba"<<EOF > /dev/null
+set feed off
+set term off
+set pages 0
+set head off heading off
+set echo off
+spool /u00/jobs/db/log/${ORACLE_SID}_bdumpdest.out
+select VALUE from v\$parameter where name = 'background_dump_dest';
+spool off
+EOF
+BdumpDest=`cat /u00/jobs/db/log/${ORACLE_SID}_bdumpdest.out`
+cd ${BdumpDest}
+if [ $? -eq 0 ]; then
+>alert_${ORACLE_SID}.log_diff
+diff alert_${ORACLE_SID}.log alert_${ORACLE_SID}.log_comp >> alert_${ORACLE_SID}.log_diff
+TotalLines=`wc -l alert_${ORACLE_SID}.log_diff | awk '{print $1}'`
+TotalLines2=`wc -l alert_${ORACLE_SID}.log | awk '{print $1}'`
+if [ $TotalLines -gt 0 ]; then
+tail -"${TotalLines}" alert_${ORACLE_SID}.log_diff | grep -A 4 -B 4 ORA- | egrep -iv '<|ORA-12012|ORA-06575' >> alert_${ORACLE_SID}.out
+#else
+#tail -"${TotalLines2}" alert_${ORACLE_SID}.log | grep -A 4 -B 4 ORA- | egrep -iv '<|ORA-12012|ORA-06575' >> alert_${ORACLE_SID}.out
+fi
+AlertCount=`egrep "ORA-" alert_${ORACLE_SID}.out | wc -l`
+   if [ $AlertCount -gt 0 ]; then
+      mail -s " ORA- Error Reported for ${ORACLE_SID} " tulasi.vanapalli@turn.com < alert_${ORACLE_SID}.out
+   fi
+fi
+cp -p  alert_${ORACLE_SID}.log alert_${ORACLE_SID}.log_comp
+>alert_${ORACLE_SID}.out
+done

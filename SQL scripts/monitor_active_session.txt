@@ -1,0 +1,68 @@
+#!/bin/ksh
+/sbin/pidof -x -o $$ ${0##*/} && exit
+source /home/oracle/.profile_APPPRD
+#
+
+PROGRAM=monitor_active_session_APPPRD
+
+LOCAL=/u00/jobs/db
+
+
+MAILING_LIST="tulasi.vanapalli@turn.com"
+
+MAIL_ON_COMPLETION=ERRORS
+
+
+find /u00/jobs/db/log/ -name "monitor_active_session_APPPRD_??????_??????" -type f -mtime +4 -exec rm -f {} \;
+
+
+#
+#--- Local Declarations
+#
+
+DATE=`/bin/date '+%y%m%d_%H%M%S'`
+PROGRAM="monitor_active_session_APPPRD"
+CAT=/bin/cat
+AWK=/bin/awk
+ECHO=/bin/echo
+RM=/bin/rm
+SQLPLUS=${ORACLE_HOME}/bin/sqlplus
+DATE=`/bin/date '+%y%m%d_%H%M%S'`
+MAILX=/bin/mailx
+
+FILEBASE=${PROGRAM}_${DATE}
+FILENAME=${LOCAL}/log/${FILEBASE}
+#######################################################
+
+#NUM_SESSION=`sqlplus -S /nolog<<EOF
+NUM_SESSION=`${SQLPLUS} -S /nolog<<EOF
+  set linesize 127
+  set newpage  0
+  set pagesize 0
+  set verify   off
+  set feedback off
+  set echo     off
+  set termout  off
+  connect / as sysdba
+  select count(*)
+  from gv\\$session
+  where status = 'ACTIVE'
+  and username not in ('SYS');
+  exit;
+EOF`
+
+echo "NUM_SESSION :" $NUM_SESSION
+
+if [[ ${NUM_SESSION} -ge 70 ]];
+then
+    echo " Active connections exceeds threshold"
+    MESSAGE="Number of Active Oracle sessions on db001.sjc2 is ${NUM_SESSION}"
+    ${MAILX} -s"${PROGRAM} - Active Connections Critical" ${MAILING_LIST}<<EOF1
+    $MESSAGE
+EOF1
+else
+echo " Active connections are less than threshold"
+fi
+
+
+######################################################

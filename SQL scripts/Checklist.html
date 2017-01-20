@@ -1,0 +1,212 @@
+
+<fieldset>
+    <a name="top"></a><br><b>Hi All,<br><br>This is an automated DBA Checklist Report for the following SQL servers as on <font color="#347C17">12/29/2016 9:27:08 PM</font>.Please click on the server name to see the report for that server.</b><br><br><TABLE border="0"><TR><TH bgcolor="#B7CEEC">SQL servers</TH><TH bgcolor="#B7CEEC">Status</TH></TR><TR><TD bgcolor="#C2DFFF"><a href="#hydlpt467">hydlpt467</a></TD><TD bgcolor="#C2DFFF"><font color="#347C17">Running</font></TD></TR><TR><TD bgcolor="#C2DFFF"><a href="#hydlpt467SQLEXPRESS">hydlpt467\SQLEXPRESS</a></TD><TD bgcolor="#C2DFFF"><font color="#347C17">Running</font></TD></TR></TABLE>
+</fieldset><?xml version="1.0" encoding="UTF-16"?>
+<HEAD>
+    <TITLE>Checklist for SQL Server</TITLE>
+    <style type="text/css">
+h3 {color:#2B60DE}
+TH {color:BLACK}
+h4 {color:#25587E}
+</style>
+</HEAD>
+<BODY>
+    <fieldset>
+        <fieldset style="text-align:left;">
+            <legend><font color="#2B60DE"><h3><b>Overall Summary/issues</b></h3></font></legend>
+            <h4>Database Status Summary</h4>
+            <TABLE border="0">
+                <TR>
+                    <TH bgcolor="#B7CEEC">Server</TH>
+                    <TH bgcolor="#B7CEEC">Online</TH>
+                    <TH bgcolor="#B7CEEC">Offline</TH>
+                    <TH bgcolor="#B7CEEC">Total</TH>
+                </TR>
+                <TR>
+                    <TD bgcolor="#C2DFFF">HYDLPT467</TD>
+                    <TD bgcolor="#C2DFFF"><font color="#347C17">5</font></TD>
+                    <TD bgcolor="#C2DFFF"><font color="#347C17">0</font></TD>
+                    <TD bgcolor="#C2DFFF"><b>5</b></TD>
+                </TR>
+                <TR>
+                    <TD bgcolor="#C2DFFF">HYDLPT467\SQLEXPRESS</TD>
+                    <TD bgcolor="#C2DFFF"><font color="#347C17">4</font></TD>
+                    <TD bgcolor="#C2DFFF"><font color="#347C17">0</font></TD>
+                    <TD bgcolor="#C2DFFF"><b>4</b></TD>
+                </TR>
+            </TABLE>
+            <br /><b>* All scheduled jobs on all servers executed and finished successfully without anyissues</b><h4>Low free space database(s) \ file(s)</h4>
+            <TABLE border="0">
+                <TR>
+                    <TH bgcolor="#B7CEEC">Server</TH>
+                    <TH bgcolor="#B7CEEC">Database Name</TH>
+                    <TH bgcolor="#B7CEEC">DB Type</TH>
+                    <TH bgcolor="#B7CEEC">File Type</TH>
+                    <TH bgcolor="#B7CEEC">File Name</TH>
+                    <TH bgcolor="#B7CEEC">Total(MB)</TH>
+                    <TH bgcolor="#B7CEEC">Free(%)</TH>
+                    <TH bgcolor="#B7CEEC">Autogrow</TH>
+                </TR>
+                <TR>
+                    <TD bgcolor="#C2DFFF">HYDLPT467</TD>
+                    <TD bgcolor="#C2DFFF">msdb</TD>
+                    <TD bgcolor="#C2DFFF">SYSTEMDB</TD>
+                    <TD bgcolor="#C2DFFF">Data</TD>
+                    <TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\MSDBData.mdf</TD>
+                    <TD bgcolor="#C2DFFF">17.13</TD>
+                    <TD bgcolor="#C2DFFF"><font color="#C35817">4.38</font></TD>
+                    <TD bgcolor="#C2DFFF">Yes</TD>
+                </TR>
+                <TR>
+                    <TD bgcolor="#C2DFFF">HYDLPT467\SQLEXPRESS</TD><TD bgcolor="#C2DFFF">model</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Data</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL10.SQLEXPRESS\MSSQL\DATA\model.mdf</TD><TD bgcolor="#C2DFFF">1.25</TD><TD bgcolor="#C2DFFF"><font color="#C35817">0.00</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR>
+            </TABLE><br /><b>* All disk drives have enough free space(&gt;=2)</b>
+        </fieldset><a href="#top" style="float:right">Go to Top</a>
+    </fieldset>
+</BODY>
+<?xml version="1.0" encoding="UTF-16"?>
+<HEAD>
+    <TITLE>Checklist for SQL Server</TITLE>
+    <style type="text/css">h3 {color:#2B60DE}TH {color:BLACK}h4 {color:#25587E}</style></HEAD>
+    <BODY>
+        <fieldset>
+            <fieldset style="text-align:center;">
+                <a name="hydlpt467"><h2>Database Checklist for <font color="#566D7E">hydlpt467</font> as on <font color="#566D7E">2016-12-29 21:27:06</font></h2></a><h4>SQL Server Uptime: <font color="#347C17">0 day(s) 10 hour(s) 51 minute(s)</font></h4>
+            </fieldset>
+            <fieldset style="text-align:left;">
+                <legend><font color="black"><h3><b>Summary/issues</b></h3></font></legend><h4>Database Status Summary</h4>
+                <TABLE border="0">
+                    <TR>
+                        <TH bgcolor="#B7CEEC">Status</TH>
+                        <TH bgcolor="#B7CEEC">Count</TH>
+                    </TR>
+                    <TR>
+                        <TD bgcolor="#C2DFFF">ONLINE</TD>
+                        <TD bgcolor="#C2DFFF"><font color="#347C17">5</font></TD>
+                    </TR>
+                    <TR>
+                        <TD bgcolor="#C2DFFF">OFFLINE</TD>
+                        <TD bgcolor="#C2DFFF"><font color="#347C17">0</font></TD>
+                    </TR><TR><TD bgcolor="#C2DFFF">TOTAL</TD><TD bgcolor="#C2DFFF"><font color="#347C17">5</font></TD></TR></TABLE><br /><font color="Red">SQL server Agent is not running.Check the service status</font>
+                    <h4>Low free space database(s) / file(s)</h4>
+                    <TABLE border="0">
+                        <TR>
+                            <TH bgcolor="#B7CEEC">Database Name</TH>
+                            <TH bgcolor="#B7CEEC">DB Type</TH>
+                            <TH bgcolor="#B7CEEC">File Type</TH>
+                            <TH bgcolor="#B7CEEC">File Name</TH>
+                            <TH bgcolor="#B7CEEC">Total(MB)</TH>
+                            <TH bgcolor="#B7CEEC">Free(%)</TH>
+                            <TH bgcolor="#B7CEEC">Autogrow</TH>
+                        </TR>
+                        <TR>
+                            <TD bgcolor="#C2DFFF">msdb</TD>
+                            <TD bgcolor="#C2DFFF">SYSTEMDB</TD>
+                            <TD bgcolor="#C2DFFF">Data</TD>
+                            <TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\MSDBData.mdf</TD>
+                            <TD bgcolor="#C2DFFF">17.13</TD>
+                            <TD bgcolor="#C2DFFF"><font color="#C35817">4.38</font></TD>
+                            <TD bgcolor="#C2DFFF">Yes</TD>
+                        </TR>
+                    </TABLE>
+                    <br /><b></b><br /><b>* All disk drives have enough free space(&gt;2 GB)</b>
+            </fieldset>
+            <fieldset style="text-align:left;">
+                <legend><font color="black"><h3><b>Detailed Checklist</b></h3></font></legend>
+                <h4>SQL Server Services Status</h4>
+                <TABLE border="0">
+                    <TR>
+                        <TH bgcolor="#B7CEEC">Service</TH>
+                        <TH bgcolor="#B7CEEC">Type</TH>
+                        <TH bgcolor="#B7CEEC">Status</TH>
+                    </TR>
+                    <TR>
+                        <TD bgcolor="#C2DFFF">MSSQL$SQLEXPRESS</TD>
+                        <TD bgcolor="#C2DFFF">Auto</TD>
+                        <TD bgcolor="#C2DFFF"><font color="#347C17">Running</font></TD>
+                    </TR>
+                    <TR>
+                        <TD bgcolor="#C2DFFF">MSSQLFDLauncher</TD><TD bgcolor="#C2DFFF">Manual</TD><TD bgcolor="#C2DFFF"><font color="#347C17">Running</font></TD></TR><TR><TD bgcolor="#C2DFFF">MSSQLSERVER</TD><TD bgcolor="#C2DFFF">Auto</TD><TD bgcolor="#C2DFFF"><font color="#347C17">Running</font></TD></TR><TR><TD bgcolor="#C2DFFF">MSSQLServerADHelper100</TD><TD bgcolor="#C2DFFF">Disabled</TD><TD bgcolor="#C2DFFF"><font color="#347C17">Stopped</font></TD></TR><TR><TD bgcolor="#C2DFFF">SQLAgent$SQLEXPRESS</TD><TD bgcolor="#C2DFFF">Disabled</TD><TD bgcolor="#C2DFFF"><font color="#347C17">Stopped</font></TD></TR><TR><TD bgcolor="#C2DFFF">SQLBrowser</TD><TD bgcolor="#C2DFFF">Auto</TD><TD bgcolor="#C2DFFF"><font color="#347C17">Running</font></TD></TR><TR><TD bgcolor="#C2DFFF">SQLSERVERAGENT</TD><TD bgcolor="#C2DFFF">Manual</TD><TD bgcolor="#C2DFFF"><font color="#347C17">Stopped</font></TD></TR><TR><TD bgcolor="#C2DFFF">SQLWriter</TD><TD bgcolor="#C2DFFF">Auto</TD><TD bgcolor="#C2DFFF"><font color="#FF0000">Stopped</font></TD></TR>
+                </TABLE>
+            <h4>Database Status</h4>
+            <TABLE border="0">
+                <TR>
+                    <TH bgcolor="#B7CEEC">Database Name</TH>
+                    <TH bgcolor="#B7CEEC">DB Type</TH>
+                    <TH bgcolor="#B7CEEC">Recovery Model</TH>
+                    <TH bgcolor="#B7CEEC">Status</TH>
+                    <TH bgcolor="#B7CEEC">Last Full Backup</TH>
+                    <TH bgcolor="#B7CEEC">Last Log Backup</TH>
+                </TR>
+                <TR>
+                    <TD bgcolor="#C2DFFF">master</TD>
+                    <TD bgcolor="#C2DFFF">SYSTEMDB</TD>
+                    <TD bgcolor="#C2DFFF">SIMPLE</TD>
+                    <TD bgcolor="#C2DFFF"><font color="#347C17">ONLINE</font></TD>
+                    <TD bgcolor="#C2DFFF">N/A</TD>
+                    <TD bgcolor="#C2DFFF">N/A</TD>
+                </TR>
+                <TR>
+                    <TD bgcolor="#C2DFFF">tempdb</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">SIMPLE</TD><TD bgcolor="#C2DFFF"><font color="#347C17">ONLINE</font></TD><TD bgcolor="#C2DFFF">N/A</TD><TD bgcolor="#C2DFFF">N/A</TD></TR><TR><TD bgcolor="#C2DFFF">model</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">FULL</TD><TD bgcolor="#C2DFFF"><font color="#347C17">ONLINE</font></TD><TD bgcolor="#C2DFFF">N/A</TD><TD bgcolor="#C2DFFF">N/A</TD></TR><TR><TD bgcolor="#C2DFFF">msdb</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">SIMPLE</TD><TD bgcolor="#C2DFFF"><font color="#347C17">ONLINE</font></TD><TD bgcolor="#C2DFFF">N/A</TD><TD bgcolor="#C2DFFF">N/A</TD></TR><TR><TD bgcolor="#C2DFFF">SavindraLaptop</TD><TD bgcolor="#C2DFFF">USERDB</TD><TD bgcolor="#C2DFFF">SIMPLE</TD><TD bgcolor="#C2DFFF"><font color="#347C17">ONLINE</font></TD><TD bgcolor="#C2DFFF">2016-11-07 19:49:31</TD><TD bgcolor="#C2DFFF">N/A</TD></TR></TABLE>
+                <h4>Database Files Status</h4>
+                <TABLE border="0">
+                    <TR>
+                        <TH bgcolor="#B7CEEC">Database Name</TH>
+                        <TH bgcolor="#B7CEEC">DB Type</TH>
+                        <TH bgcolor="#B7CEEC">File Type</TH>
+                        <TH bgcolor="#B7CEEC">File Name</TH>
+                        <TH bgcolor="#B7CEEC">Total(MB)</TH>
+                        <TH bgcolor="#B7CEEC">Used(MB)</TH>
+                        <TH bgcolor="#B7CEEC">Free(MB)</TH>
+                        <TH bgcolor="#B7CEEC">Used(%)</TH>
+                        <TH bgcolor="#B7CEEC">Free(%)</TH>
+                        <TH bgcolor="#B7CEEC">Autogrow</TH>
+                    </TR>
+                    <TR>
+                        <TD bgcolor="#C2DFFF">master</TD>
+                        <TD bgcolor="#C2DFFF">SYSTEMDB</TD>
+                        <TD bgcolor="#C2DFFF">Data</TD>
+                        <TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\master.mdf</TD>
+                        <TD bgcolor="#C2DFFF">4.00</TD>
+                        <TD bgcolor="#C2DFFF">3.63</TD>
+                        <TD bgcolor="#C2DFFF">0.37</TD>
+                        <TD bgcolor="#C2DFFF">90.75</TD>
+                        <TD bgcolor="#C2DFFF"><font color="#347C17">9.25</font></TD>
+                        <TD bgcolor="#C2DFFF">Yes</TD>
+                    </TR>
+                    <TR>
+                        <TD bgcolor="#C2DFFF">master</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Log</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\mastlog.ldf</TD><TD bgcolor="#C2DFFF">1.99</TD><TD bgcolor="#C2DFFF">0.84</TD><TD bgcolor="#C2DFFF">1.15</TD><TD bgcolor="#C2DFFF">42.21</TD><TD bgcolor="#C2DFFF"><font color="#347C17">57.79</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">model</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Data</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\model.mdf</TD><TD bgcolor="#C2DFFF">3.19</TD><TD bgcolor="#C2DFFF">2.31</TD><TD bgcolor="#C2DFFF">0.88</TD><TD bgcolor="#C2DFFF">72.41</TD><TD bgcolor="#C2DFFF"><font color="#347C17">27.59</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">model</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Log</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\modellog.ldf</TD><TD bgcolor="#C2DFFF">0.74</TD><TD bgcolor="#C2DFFF">0.48</TD><TD bgcolor="#C2DFFF">0.26</TD><TD bgcolor="#C2DFFF">64.86</TD><TD bgcolor="#C2DFFF"><font color="#347C17">35.14</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">msdb</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Data</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\MSDBData.mdf</TD><TD bgcolor="#C2DFFF">17.13</TD><TD bgcolor="#C2DFFF">16.38</TD><TD bgcolor="#C2DFFF">0.75</TD><TD bgcolor="#C2DFFF">95.62</TD><TD bgcolor="#C2DFFF"><font color="#C35817">4.38</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">msdb</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Log</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\MSDBLog.ldf</TD><TD bgcolor="#C2DFFF">26.18</TD><TD bgcolor="#C2DFFF">1.63</TD><TD bgcolor="#C2DFFF">24.55</TD><TD bgcolor="#C2DFFF">6.23</TD><TD bgcolor="#C2DFFF"><font color="#347C17">93.77</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">SavindraLaptop</TD><TD bgcolor="#C2DFFF">USERDB</TD><TD bgcolor="#C2DFFF">Data</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\SavindraLaptop.mdf</TD><TD bgcolor="#C2DFFF">67.06</TD><TD bgcolor="#C2DFFF">57.00</TD><TD bgcolor="#C2DFFF">10.06</TD><TD bgcolor="#C2DFFF">85.00</TD><TD bgcolor="#C2DFFF"><font color="#347C17">15.00</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">SavindraLaptop</TD><TD bgcolor="#C2DFFF">USERDB</TD><TD bgcolor="#C2DFFF">Log</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\SavindraLaptop_log.ldf</TD><TD bgcolor="#C2DFFF">5.55</TD><TD bgcolor="#C2DFFF">0.96</TD><TD bgcolor="#C2DFFF">4.59</TD><TD bgcolor="#C2DFFF">17.30</TD><TD bgcolor="#C2DFFF"><font color="#347C17">82.70</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">tempdb</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Data</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\tempdb.mdf</TD><TD bgcolor="#C2DFFF">8.00</TD><TD bgcolor="#C2DFFF">2.56</TD><TD bgcolor="#C2DFFF">5.44</TD><TD bgcolor="#C2DFFF">32.00</TD><TD bgcolor="#C2DFFF"><font color="#347C17">68.00</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">tempdb</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Log</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\templog.ldf</TD><TD bgcolor="#C2DFFF">0.74</TD><TD bgcolor="#C2DFFF">0.54</TD><TD bgcolor="#C2DFFF">0.20</TD><TD bgcolor="#C2DFFF">72.97</TD><TD bgcolor="#C2DFFF"><font color="#347C17">27.03</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR></TABLE>
+                        <h4>Jobs Status</h4>
+                        <TABLE border="0">
+                            <TR>
+                                <TH bgcolor="#B7CEEC">JobName</TH>
+                                <TH bgcolor="#B7CEEC">Last Run Status</TH>
+                                <TH bgcolor="#B7CEEC">Last Run Date</TH>
+                                <TH bgcolor="#B7CEEC">Next Run Date</TH>
+                                <TH bgcolor="#B7CEEC">Total Runs</TH>
+                                <TH bgcolor="#B7CEEC">Success</TH>
+                                <TH bgcolor="#B7CEEC">Failed</TH>
+                            </TR>
+                        </TABLE><font color="Red">SQL server Agent is not running.Check the service status</font>
+                        <h4>Drive Details</h4>
+                        <TABLE border="0">
+                            <TR>
+                                <TH bgcolor="#B7CEEC">Drive Name</TH>
+                                <TH bgcolor="#B7CEEC">Free Space(GB)</TH>
+                            </TR>
+                            <TR>
+                                <TD bgcolor="#C2DFFF">C</TD>
+                                <TD bgcolor="#C2DFFF"><font color="#347C17">9.25</font></TD>
+                            </TR>
+                            <TR>
+                                <TD bgcolor="#C2DFFF">D</TD>
+                                <TD bgcolor="#C2DFFF"><font color="#347C17">47.51</font></TD>
+                            </TR>
+                            <TR>
+                                <TD bgcolor="#C2DFFF">F</TD>
+                            <   TD bgcolor="#C2DFFF"><font color="#347C17">31.46</font></TD>
+                            </TR>
+                        </TABLE>
+            </fieldset><a href="#top" style="float:right">Go to Top</a>
+            </fieldset></BODY><hr color="#000000"><?xml version="1.0" encoding="UTF-16"?><HEAD><TITLE>Checklist for SQL Server</TITLE><style type="text/css">h3 {color:#2B60DE}TH {color:BLACK}h4 {color:#25587E}</style></HEAD><BODY><fieldset><fieldset style="text-align:center;"><a name="hydlpt467SQLEXPRESS"><h2>Database Checklist for <font color="#566D7E">hydlpt467\SQLEXPRESS</font> as on <font color="#566D7E">2016-12-29 21:27:07</font></h2></a><h4>SQL Server Uptime: <font color="#347C17">0 day(s) 10 hour(s) 52 minute(s)</font></h4></fieldset><fieldset style="text-align:left;"><legend><font color="black"><h3><b>Summary/issues</b></h3></font></legend><h4>Database Status Summary</h4><TABLE border="0"><TR><TH bgcolor="#B7CEEC">Status</TH><TH bgcolor="#B7CEEC">Count</TH></TR><TR><TD bgcolor="#C2DFFF">ONLINE</TD><TD bgcolor="#C2DFFF"><font color="#347C17">4</font></TD></TR><TR><TD bgcolor="#C2DFFF">OFFLINE</TD><TD bgcolor="#C2DFFF"><font color="#347C17">0</font></TD></TR><TR><TD bgcolor="#C2DFFF">TOTAL</TD><TD bgcolor="#C2DFFF"><font color="#347C17">4</font></TD></TR></TABLE><br /><font color="Red">SQL server Agent is not running.Check the service status</font><h4>Low free space database(s) / file(s)</h4><TABLE border="0"><TR><TH bgcolor="#B7CEEC">Database Name</TH><TH bgcolor="#B7CEEC">DB Type</TH><TH bgcolor="#B7CEEC">File Type</TH><TH bgcolor="#B7CEEC">File Name</TH><TH bgcolor="#B7CEEC">Total(MB)</TH><TH bgcolor="#B7CEEC">Free(%)</TH><TH bgcolor="#B7CEEC">Autogrow</TH></TR><TR><TD bgcolor="#C2DFFF">model</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Data</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL10.SQLEXPRESS\MSSQL\DATA\model.mdf</TD><TD bgcolor="#C2DFFF">1.25</TD><TD bgcolor="#C2DFFF"><font color="#C35817">0.00</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR></TABLE><br /><b></b><br /><b>* All disk drives have enough free space(&gt;2 GB)</b></fieldset><fieldset style="text-align:left;"><legend><font color="black"><h3><b>Detailed Checklist</b></h3></font></legend><h4>SQL Server Services Status</h4><TABLE border="0"><TR><TH bgcolor="#B7CEEC">Service</TH><TH bgcolor="#B7CEEC">Type</TH><TH bgcolor="#B7CEEC">Status</TH></TR><TR><TD bgcolor="#C2DFFF">MSSQL$SQLEXPRESS</TD><TD bgcolor="#C2DFFF">Auto</TD><TD bgcolor="#C2DFFF"><font color="#347C17">Running</font></TD></TR><TR><TD bgcolor="#C2DFFF">MSSQLFDLauncher</TD><TD bgcolor="#C2DFFF">Manual</TD><TD bgcolor="#C2DFFF"><font color="#347C17">Running</font></TD></TR><TR><TD bgcolor="#C2DFFF">MSSQLSERVER</TD><TD bgcolor="#C2DFFF">Auto</TD><TD bgcolor="#C2DFFF"><font color="#347C17">Running</font></TD></TR><TR><TD bgcolor="#C2DFFF">MSSQLServerADHelper100</TD><TD bgcolor="#C2DFFF">Disabled</TD><TD bgcolor="#C2DFFF"><font color="#347C17">Stopped</font></TD></TR><TR><TD bgcolor="#C2DFFF">SQLAgent$SQLEXPRESS</TD><TD bgcolor="#C2DFFF">Disabled</TD><TD bgcolor="#C2DFFF"><font color="#347C17">Stopped</font></TD></TR><TR><TD bgcolor="#C2DFFF">SQLBrowser</TD><TD bgcolor="#C2DFFF">Auto</TD><TD bgcolor="#C2DFFF"><font color="#347C17">Running</font></TD></TR><TR><TD bgcolor="#C2DFFF">SQLSERVERAGENT</TD><TD bgcolor="#C2DFFF">Manual</TD><TD bgcolor="#C2DFFF"><font color="#347C17">Stopped</font></TD></TR><TR><TD bgcolor="#C2DFFF">SQLWriter</TD><TD bgcolor="#C2DFFF">Auto</TD><TD bgcolor="#C2DFFF"><font color="#FF0000">Stopped</font></TD></TR></TABLE><h4>Database Status</h4><TABLE border="0"><TR><TH bgcolor="#B7CEEC">Database Name</TH><TH bgcolor="#B7CEEC">DB Type</TH><TH bgcolor="#B7CEEC">Recovery Model</TH><TH bgcolor="#B7CEEC">Status</TH><TH bgcolor="#B7CEEC">Last Full Backup</TH><TH bgcolor="#B7CEEC">Last Log Backup</TH></TR><TR><TD bgcolor="#C2DFFF">master</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">SIMPLE</TD><TD bgcolor="#C2DFFF"><font color="#347C17">ONLINE</font></TD><TD bgcolor="#C2DFFF">N/A</TD><TD bgcolor="#C2DFFF">N/A</TD></TR><TR><TD bgcolor="#C2DFFF">tempdb</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">SIMPLE</TD><TD bgcolor="#C2DFFF"><font color="#347C17">ONLINE</font></TD><TD bgcolor="#C2DFFF">N/A</TD><TD bgcolor="#C2DFFF">N/A</TD></TR><TR><TD bgcolor="#C2DFFF">model</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">SIMPLE</TD><TD bgcolor="#C2DFFF"><font color="#347C17">ONLINE</font></TD><TD bgcolor="#C2DFFF">N/A</TD><TD bgcolor="#C2DFFF">N/A</TD></TR><TR><TD bgcolor="#C2DFFF">msdb</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">SIMPLE</TD><TD bgcolor="#C2DFFF"><font color="#347C17">ONLINE</font></TD><TD bgcolor="#C2DFFF">N/A</TD><TD bgcolor="#C2DFFF">N/A</TD></TR></TABLE><h4>Database Files Status</h4><TABLE border="0"><TR><TH bgcolor="#B7CEEC">Database Name</TH><TH bgcolor="#B7CEEC">DB Type</TH><TH bgcolor="#B7CEEC">File Type</TH><TH bgcolor="#B7CEEC">File Name</TH><TH bgcolor="#B7CEEC">Total(MB)</TH><TH bgcolor="#B7CEEC">Used(MB)</TH><TH bgcolor="#B7CEEC">Free(MB)</TH><TH bgcolor="#B7CEEC">Used(%)</TH><TH bgcolor="#B7CEEC">Free(%)</TH><TH bgcolor="#B7CEEC">Autogrow</TH></TR><TR><TD bgcolor="#C2DFFF">master</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Data</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL10.SQLEXPRESS\MSSQL\DATA\master.mdf</TD><TD bgcolor="#C2DFFF">4.00</TD><TD bgcolor="#C2DFFF">2.94</TD><TD bgcolor="#C2DFFF">1.06</TD><TD bgcolor="#C2DFFF">73.50</TD><TD bgcolor="#C2DFFF"><font color="#347C17">26.50</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">master</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Log</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL10.SQLEXPRESS\MSSQL\DATA\mastlog.ldf</TD><TD bgcolor="#C2DFFF">1.24</TD><TD bgcolor="#C2DFFF">0.38</TD><TD bgcolor="#C2DFFF">0.86</TD><TD bgcolor="#C2DFFF">30.65</TD><TD bgcolor="#C2DFFF"><font color="#347C17">69.35</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">model</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Data</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL10.SQLEXPRESS\MSSQL\DATA\model.mdf</TD><TD bgcolor="#C2DFFF">1.25</TD><TD bgcolor="#C2DFFF">1.25</TD><TD bgcolor="#C2DFFF">0.00</TD><TD bgcolor="#C2DFFF">100.00</TD><TD bgcolor="#C2DFFF"><font color="#C35817">0.00</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">model</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Log</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL10.SQLEXPRESS\MSSQL\DATA\modellog.ldf</TD><TD bgcolor="#C2DFFF">0.49</TD><TD bgcolor="#C2DFFF">0.29</TD><TD bgcolor="#C2DFFF">0.20</TD><TD bgcolor="#C2DFFF">59.18</TD><TD bgcolor="#C2DFFF"><font color="#347C17">40.82</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">msdb</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Data</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL10.SQLEXPRESS\MSSQL\DATA\MSDBData.mdf</TD><TD bgcolor="#C2DFFF">12.75</TD><TD bgcolor="#C2DFFF">11.94</TD><TD bgcolor="#C2DFFF">0.81</TD><TD bgcolor="#C2DFFF">93.65</TD><TD bgcolor="#C2DFFF"><font color="#347C17">6.35</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">msdb</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Log</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL10.SQLEXPRESS\MSSQL\DATA\MSDBLog.ldf</TD><TD bgcolor="#C2DFFF">19.62</TD><TD bgcolor="#C2DFFF">2.22</TD><TD bgcolor="#C2DFFF">17.40</TD><TD bgcolor="#C2DFFF">11.31</TD><TD bgcolor="#C2DFFF"><font color="#347C17">88.69</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">tempdb</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Data</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL10.SQLEXPRESS\MSSQL\DATA\tempdb.mdf</TD><TD bgcolor="#C2DFFF">2.00</TD><TD bgcolor="#C2DFFF">1.56</TD><TD bgcolor="#C2DFFF">0.44</TD><TD bgcolor="#C2DFFF">78.00</TD><TD bgcolor="#C2DFFF"><font color="#347C17">22.00</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR><TR><TD bgcolor="#C2DFFF">tempdb</TD><TD bgcolor="#C2DFFF">SYSTEMDB</TD><TD bgcolor="#C2DFFF">Log</TD><TD bgcolor="#C2DFFF">C:\Program Files\Microsoft SQL Server\MSSQL10.SQLEXPRESS\MSSQL\DATA\templog.ldf</TD><TD bgcolor="#C2DFFF">0.74</TD><TD bgcolor="#C2DFFF">0.48</TD><TD bgcolor="#C2DFFF">0.26</TD><TD bgcolor="#C2DFFF">64.86</TD><TD bgcolor="#C2DFFF"><font color="#347C17">35.14</font></TD><TD bgcolor="#C2DFFF">Yes</TD></TR></TABLE><h4>Jobs Status</h4><TABLE border="0"><TR><TH bgcolor="#B7CEEC">JobName</TH><TH bgcolor="#B7CEEC">Last Run Status</TH><TH bgcolor="#B7CEEC">Last Run Date</TH><TH bgcolor="#B7CEEC">Next Run Date</TH><TH bgcolor="#B7CEEC">Total Runs</TH><TH bgcolor="#B7CEEC">Success</TH><TH bgcolor="#B7CEEC">Failed</TH></TR></TABLE><font color="Red">SQL server Agent is not running.Check the service status</font><h4>Drive Details</h4><TABLE border="0"><TR><TH bgcolor="#B7CEEC">Drive Name</TH><TH bgcolor="#B7CEEC">Free Space(GB)</TH></TR><TR><TD bgcolor="#C2DFFF">C</TD><TD bgcolor="#C2DFFF"><font color="#347C17">9.25</font></TD></TR><TR><TD bgcolor="#C2DFFF">D</TD><TD bgcolor="#C2DFFF"><font color="#347C17">47.51</font></TD></TR><TR><TD bgcolor="#C2DFFF">F</TD><TD bgcolor="#C2DFFF"><font color="#347C17">31.46</font></TD></TR></TABLE></fieldset><a href="#top" style="float:right">Go to Top</a></fieldset></BODY><hr color="#000000">
+
+<br>Thanks,<br>NetEnrich.<br>

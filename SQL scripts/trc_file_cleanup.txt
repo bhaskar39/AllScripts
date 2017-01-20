@@ -1,0 +1,129 @@
+#!/bin/ksh
+NumDays=15
+ps -ef | grep pmon| egrep -iv '\+ASM|#|^$|grep' | awk -F"_" '{print $3}' > /u00/jobs/db/log/up_db.lst
+for i in `cat /u00/jobs/db/log/up_db.lst`
+do
+ORACLE_SID=$i
+export ORACLE_SID
+export ORACLE_HOME=`grep ^$ORACLE_SID: /etc/oratab| awk -F: '{print $2}'`;export ORACLE_HOME
+export PATH=$ORACLE_HOME/bin:$PATH
+export ORACLE_BASE=/u00/app/oracle
+Dt=`date "+%Y%m%d_%H%M"`
+$ORACLE_HOME/bin/sqlplus -s "/ as sysdba"<<EOF > /dev/null
+set feed off
+set term off
+set pages 0
+set head off heading off
+set echo off
+spool /u00/jobs/db/log/${ORACLE_SID}_diagdest.out
+select VALUE from v\$diag_info where NAME='Diag Trace';
+spool off
+spool /u00/jobs/db/log/${ORACLE_SID}_diagalert.out
+select VALUE from v\$diag_info where NAME='Diag Alert';
+spool off
+spool /u00/jobs/db/log/${ORACLE_SID}_auddest.out
+select VALUE from v\$parameter where name ='audit_file_dest';
+spool off
+spool /u00/jobs/db/log/${ORACLE_SID}_diagcdump.out
+select VALUE from v\$diag_info where name ='Diag Cdump';
+spool off
+EOF
+echo " ${ORACLE_SID} - ${ORACLE_HOME} " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+DiagDest=`cat /u00/jobs/db/log/${ORACLE_SID}_diagdest.out`
+if [ $? -eq 0 ]; then
+    echo " Diag Dest is ${DiagDest} " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+cd ${DiagDest}
+echo " Current Directory : "$PWD >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+echo " trc File List as Below: " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+find ${DiagDest} -type f -name "*.trc" -mtime +${NumDays} -exec ls -ltr {} \; >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.lst
+        if [ $? -eq 0 ]; then
+        echo " trc Files List Creation Successful; Those files will be deleted " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+        else
+        echo " trc Files List Creation Failed; Files will not be deleted " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+        fi
+echo " trc Files List has been created in /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.lst for $ORACLE_SID " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+find ${DiagDest} -type f -name "*.trc" -mtime +${NumDays} -exec rm -f {} \;
+echo " trc Files Removal Completed " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+echo " trm File List as Below: " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+find ${DiagDest} -type f -name "*.trm" -mtime +${NumDays} -exec ls -ltr {} \; >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.lst
+        if [ $? -eq 0 ]; then
+        echo " trm Files List Creation Successful; Those files will be deleted " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+        else
+        echo " trm Files List Creation Failed; Files will not be deleted " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+        fi
+echo " trm Files List has been created in /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.lst for $ORACLE_SID " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+find ${DiagDest} -type f -name "*.trm" -mtime +${NumDays} -exec rm -f {} \;
+echo " trm Files Removal Completed " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+df -Ph . | awk '{print $5}' > /u00/jobs/db/log/percent.lst
+UsedPerct=$(tail -1 /u00/jobs/db/log/percent.lst | cut -d'%' -f1)
+  if [ $UsedPerct -ge 80 ]; then
+        du -sk *.trc | sort -nr | head -10 | awk '{print $2}' > /u00/jobs/db/log/large_trc_files_${ORACLE_SID}.lst
+        for j in `cat /u00/jobs/db/log/large_trc_files_${ORACLE_SID}.lst`
+        do
+        CurrDate="$(date '+%Y%m%d%H%M%S')"
+        FileDate="$(date -r $j '+%Y%m%d%H%M%S')"
+        DateDiff=$(( $CurrDate - $FileDate ))
+        echo $DateDiff > /u00/jobs/db/log/DateDiff.log
+        if [ $DateDiff -gt 900 ]
+        then
+        echo "Removing the Bigger *.trc file $j " >> /u00/jobs/db/log/large_trc_files_rem_${ORACLE_SID}.lst
+        else
+        echo " File $j is Latest " >> /u00/jobs/db/log/large_trc_files_rem_${ORACLE_SID}.lst
+        fi
+        done
+  fi
+else
+    echo " Diag Dest not found; Skipping.... " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+fi
+        DiagCdump=`cat /u00/jobs/db/log/${ORACLE_SID}_diagcdump.out`
+        if [ $? -eq 0 ]; then
+        echo " DiagCdump is ${DiagDest} " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+        cd ${DiagCdump}
+        echo " Current Directory : "$PWD >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+        find ${DiagCdump} -type d -name "core_*" -mtime +${NumDays} -exec rm -Rf {} \;
+        echo " cdump Directory Removal Completed " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+        fi
+DiagAlert=`cat /u00/jobs/db/log/${ORACLE_SID}_diagalert.out`
+if [ $? -eq 0 ]; then
+    echo " Diag Alert is ${DiagAlert} " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+cd ${DiagAlert}
+echo " Current Directory : "$PWD >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+echo " diag File List as Below: " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+find ${DiagAlert} -type f -name "log_*.xml" -mtime +${NumDays} -exec ls -ltr {} \; >> /u00/jobs/db/log/diag_file_${ORACLE_SID}_${Dt}.lst
+        if [ $? -eq 0 ]; then
+        echo " diag Files List Creation Successful; Those files will be deleted " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+        else
+        echo " diag Files List Creation Failed; Files will not be deleted " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+        fi
+echo " diag Files List has been created in /u00/jobs/db/log/diag_file_${ORACLE_SID}_${Dt}.lst for $ORACLE_SID " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+find ${DiagAlert} -type f -name "log_*.xml" -mtime +${NumDays} -exec rm -f {} \;
+echo " diag Files Removal Completed " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+else
+    echo " Diag Alert not found; Skipping.... " /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+fi
+AudDest=`cat /u00/jobs/db/log/${ORACLE_SID}_auddest.out`
+if [ $? -eq 0 ]; then
+    echo " Aud Dest is ${AudDest} " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+cd ${AudDest}
+echo " Current Directory : "$PWD >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+echo " Aud File List as Below: " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+#find ${AudDest} -type f -name "*.aud" -mtime +${NumDays} -exec ls -ltr {} \; >> /u00/jobs/db/log/aud_file_${ORACLE_SID}_${Dt}.lst
+#        if [ $? -eq 0 ]; then
+#        echo " Aud Files List Creation Successful; Those files will be deleted " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+#        else
+#        echo " Aud Files List Creation Failed; Files will not be deleted " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+#        fi
+#echo " Aud Files List has been created in /u00/jobs/db/log/aud_file_${ORACLE_SID}_${Dt}.lst for $ORACLE_SID " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+find ${AudDest} -type f -name "*.aud" -mtime +${NumDays} -exec rm -f {} \;
+echo " Aud Files Removal Completed " >> /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+else
+    echo " Aud Dest not found; Skipping.... " /u00/jobs/db/log/trc_file_${ORACLE_SID}_${Dt}.log
+fi
+done
+df -Ph . | awk '{print $5}' > /u00/jobs/db/log/percent_after.lst
+UsedPerctAftr=$(tail -1 /u00/jobs/db/log/percent_after.lst | cut -d'%' -f1)
+if [ $UsedPerctAftr -ge 80 ]; then
+   echo " Running out of space on $(hostname) as on $(date) for ${DiagDest} and ${DiagAlert}" | mail -s " Alert : $(hostname):Out of disk space $UsedPerctAftr% in DiagTrace & DiagAlert " tulasi.vanapalli@turn.com
+   else
+   echo " Space Cleared " >> /u00/jobs/db/log/percent_after.lst
+fi

@@ -1,0 +1,33 @@
+#!/bin/bash
+set -x
+
+EMAIL_LIST="tulasi.vanapalli@turn.com"
+WARN_THRESHOLD=10 ## Warns if free memory is less than this value in GBs, default is 5
+MEMFREE_HISTORY_FILE=/home/oracle/memfree_info.txt
+
+send_email () {
+
+  cat /proc/meminfo|mail -s "`hostname` : Free Memory available is low, $MEMFREE_GB GB available, potential host eviction " $EMAIL_LIST
+
+}
+
+cleanup () {
+
+  find /tmp -name "monitor_free_memory.*" -mtime +2 -exec rm -rf {} \;
+
+}
+
+
+## Main Function
+
+
+MEMFREE=`cat /proc/meminfo|grep MemFree|awk '{print $2}'`
+MEMFREE_GB=$(($MEMFREE/1024/1024))
+
+echo "`date` : $MEMFREE  $MEMFREE_GB " >>$MEMFREE_HISTORY_FILE
+if [ $MEMFREE_GB -le $WARN_THRESHOLD ]; then
+   echo "ALERT: `hostname` Free memory available is less than $WARN_THRESHOLD GB"
+   send_email
+fi
+
+#end

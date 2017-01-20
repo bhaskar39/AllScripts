@@ -1,0 +1,43 @@
+Bring Database from Offline to Online\Rebuild log automatically
+================================
+declare @dbname varchar(60)
+declare @State tinyint
+declare @sqlstmt varchar(2000)
+
+declare cur_Fix cursor
+for
+select name,state from sys.databases 
+where state in (6,5,4,3) order by name asc
+
+open cur_Fix
+fetch next from cur_Fix into @dbname,@state
+while @@FETCH_STATUS=0
+begin
+if @State =6
+begin 
+     
+                set @sqlstmt =  'alter database ' + '['+@dbname+ ']'+ ' Set Online; ' 
+                exec (@sqlstmt)
+                --print @sqlstmt
+                --print'go'
+				Print + @dbname +' has been set Online'
+               
+end
+
+if @State in(3,5,4)
+begin 
+set @sqlstmt =  'ALTER DATABASE' + '['+@dbname+ ']'+ 'SET EMERGENCY;' +
+                'ALTER DATABASE' + '['+@dbname+ ']'+ 'SET SINGLE_USER;'+
+				'DBCC CHECKDB' + '(' +'['+@dbname+ ']'+','+ 'REPAIR_ALLOW_DATA_LOSS' +') WITH NO_INFOMSGS,ALL_ERRORMSGS;'+
+				'ALTER DATABASE'+ '['+@dbname+ ']'+ 'SET Multi_User;';
+                exec (@sqlstmt)
+                --Print @sqlstmt
+                --Print'go'
+				Print 'Log Has Been Rebuild for Database '+@dbname
+
+end
+
+fetch next from cur_fix  into @dbname,@State
+end
+close cur_fix
+deallocate cur_fix

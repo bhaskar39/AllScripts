@@ -1,0 +1,50 @@
+#!/bin/ksh
+set -x
+ORACLE_SID=+ASM1
+export ORACLE_SID
+export ORACLE_HOME=`grep ^$ORACLE_SID: /etc/oratab| awk -F: '{print $2}'`;export ORACLE_HOME
+export PATH=$ORACLE_HOME/bin:$PATH
+export ORACLE_BASE=/u00/app/oracle
+$ORACLE_HOME/bin/sqlplus -s "/ as sysasm"<<EOF > /dev/null
+spool /home/grid/dba/diskgroup_usage.log
+set linesize 140
+SET PAGESIZE 0 FEEDBACK OFF VERIFY OFF HEADING OFF ECHO OFF
+col group_number format 999
+col diskgroup  format a20
+col total_mb  format 999,999,999
+col free_mb  format 999,999,999
+col tot_used format 999,999,999
+col pct_used format 999
+col pct_free format 999
+select group_number,
+       name diskgroup,
+       total_mb,
+       free_mb,
+       total_mb-free_mb tot_used,
+       pct_used,
+       pct_free
+  from (select group_number,name,total_mb,free_mb,
+             round(((total_mb-nvl(free_mb,0))/decode(total_mb,0,1,total_mb))*100) pct_used,
+             round((free_mb/total_mb)*100) pct_free
+      from v\$asm_diskgroup
+      where total_mb >0
+      order by pct_free
+     )
+/
+spool off;
+EOF
+
+while read -r values
+do
+    USED_PCT=$(echo $values | awk '{print $6}')
+    DISKGROUP_NAME=$(echo $values | awk '{print $2}')
+    WARNING_LIMIT=80
+    CRITICAL_LIMIT=85
+    if [ ${USED_PCT} -ge ${WARNING_LIMIT} ] && [ ${USED_PCT} -lt ${CRITICAL_LIMIT} ]
+    then
+        echo "WARNING ALERT. $DISKGROUP_NAME disk has used $USED_PCT%" | mail -s "WARNING ALERT :$DISKGROUP_NAME diskgroup usage is $USED_PCT% on $(hostname)" tulasi.vanapalli@turn.com
+    elif [ ${USED_PCT} -ge ${CRITICAL_LIMIT} ]
+    then
+        echo "CRITICAL ALERT.$DISKGROUP_NAME disk has used $USED_PCT%" | mailx -s "CRITICAL ALERT :$DISKGROUP_NAME diskgroup usage is $USED_PCT% on $(hostname)" tulasi.vanapalli@turn.com
+    fi
+done < /home/grid/dba/diskgroup_usage.log

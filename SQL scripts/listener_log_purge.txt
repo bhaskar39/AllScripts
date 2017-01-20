@@ -1,0 +1,24 @@
+#!/bin/bash
+###########################
+ORACLE_SID=`ps -ef | grep pmon| egrep -iv '#|^$|grep' | egrep -i '\+ASM' | awk -F"_" '{print $3}'`
+export ORACLE_SID
+export ORACLE_HOME=`grep ^$ORACLE_SID: /etc/oratab| awk -F: '{print $2}'`;export ORACLE_HOME
+export PATH=$ORACLE_HOME/bin:$PATH
+export ORACLE_BASE=/u00/app/obase12c
+Dt=`date "+%Y%m%d_%H"`
+LSNR=LISTENER
+lsnrctl<< EOF > /home/grid/dba/lsnr_tmp.log
+set current_listener ${LSNR}
+show log_directory
+exit
+EOF
+
+LsnrDir=`cat /home/grid/dba/lsnr_tmp.log | grep log_directory|awk '{print $6}'`;
+cd ${LsnrDir}
+
+lsnrctl set log_file listener_tmp
+mv -i listener.log listener.log.${Dt}
+lsnrctl set log_file listener
+cat listener_tmp.log >> listener.log.${Dt}
+/usr/bin/gzip listener.log.${Dt} &
+mv -i listener_tmp.log listener_tmp.log.${Dt}

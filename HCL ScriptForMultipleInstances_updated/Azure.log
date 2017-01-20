@@ -1,0 +1,46 @@
+02/23/2015 12:54:42 ************Welcome*****************
+
+02/23/2015 12:54:43: Creating Testvm001 Server in TestVMCS cloud service
+A parameter cannot be found that matches parameter name 'Append'.
+02/23/2015 12:56:11: Failed to launch Testvm001 virtual machine in TestVMCS
+
+02/23/2015 13:04:40: Creating Testvm001 Server in TestVMCS cloud service
+A parameter cannot be found that matches parameter name 'Append'.
+02/23/2015 13:04:53: Failed to launch Testvm001 virtual machine in TestVMCS
+
+02/23/2015 13:08:37: Creating Testvm001 Server in TestVMCS cloud service
+A parameter cannot be found that matches parameter name 'Append'.
+02/23/2015 13:08:50: Failed to launch Testvm001 virtual machine in TestVMCS
+
+02/23/2015 14:11:19: Creating Testvm001 Server in TestVMCS cloud service
+02/23/2015 14:11:31: Exception occured
+02/23/2015 14:11:31: Error: Location does not support the provided instance size
+02/23/2015 14:11:31: Failed to launch Testvm001 virtual machine in TestVMCS
+
+02/23/2015 14:16:16: Creating Testvm001 Server in TestVMCS cloud service
+02/23/2015 14:17:07: Exception occured
+02/23/2015 14:17:07: Error: Details provided for VNet, Subnet and IP Address are not valid
+02/23/2015 14:17:07: Failed to launch Testvm001 virtual machine in TestVMCS
+
+02/23/2015 14:24:24: Creating Testvm001 Server in TestVMCS cloud service
+02/23/2015 14:29:08: Virtual Network Regvnet21 does not exit
+02/23/2015 14:29:13: Error: Details provided for VNet, Subnet and IP Address are not valid
+02/23/2015 14:29:16: Failed to launch Testvm001 virtual machine in TestVMCS
+
+02/23/2015 14:30:57: Creating Testvm001 Server in TestVMCS cloud service
+
+02/23/2015 14:31:57: Creating Testvm001 Server in TestVMCS cloud service
+02/23/2015 14:33:07: Subnet does not exist in this Regvnet2 network
+02/23/2015 14:33:07: Error: Details provided for VNet, Subnet and IP Address are not valid
+02/23/2015 14:33:07: Failed to launch Testvm001 virtual machine in TestVMCS
+
+02/23/2015 14:35:05: Creating Testvm001 Server in TestVMCS cloud service
+02/23/2015 14:36:12: Subnet does not exist in this RegVNet2 network
+02/23/2015 14:36:12: Error: Details provided for VNet, Subnet and IP Address are not valid
+02/23/2015 14:36:12: Failed to launch Testvm001 virtual machine in TestVMCS
+
+02/23/2015 14:39:07: Creating Testvm001 Server in TestVMCS cloud service
+02/23/2015 14:47:05: Error:Cloud service is not associted with the Location East Asia
+02/23/2015 14:47:05: Failed to launch Testvm001 virtual machine in TestVMCS
+
+02/23/2015 14:50:01: Creating Testvm001 Server in TestVMCSscripttest cloud service

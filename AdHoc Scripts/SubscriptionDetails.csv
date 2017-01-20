@@ -1,0 +1,16 @@
+"Attribute","Value"
+"Specify the Microsoft ID/Live ID that you are using to login to your subscription","bhaskar.desharaju@netenrich.com"
+"Count of total number of Virtual machines that are in EA/Open subscription","69"
+"Count of Azure VMs that are provisioned through ASM (Azure Service Management)","15"
+"Number of Storage accounts provisioned?","85"
+"Is Storage provisioned ASM  or ARM?","ASM:18; ARM:67"
+"Number of Vnet deployed in the network?","73"
+"Number of Azure VM outside Vnet?","5"
+"Which region does these resources provisioned?","demotestvm:East US; 
+sunvmtest:East US; 
+testing:East US; 
+testingexten:East US; 
+TestVirM123:East US; 
+"
+"Currently do you have traffic managers deployed?","2"
+"Does any of the applications currently Azure Active directory auth?","24"

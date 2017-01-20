@@ -1,0 +1,76 @@
+#!/bin/bash
+#This script sends warning for long running rman processes.
+
+#variables
+process_name='rman'
+warning_time='11'    #please feed value in hours only
+killing_time='12'    #please feed value in hours only
+dat=`date +%d-%m-%Y`
+logfile='/tmp/rman_job_killing_log.txt'
+mailid='tulasi.vanapalli@turn.com
+mail_subject="Warning on $process_name running processes on $dat"
+
+mail_content="<table border=1 cellspacing=0 style=\"min-width:500px\">"
+mail_content=$mail_content"<tr><th colspan=5 style=\"height:40px;background:#8c8c90;color:#FFF;\">All "$process_name" processes status</th></tr><tr style=\"height:35px\"><th>Process</th><th>PID</th><th>status</th><th>Elapsed Time</th><th>message</th>"
+mail_content=$mail_content"</tr><tr style=\"height:35px\"><th rowspan=2>"$process_name"</th>"
+
+
+#Convert etime to seconds
+convert_seconds(){
+    line=$1
+    time_string=$(echo $line | sed 's/:\|-/ /g;')
+    arr=(${time_string// / })
+    increment=1
+    seconds=0
+    n=${#arr[*]}
+    for (( i = n-1; i >= 0; i-- ))
+    do
+        seconds=$(( ($increment * ${arr[i]#0})+$seconds ))
+        if [ $n == 4 ] && [ $i == 1 ]
+            then increment=$(($increment*24))
+            else increment=$(($increment*60))
+        fi
+    done
+    echo $seconds
+}
+
+
+sending_mail () {
+    echo "$mail_content" | mail -s "$(echo -e $mail_subject"\nContent-Type: text/html")" $mailid
+}
+
+
+#Comparing warning and killing time
+compare_time (){
+    if [ $killing_time -lt $warning_time  ]
+        then
+        echo "Your process killing time must be greater than or equal to warning time"
+        exit
+    fi
+}
+
+touch $logfile || exit
+compare_time
+
+
+warning_seconds=`expr $warning_time \* 3600`
+killing_seconds=`expr $killing_time \* 3600`
+
+
+for i in `ps -C $process_name | grep -v "PID" | awk '{print $1}'`
+    do
+    el_time=$(ps -p $i -o etime=)
+    p_seconds=$(convert_seconds $el_time)
+    if [ $p_seconds -gt $warning_seconds ] && [ $p_seconds -lt $killing_seconds ]
+        then
+        echo "Warning: $process_name with PID $i at "$(date) >> $logfile
+        mail_content=$mail_content"<td>"$i"</td><th style=\"background:#D58A00;color:#FFF\">running</th><td>"$el_time"</td><td>will be killed if elapsed time is > 12Hr</td></tr><tr style=\"height:35px\">"
+        sending_mail
+    elif [ $p_seconds -gt $killing_seconds ]
+        then
+        echo "Killing: $process_name with PID $i at "$(date) >> $logfile
+        mail_content=$mail_content"<td>"$i"</td><th style=\"background:#E10000;color:#FFF\">killed</th><td>"$el_time"</td><td>It was running since 12hrs</td></tr><tr style=\"height:35px\">"
+        kill $i  #dont uncomment this
+        sending_mail
+    fi
+done

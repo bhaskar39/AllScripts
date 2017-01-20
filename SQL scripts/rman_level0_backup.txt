@@ -1,0 +1,133 @@
+#!/bin/sh
+/sbin/pidof -x -o $$ ${0##*/} && exit
+source /home/oracle/.bash_profile
+# ---------------------------------------------------------------------------
+#                       dwprd_level0.sh
+# ---------------------------------------------------------------------------
+#  This script uses RMAN to take a hot (inconsistent) database
+#  backup. A hot backup is inconsistent because portions of the database are
+#  being modified and written to the disk while the backup is progressing.
+#  You must run your database in ARCHIVELOG mode to make hot backups.
+# ---------------------------------------------------------------------------
+# output in <file name>.out
+# ---------------------------------------------------------------------------
+#OUTFILEILE=${0}.out
+DATETAG=`date '+%Y%m%d-%H%M%S'`
+OUTFILE=/u00/jobs/rman/log/dwprd_level0.${DATETAG}.log
+find /u00/jobs/rman/log  -name "dwprd_level0.????????-??????.log" -type f -mtime +60 -exec rm -f {} \;
+# ---------------------------------------------------------------------------
+# to delete the output file so that backup information does not accumulate.
+# ---------------------------------------------------------------------------
+
+if [ -f "$OUTFILE" ]
+then
+        rm -f "$OUTFILE"
+fi
+
+{ # output block
+
+STARTTIME=`date`
+
+echo "`date` ----------------Beginning of Script------------"
+echo "Script name: $0"
+
+# ---------------------------------------------------------------------------
+#  Oracle home path.
+# ---------------------------------------------------------------------------
+
+#ORACLE_HOME=/u00/app/oracle/product/10.2.0/DWPRD
+#export ORACLE_HOME
+
+# ---------------------------------------------------------------------------
+# Oracle SID of the target database.
+# ---------------------------------------------------------------------------
+
+#ORACLE_SID=DWPRD
+#export ORACLE_SID
+
+# ---------------------------------------------------------------------------
+# Oracle DBA userid.
+# ---------------------------------------------------------------------------
+
+ORACLE_USER=oracle
+
+# ---------------------------------------------------------------------------
+# location of rman rcv file.
+# ---------------------------------------------------------------------------
+
+RMAN_ORA_SCRIPTS=/u00/jobs/rman/script
+# ---------------------------------------------------------------------------
+# Name of Oracle Recovery Manager name.
+# ---------------------------------------------------------------------------
+
+RMAN=rman
+
+# ---------------------------------------------------------------------------
+# Print values of the variables set by this script.
+# ---------------------------------------------------------------------------
+
+echo
+echo   "RMAN: $RMAN"
+echo   "ORACLE_SID: $ORACLE_SID"
+echo   "ORACLE_USER: $ORACLE_USER"
+echo   "ORACLE_HOME: $ORACLE_HOME"
+echo   "RMAN_ORA_SCRIPTS: $RMAN_ORA_SCRIPTS"
+
+# ---------------------------------------------------------------------------
+# This script assumes that the database is properly opened. If desired,
+# this would be the place to verify that.
+# ---------------------------------------------------------------------------
+
+export NLS_DATE_FORMAT='DD-MON-YY HH24:MI:SS'
+
+echo
+
+CMDFILE=${RMAN_ORA_SCRIPTS}/dwprd_level0.rcv
+
+# ---------------------------------------------------------------------------
+# Call RMAN to initiate the backup.
+#
+# ---------------------------------------------------------------------------
+
+echo
+echo "% ${ORACLE_HOME}/bin/$RMAN cmdfile '$CMDFILE'"
+echo
+
+### ${ORACLE_HOME}/bin/$RMAN cmdfile "$CMDFILE"
+
+${ORACLE_HOME}/bin/$RMAN TARGET / NOCATALOG cmdfile "$CMDFILE"
+
+RETURN_STATUS=$?
+
+echo
+echo "`date` ----------------End of Script------------------"
+echo
+
+if [ $RETURN_STATUS -eq 0 ]; then
+    cat <<END_OF_SUCCESS | mailx -s "${ORACLE_SID} / Level 0 / Success" \
+                           tulasi.vanapalli@turn.com
+Level 0 backup of ${ORACLE_SID} on `hostname` successfull.
+
+Begin : ${STARTTIME}
+End   : `date`
+Log   : ${OUTFILE}
+END_OF_SUCCESS
+else
+    cat <<END_OF_FAILURE | mailx -s "${ORACLE_SID} / Level 0 / Failed" \
+                           tulasi.vanapalli@turn.com
+Level 0 backup of ${ORACLE_SID} on `hostname` Failed.
+
+Begin : ${STARTTIME}
+End   : `date`
+Log   : ${OUTFILE}
+
+Last 20 lines of failure log:
+`tail -20 ${OUTFILE}`
+
+END_OF_FAILURE
+fi
+
+echo "exit $RETURN_STATUS"
+exit $RETURN_STATUS
+
+} >> $OUTFILE
