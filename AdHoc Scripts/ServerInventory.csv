@@ -1,0 +1,5 @@
+"ServerName","RDS Connection Broker","RDS Gateway","RDS Licensing","RDS Session Host","RDS Web Access","Print Services"
+"Britec-Adcb1","Yes","No","Yes","No","No","No"
+"Britec-RDSH","No","No","No","Yes","No","No"
+"Britec-Webgw","Not Reachable","Not Reachable","Not Reachable","Not Reachable",,"Not Reachable"
+"Britec-MFA","No","No","No","No","No","No"

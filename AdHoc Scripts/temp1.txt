@@ -1,0 +1,632 @@
+ volume        barcode          (%) pool          location
+ATS051L        ATS051L         full Monthly       
+ATS052L        ATS052L         full Monthly       
+ATS053L        ATS053L         full Monthly       
+ATS054L        ATS054L         100% Monthly       SPECTRA@14.0.1
+ATS055L        ATS055L         full Monthly       
+ATS056L        ATS056L         100% Daily         SPECTRA@14.0.1
+ATS057L        ATS057L          61% Monthly       
+ATS058L        ATS058L         full Monthly       
+ATS059L        ATS059L         full Monthly       
+ATS060L        ATS060L         full Monthly       
+ATS061L        ATS061L         full Monthly       SPECTRA@14.0.1
+ATS062L        ATS062L         full Monthly       
+ATS063L        ATS063L         full Monthly       
+ATS064L        ATS064L         full Daily         SPECTRA@14.0.1
+ATS065L        ATS065L         full Monthly       
+ATS066L        ATS066L         full Monthly       
+ATS067L        ATS067L         full Monthly       
+ATS068L        ATS068L         full Weekly        
+ATS070L        ATS070L         full Monthly       SPECTRA@14.0.1
+ATS071L        ATS071L         full Monthly       
+ATS072L        ATS072L         full Weekly        
+ATS073L        ATS073L         full Weekly        
+ATS074L        ATS074L         full Monthly       
+ATS075L        ATS075L         full Monthly       
+ATS076L        ATS076L         full Monthly       
+ATS077L        ATS077L         full Weekly        
+ATS078L        ATS078L         full Yearly        SPECTRA@14.0.1
+ATS079L        ATS079L         full Weekly        SPECTRA@14.0.1
+ATS080L        ATS080L         full Weekly        SPECTRA@14.0.1
+ATS081L        ATS081L         full Monthly       
+ATS082L        ATS082L         full Weekly        SPECTRA@14.0.1
+ATS083L        ATS083L         full Monthly       
+ATS084L        ATS084L         full Weekly        
+ATS085L        ATS085L         full Weekly        
+ATS086L        ATS086L         full Monthly       
+ATS087L        ATS087L         full Monthly       
+ATS088L        ATS088L         100% WeeklySQL     SPECTRA@14.0.1
+ATS089L        ATS089L         full Weekly        
+ATS090L        ATS090L         full Weekly        
+ATS091L        ATS091L         full Weekly        
+ATS092L        ATS092L         full Yearly        SPECTRA@14.0.1
+ATS093L        ATS093L         full Weekly        
+ATS094L        ATS094L         full Yearly        SPECTRA@14.0.1
+ATS095L        ATS095L         full Weekly        
+ATS096L        ATS096L         full Weekly        
+ATS097L        ATS097L         full Weekly        
+ATS098L        ATS098L         full Weekly        SPECTRA@14.0.1
+ATS099L        ATS099L         full Weekly        
+ATS100L        ATS100L         full Weekly        
+FZM360L        FZM360L         100% Monthly       
+FZM361L        FZM361L          38% Monthly       
+FZM362L        FZM362L         full Monthly       
+FZM363L        FZM363L         100% Daily         
+FZM380L        FZM380L         full Monthly       
+FZM381L        FZM381L         full Monthly       
+FZM382L        FZM382L         full Daily         SPECTRA@14.0.1
+FZM383L        FZM383L         full Monthly       
+FZM384L        FZM384L         full Monthly       
+FZM385L        FZM385L          63% Monthly       
+FZM386L        FZM386L         full Monthly       
+FZM390L        FZM390L         full Monthly       
+FZM391L        FZM391L         full Weekly        
+FZM395L        FZM395L         full Monthly       
+FZM396L        FZM396L         full Monthly       
+FZM397L        FZM397L         full Weekly        
+GMS016L        GMS016L         full Yearly        
+GMS017L        GMS017L          51% Yearly        
+ML7241L4       ML7241L4        full Weekly        
+ML7242L4       ML7242L4        full Monthly       
+ML7243L4       ML7243L4        full Monthly       
+ML7244L4       ML7244L4        full Yearly        
+ML7245L4       ML7245L4        full Monthly       
+ML7246L4       ML7246L4        100% Yearly        HP@6.0.1
+ML7247L4       ML7247L4        full Monthly       
+ML7248L4       ML7248L4        full Yearly        
+ML7249L4       ML7249L4        full Yearly        HP@6.0.1
+ML7250L4       ML7250L4        full Monthly       
+ML7251L4       ML7251L4        full Monthly       HP@6.0.1
+ML7252L4       ML7252L4        full Yearly        HP@6.0.1
+ML7253L4       ML7253L4        full Yearly        
+ML7254L4       ML7254L4        full Monthly       
+ML7255L4       ML7255L4          0% Monthly       HP@6.0.1
+ML7256L4       ML7256L4        full Weekly        HP@6.0.1
+ML7257L4       ML7257L4        full Weekly        
+ML7259L4       ML7259L4        full Weekly        
+ML7260L4       ML7260L4        full Monthly       
+ML7261L4       ML7261L4        full Monthly       
+ML7263L4       ML7263L4          0% Weekly        HP@6.0.1
+ML7265L4       ML7265L4        full Yearly        HP@6.0.1
+ML7266L4       ML7266L4        full Weekly        
+ML7267L4       ML7267L4        full Weekly        
+ML7269L4       ML7269L4        full Monthly       
+ML7270L4       ML7270L4        full Monthly       
+ML7271L4       ML7271L4        full Weekly        
+ML7272L4       ML7272L4        full Yearly        HP@6.0.1
+ML7273L4       ML7273L4        full Yearly        
+ML7274L4       ML7274L4        full Monthly       
+ML7275L4       ML7275L4        full Monthly       
+ML7276L4       ML7276L4        full Yearly        HP@6.0.1
+ML7277L4       ML7277L4        full Daily         HP@6.0.1
+ML7278L4       ML7278L4        full Yearly        HP@6.0.1
+ML7279L4       ML7279L4        full Monthly       
+ML7280L4       ML7280L4        full Monthly       
+ML7281L4       ML7281L4        full Yearly        
+ML7282L4       ML7282L4        full Yearly        HP@6.0.1
+ML7283L4       ML7283L4        full Weekly        
+ML7284L4       ML7284L4        full Yearly        HP@6.0.1
+ML7285L4       ML7285L4        full Monthly       
+ML7286L4       ML7286L4        full Monthly       
+ML7287L4       ML7287L4        full Weekly        
+ML7288L4       ML7288L4        full Weekly        
+ML7289L4       ML7289L4         69% Yearly        HP@6.0.1
+ML7290L4       ML7290L4        full Yearly        HP@6.0.1
+ML7291L4       ML7291L4        full Weekly        
+ML7292L4       ML7292L4        full Monthly       
+ML7293L4       ML7293L4        full Monthly       
+ML7295L4       ML7295L4        full Monthly       
+ML7297L4       ML7297L4        full Monthly       
+ML7298L4       ML7298L4        full Weekly        HP@6.0.1
+ML7299L4       ML7299L4        full Yearly        
+ML7300L4       ML7300L4        full Monthly       
+ML7326L4       ML7326L4        full Weekly        
+ML7327L4       ML7327L4        full Monthly       
+ML7328L4       ML7328L4        full Monthly       
+ML7329L4       ML7329L4        full Monthly       
+ML7331L4       ML7331L4        full Weekly        
+ML7332L4       ML7332L4        full Yearly        
+ML7333L4       ML7333L4        full Weekly        
+ML7334L4       ML7334L4        full Monthly       
+ML7335L4       ML7335L4        full Monthly       
+ML7336L4       ML7336L4        full Weekly        
+ML7338L4       ML7338L4        full Monthly       
+ML7339L4       ML7339L4        full Weekly        
+ML7341L4       ML7341L4        full Weekly        
+ML7342L4       ML7342L4        full Monthly       
+ML7343L4       ML7343L4        full Weekly        
+ML7344L4       ML7344L4        full Yearly        HP@6.0.1
+ML7345L4       ML7345L4        full Yearly        HP@6.0.1
+ML7346L4       ML7346L4        full Weekly        
+ML7349L4       ML7349L4        full Weekly        
+ML7350L4       ML7350L4        full Yearly        HP@6.0.1
+ML7351L4       ML7351L4        full Monthly       
+ML7352L4       ML7352L4        full Daily         HP@6.0.1
+ML7353L4       ML7353L4        full Monthly       
+ML7354L4       ML7354L4        full Monthly       
+ML7355L4       ML7355L4        full Yearly        HP@6.0.1
+ML7356L4       ML7356L4        full Monthly       
+ML7357L4       ML7357L4        full Monthly       
+ML7358L4       ML7358L4        full Weekly        
+ML7359L4       ML7359L4        full Weekly        HP@6.0.1
+ML7360L4       ML7360L4        full Yearly        HP@6.0.1
+ML7361L4       ML7361L4        full Yearly        HP@6.0.1
+ML7362L4       ML7362L4        full Weekly        
+ML7363L4       ML7363L4        full Weekly        HP@6.0.1
+ML7364L4       ML7364L4        full Monthly       
+ML7365L4       ML7365L4        full Yearly        
+ML7366L4       ML7366L4        full Weekly        HP@6.0.1
+ML7367L4       ML7367L4         30% Weekly        
+ML7368L4       ML7368L4        full Monthly       
+ML7369L4       ML7369L4        full Weekly        
+ML7370L4       ML7370L4        full Yearly        
+ML7371L4       ML7371L4        full Yearly        HP@6.0.1
+ML7373L4       ML7373L4        full Yearly        HP@6.0.1
+ML7374L4       ML7374L4        full Yearly        
+ML7375L4       ML7375L4        full Monthly       
+ML7376L4       ML7376L4        full Monthly       
+ML7377L4       ML7377L4        full Yearly        
+ML7378L4       ML7378L4        full Weekly        
+ML7379L4       ML7379L4        full Monthly       
+ML7380L4       ML7380L4        full Yearly        HP@6.0.1
+ML7386L4       ML7386L4        full Monthly       
+ML7387L4       ML7387L4        full Yearly        HP@6.0.1
+ML7388L4       ML7388L4        full Monthly       
+ML7389L4       ML7389L4        full Weekly        
+ML7390L4       ML7390L4          0% Weekly        HP@6.0.1
+ML7581L4       ML7581L4        full Monthly       
+ML7582L4       ML7582L4        full Yearly        
+ML7583L4       ML7583L4        full Monthly       
+ML7584L4       ML7584L4        full Monthly       
+ML7585L4       ML7585L4          0% Weekly        HP@6.0.1
+ML7586L4       ML7586L4        full Weekly        HP@6.0.1
+ML7587L4       ML7587L4        full Monthly       
+ML7588L4       ML7588L4        full Weekly        
+ML7589L4       ML7589L4        full Weekly        
+ML7590L4       ML7590L4        full Weekly        
+ML7591L4       ML7591L4        full Monthly       
+ML7592L4       ML7592L4        full Monthly       
+ML7593L4       ML7593L4        full Monthly       
+ML7594L4       ML7594L4        full Weekly        
+ML7595L4       ML7595L4        full Yearly        
+ML7596L4       ML7596L4        100% Weekly        HP@6.0.1
+ML7597L4       ML7597L4        full Yearly        HP@6.0.1
+ML7598L4       ML7598L4        full Weekly        
+ML7599L4       ML7599L4        full Monthly       
+ML7600L4       ML7600L4        full Weekly        
+ML7601L4       ML7601L4        full Weekly        
+ML7602L4       ML7602L4        full Monthly       
+ML7603L4       ML7603L4         57% Monthly       
+ML7604L4       ML7604L4        full Monthly       
+ML7605L4       ML7605L4        full Weekly        HP@6.0.1
+ML7606L4       ML7606L4        full Weekly        
+ML7607L4       ML7607L4        full Yearly        HP@6.0.1
+ML7608L4       ML7608L4          0% Weekly        HP@6.0.1
+ML7609L4       ML7609L4        full Monthly       
+ML7610L4       ML7610L4        full Monthly       
+ML7611L4       ML7611L4        full Monthly       
+ML7612L4       ML7612L4        full Yearly        
+ML7613L4       ML7613L4        full Monthly       
+ML7614L4       ML7614L4        full Yearly        HP@6.0.1
+ML7615L4       ML7615L4        full Weekly        
+ML7616L4       ML7616L4        full Monthly       
+ML7617L4       ML7617L4        full Monthly       
+ML7618L4       ML7618L4        full Monthly       
+ML7619L4       ML7619L4        full Monthly       
+ML7620L4       ML7620L4        full Yearly        
+ML7621L4       ML7621L4        full Yearly        HP@6.0.1
+ML7622L4       ML7622L4        full Monthly       
+ML7623L4       ML7623L4        full Monthly       
+ML7624L4       ML7624L4        full Weekly        HP@6.0.1
+ML7625L4       ML7625L4        full Monthly       
+ML7626L4       ML7626L4        full Weekly        HP@6.0.1
+ML7627L4       ML7627L4        full Yearly        HP@6.0.1
+ML7628L4       ML7628L4        full Monthly       
+ML7629L4       ML7629L4        full Monthly       
+ML7630L4       ML7630L4        full Weekly        HP@6.0.1
+ML7631L4       ML7631L4        full Monthly       
+ML7632L4       ML7632L4        full Monthly       
+ML7633L4       ML7633L4        full Monthly       
+ML7634L4       ML7634L4        0.6% Daily         HP@6.0.1
+ML7635L4       ML7635L4        full Monthly       
+ML7636L4       ML7636L4        full Yearly        
+ML7637L4       ML7637L4        full PermanentArchive 
+ML7638L4       ML7638L4        full Monthly       
+ML7639L4       ML7639L4        full Weekly        
+ML7640L4       ML7640L4        full Yearly        HP@6.0.1
+ML7641L4       ML7641L4          4% Yearly        
+ML7642L4       ML7642L4        full Monthly       
+ML7643L4       ML7643L4        full Weekly        
+ML7644L4       ML7644L4        full Monthly       
+ML7645L4       ML7645L4        full Weekly        
+ML7646L4       ML7646L4        full Monthly       
+ML7647L4       ML7647L4        full Yearly        
+ML7648L4       ML7648L4        full Monthly       
+ML7649L4       ML7649L4        full Weekly        
+ML7650L4       ML7650L4        full Monthly       
+ML7651L4       ML7651L4        full Weekly        
+ML7652L4       ML7652L4        full Weekly        HP@6.0.1
+ML7653L4       ML7653L4        full Weekly        
+ML7654L4       ML7654L4        full Yearly        HP@6.0.1
+ML7655L4       ML7655L4        full Monthly       
+ML7656L4       ML7656L4        full Monthly       
+ML7657L4       ML7657L4        full Weekly        HP@6.0.1
+ML7658L4       ML7658L4        full Monthly       
+ML7659L4       ML7659L4        full Weekly        
+ML7660L4       ML7660L4        full Weekly        
+ML7801L4       ML7801L4        full Monthly       
+ML7802L4       ML7802L4        full Yearly        
+ML7803L4       ML7803L4        full Yearly        HP@6.0.1
+ML7804L4       ML7804L4        full Monthly       
+ML7805L4       ML7805L4        full Yearly        
+ML7806L4       ML7806L4        full Monthly       
+ML7807L4       ML7807L4        full Monthly       
+ML7808L4       ML7808L4        full Yearly        HP@6.0.1
+ML7809L4       ML7809L4        full Weekly        
+ML7810L4       ML7810L4        full Weekly        
+ML7811L4       ML7811L4        full Yearly        
+ML7812L4       ML7812L4        full Weekly        
+ML7813L4       ML7813L4        full Weekly        
+ML7814L4       ML7814L4        full Monthly       
+ML7815L4       ML7815L4        full Weekly        
+ML7816L4       ML7816L4        full Weekly        HP@6.0.1
+ML7818L4       ML7818L4        full Monthly       
+ML7819L4       ML7819L4        full Weekly        
+ML7820L4       ML7820L4        full Monthly       
+ML7821L4       ML7821L4        full Weekly        
+ML7822L4       ML7822L4        full Yearly        
+ML7823L4       ML7823L4         87% Yearly        
+ML7824L4       ML7824L4        full Weekly        
+ML7825L4       ML7825L4        full Monthly       
+ML7826L4       ML7826L4        full Yearly        
+ML7827L4       ML7827L4        full Monthly       
+ML7828L4       ML7828L4        full Monthly       
+ML7829L4       ML7829L4        full Weekly        
+ML7830L4       ML7830L4        full Yearly        
+ML7831L4       ML7831L4        full Weekly        
+ML7832L4       ML7832L4        full Monthly       
+ML7833L4       ML7833L4        full Yearly        
+ML7834L4       ML7834L4        full Yearly        
+ML7836L4       ML7836L4        full Weekly        
+ML7838L4       ML7838L4        full Weekly        
+ML7839L4       ML7839L4        full Yearly        
+ML7840L4       ML7840L4        full Weekly        
+ML7841L4       ML7841L4        full Yearly        HP@6.0.1
+ML7842L4       ML7842L4        full Monthly       
+ML7843L4       ML7843L4        full Weekly        
+ML7844L4       ML7844L4        full Monthly       
+ML7845L4       ML7845L4        full Monthly       
+ML7846L4       ML7846L4        full Monthly       
+ML7847L4       ML7847L4        full Yearly        
+ML7848L4       ML7848L4        full Weekly        
+ML7849L4       ML7849L4        full Yearly        
+ML7850L4       ML7850L4        full Yearly        
+ML7851L4       ML7851L4        full Weekly        
+ML7852L4       ML7852L4        full Weekly        
+ML7853L4       ML7853L4        full Monthly       
+ML7854L4       ML7854L4        full Weekly        
+ML7855L4       ML7855L4        100% MonthlySQL    
+ML7856L4       ML7856L4        full Monthly       
+ML7857L4       ML7857L4        full Yearly        
+ML7858L4       ML7858L4        full Weekly        
+ML7859L4       ML7859L4        full Weekly        
+ML7860L4       ML7860L4        full Monthly       
+ML7861L4       ML7861L4        full Monthly       
+ML7862L4       ML7862L4        full Weekly        
+ML7863L4       ML7863L4        100% MonthlySQL    HP@6.0.1
+ML7864L4       ML7864L4        full Monthly       
+ML7865L4       ML7865L4        full Yearly        
+ML7866L4       ML7866L4        full Monthly       
+ML7867L4       ML7867L4        full Monthly       
+ML7868L4       ML7868L4        full Yearly        
+ML7869L4       ML7869L4        full Daily         HP@6.0.1
+ML7870L4       ML7870L4        full Monthly       
+ML7871L4       ML7871L4        full Yearly        
+ML7872L4       ML7872L4        full Monthly       
+ML7873L4       ML7873L4        full Weekly        
+ML7874L4       ML7874L4          0% Monthly       HP@6.0.1
+ML7875L4       ML7875L4        full Monthly       
+ML7876L4       ML7876L4        full Monthly       HP@6.0.1
+ML7877L4       ML7877L4        full Yearly        
+ML7878L4       ML7878L4        full Daily         HP@6.0.1
+ML7879L4       ML7879L4        full Monthly       
+ML7880L4       ML7880L4        full Monthly       
+ML7901L4       ML7901L4        full Weekly        
+ML7902L4       ML7902L4        full Monthly       
+ML7903L4       ML7903L4        full Monthly       
+ML7904L4       ML7904L4        full Monthly       
+ML7905L4       ML7905L4        full Yearly        
+ML7906L4       ML7906L4        full Monthly       
+ML7907L4       ML7907L4        full Yearly        
+ML7908L4       ML7908L4        full Daily         HP@6.0.1
+ML7909L4       ML7909L4        full Weekly        
+ML7910L4       ML7910L4        full Daily         HP@6.0.1
+ML7911L4       ML7911L4        full Monthly       
+ML7912L4       ML7912L4        full Monthly       
+ML7913L4       ML7913L4        full Monthly       
+ML7914L4       ML7914L4        full Daily         
+ML7915L4       ML7915L4        full Monthly       
+ML7916L4       ML7916L4        full Yearly        
+ML7917L4       ML7917L4        full Monthly       
+ML7918L4       ML7918L4         67% Yearly        
+ML7919L4       ML7919L4        full Yearly        HP@6.0.1
+ML7920L4       ML7920L4        full Yearly        
+ML7921L4       ML7921L4        full Weekly        
+ML7922L4       ML7922L4        full Weekly        
+ML7923L4       ML7923L4        full Weekly        
+ML7924L4       ML7924L4        full Yearly        
+ML7925L4       ML7925L4         47% DailySQL      HP@6.0.1
+ML7926L4       ML7926L4        full Weekly        
+ML7927L4       ML7927L4        full Yearly        
+ML7928L4       ML7928L4        full Monthly       
+ML7929L4       ML7929L4        full Monthly       
+ML7930L4       ML7930L4        full Monthly       
+ML7931L4       ML7931L4        full Weekly        
+ML7932L4       ML7932L4        full Weekly        
+ML7933L4       ML7933L4        full Monthly       
+ML7934L4       ML7934L4        full Weekly        
+ML7935L4       ML7935L4        full Yearly        
+ML7936L4       ML7936L4        full Monthly       
+ML7937L4       ML7937L4        full Weekly        HP@6.0.1
+ML7938L4       ML7938L4        full Monthly       
+ML7939L4       ML7939L4        full Yearly        
+ML7941L4       ML7941L4        full Monthly       
+ML7942L4       ML7942L4        full Monthly       
+ML7943L4       ML7943L4        full Weekly        
+ML7944L4       ML7944L4        full Yearly        
+ML7945L4       ML7945L4        full Monthly       
+ML7946L4       ML7946L4        full Weekly        
+ML7947L4       ML7947L4        full Weekly        
+ML7948L4       ML7948L4        full Yearly        
+ML7949L4       ML7949L4        full Weekly        
+ML7950L4       ML7950L4        full Monthly       
+ML7951L4       ML7951L4        full Monthly       
+ML7952L4       ML7952L4        full Yearly        
+ML7953L4       ML7953L4        full Weekly        
+ML7954L4       ML7954L4        full Yearly        
+ML7955L4       ML7955L4        full Yearly        
+ML7956L4       ML7956L4         30% PermanentArchive 
+ML7957L4       ML7957L4        full Yearly        
+ML7958L4       ML7958L4        full Yearly        
+ML7959L4       ML7959L4        full Yearly        
+ML7960L4       ML7960L4        full Weekly        
+ML7961L4       ML7961L4        full Monthly       
+ML7962L4       ML7962L4        full Monthly       
+ML7963L4       ML7963L4        full Yearly        
+ML7964L4       ML7964L4        full Yearly        HP@6.0.1
+ML7965L4       ML7965L4        full Yearly        
+ML7966L4       ML7966L4        full Yearly        
+ML7967L4       ML7967L4        full Weekly        
+ML7968L4       ML7968L4        full Weekly        
+ML7969L4       ML7969L4        full Weekly        
+ML7970L4       ML7970L4        full Weekly        
+ML7971L4       ML7971L4        full Weekly        
+ML7972L4       ML7972L4        full Weekly        
+ML7973L4       ML7973L4        full Monthly       
+ML7974L4       ML7974L4        full Monthly       
+ML7975L4       ML7975L4        full Weekly        
+ML7976L4       ML7976L4        full Daily         
+ML7977L4       ML7977L4        full Yearly        
+ML7978L4       ML7978L4        full Monthly       
+ML7979L4       ML7979L4        full Weekly        
+ML7980L4       ML7980L4        full Monthly       
+ML8021L4       ML8021L4        full Monthly       HP@6.0.1
+ML8022L4       ML8022L4        full Yearly        
+ML8023L4       ML8023L4        full Monthly       
+ML8024L4       ML8024L4        full Weekly        
+ML8025L4       ML8025L4        full Monthly       HP@6.0.1
+ML8031L4       ML8031L4        full Weekly        
+ML8032L4       ML8032L4        full Weekly        
+ML8033L4       ML8033L4        full Weekly        
+ML8034L4       ML8034L4        full Monthly       
+ML8035L4       ML8035L4        full Weekly        
+ML8037L4       ML8037L4        full Yearly        
+ML8038L4       ML8038L4        full Monthly       
+ML8039L4       ML8039L4        full Monthly       
+ML8040L4       ML8040L4        full Monthly       
+ML8201L4       ML8201L4        full Monthly       
+ML8202L4       ML8202L4        full Monthly       
+ML8203L4       ML8203L4        full Weekly        
+ML8204L4       ML8204L4        full Monthly       
+ML8205L4       ML8205L4        full WeeklySQL     
+ML8206L4       ML8206L4        full Monthly       
+ML8207L4       ML8207L4        full Monthly       
+ML8208L4       ML8208L4        full Monthly       
+ML8209L4       ML8209L4        full Weekly        
+ML8210L4       ML8210L4        full Monthly       
+ML8211L4       ML8211L4        full Weekly        
+ML8212L4       ML8212L4        full Monthly       
+ML8213L4       ML8213L4        full Monthly       
+ML8214L4       ML8214L4        full Weekly        
+ML8215L4       ML8215L4        full Weekly        
+ML8216L4       ML8216L4        full Monthly       
+ML8217L4       ML8217L4        full Monthly       
+ML8218L4       ML8218L4        full Weekly        
+ML8219L4       ML8219L4        full Weekly        
+ML8220L4       ML8220L4        full Weekly        
+ML8221L4       ML8221L4        full Weekly        
+ML8222L4       ML8222L4        full Weekly        
+ML8223L4       ML8223L4        full Monthly       
+ML8224L4       ML8224L4        full Monthly       
+ML8225L4       ML8225L4        full Yearly        
+ML8226L4       ML8226L4        full Weekly        
+ML8227L4       ML8227L4        full Weekly        
+ML8228L4       ML8228L4        full Daily         HP@6.0.1
+ML8229L4       ML8229L4        full Monthly       
+ML8230L4       ML8230L4        full Monthly       
+ML8231L4       ML8231L4        full Weekly        
+ML8232L4       ML8232L4        full Weekly        
+ML8233L4       ML8233L4        full Weekly        
+ML8234L4       ML8234L4        full Weekly        
+ML8235L4       ML8235L4        full Yearly        
+ML8236L4       ML8236L4        full Weekly        
+ML8237L4       ML8237L4        full Monthly       
+ML8238L4       ML8238L4        full Weekly        
+ML8239L4       ML8239L4        full Monthly       
+ML8240L4       ML8240L4        full Yearly        
+ML8241L4       ML8241L4        full Weekly        
+ML8242L4       ML8242L4        full Yearly        
+ML8243L4       ML8243L4        full Monthly       
+ML8244L4       ML8244L4        full Monthly       
+ML8245L4       ML8245L4        full Daily         HP@6.0.1
+ML8246L4       ML8246L4        full Weekly        
+ML8247L4       ML8247L4        full Monthly       
+ML8248L4       ML8248L4        full Monthly       
+ML8249L4       ML8249L4        full Weekly        
+ML8250L4       ML8250L4        full Weekly        
+ML8251L4       ML8251L4        full Yearly        
+ML8252L4       ML8252L4        full Yearly        
+ML8253L4       ML8253L4        full Weekly        
+ML8254L4       ML8254L4        full Monthly       
+ML8255L4       ML8255L4        full Weekly        
+ML8256L4       ML8256L4        full Weekly        
+ML8257L4       ML8257L4        full Monthly       
+ML8258L4       ML8258L4        full Monthly       
+ML8259L4       ML8259L4        full Monthly       
+ML8260L4       ML8260L4        full Weekly        
+ML8261L4       ML8261L4        full Weekly        
+ML8262L4       ML8262L4        full Weekly        
+ML8263L4       ML8263L4        full Monthly       
+ML8265L4       ML8265L4        full Monthly       
+ML8266L4       ML8266L4        full Weekly        
+ML8267L4       ML8267L4        full Yearly        
+ML8268L4       ML8268L4        full Monthly       
+ML8269L4       ML8269L4        full Weekly        
+ML8270L4       ML8270L4        full Weekly        
+ML8271L4       ML8271L4        full Monthly       
+ML8272L4       ML8272L4        full Weekly        
+ML8273L4       ML8273L4        full Monthly       
+ML8274L4       ML8274L4        full Weekly        
+ML8275L4       ML8275L4        full Weekly        
+ML8276L4       ML8276L4        full Yearly        
+ML8277L4       ML8277L4        full Monthly       
+ML8278L4       ML8278L4        full Monthly       
+ML8279L4       ML8279L4        full Monthly       
+ML8280L4       ML8280L4        full Monthly       
+ML8281L4       ML8281L4        full Weekly        
+ML8282L4       ML8282L4        full Yearly        
+ML8283L4       ML8283L4        full Weekly        
+ML8284L4       ML8284L4        full Yearly        
+ML8285L4       ML8285L4        full Monthly       
+ML8286L4       ML8286L4        full Monthly       
+ML8287L4       ML8287L4        full Weekly        
+ML8288L4       ML8288L4        full Weekly        
+ML8289L4       ML8289L4        full Weekly        
+ML8290L4       ML8290L4        full Weekly        
+ML8291L4       ML8291L4        full Weekly        
+ML8292L4       ML8292L4        full Monthly       
+ML8293L4       ML8293L4        full Weekly        
+ML8294L4       ML8294L4        full Weekly        
+ML8295L4       ML8295L4        full Weekly        
+ML8296L4       ML8296L4        full Monthly       
+ML8297L4       ML8297L4        full Weekly        
+ML8298L4       ML8298L4        full Monthly       
+ML8299L4       ML8299L4        full Monthly       
+ML8300L4       ML8300L4        full Yearly        
+ML9001L4       ML9001L4        full Weekly        
+ML9002L4       ML9002L4        full Weekly        
+ML9003L4       ML9003L4        100% Daily         HP@6.0.1
+ML9004L4       ML9004L4        full Weekly        
+ML9005L4       ML9005L4        full Weekly        
+ML9006L4       ML9006L4        full Weekly        
+ML9007L4       ML9007L4        full Weekly        
+ML9008L4       ML9008L4        full Weekly        
+ML9009L4       ML9009L4        full Weekly        
+ML9010L4       ML9010L4        full Weekly        
+ML9011L4       ML9011L4        full Yearly        HP@6.0.1
+ML9012L4       ML9012L4        full Monthly       
+ML9013L4       ML9013L4        full Weekly        
+ML9014L4       ML9014L4        full Monthly       
+ML9015L4       ML9015L4        full Weekly        
+ML9016L4       ML9016L4        full Weekly        
+ML9017L4       ML9017L4        full Weekly        
+ML9018L4       ML9018L4        full Weekly        
+ML9019L4       ML9019L4        full Weekly        
+ML9020L4       ML9020L4        full Weekly        
+ML9021L4       ML9021L4        full Yearly        HP@6.0.1
+ML9022L4       ML9022L4        full Yearly        HP@6.0.1
+ML9023L4       ML9023L4        full Weekly        
+ML9024L4       ML9024L4        full Weekly        
+ML9025L4       ML9025L4        full Weekly        
+ML9026L4       ML9026L4        full Weekly        
+ML9027L4       ML9027L4        full Weekly        
+ML9028L4       ML9028L4        full Weekly        
+ML9029L4       ML9029L4        full Weekly        
+ML9030L4       ML9030L4        full Weekly        
+ML9031L4       ML9031L4        full Weekly        
+ML9032L4       ML9032L4        full Weekly        
+ML9033L4       ML9033L4        100% WeeklySQL     HP@6.0.1
+ML9034L4       ML9034L4        full Monthly       
+ML9035L4       ML9035L4        full Monthly       
+ML9036L4       ML9036L4         14% DailySQL      
+ML9037L4       ML9037L4        full Weekly        
+ML9038L4       ML9038L4        full Weekly        
+ML9039L4       ML9039L4        full Monthly       
+ML9040L4       ML9040L4        full Monthly       
+ML9041L4       ML9041L4        full Weekly        
+ML9042L4       ML9042L4        full Weekly        
+ML9043L4       ML9043L4        full Monthly       
+ML9044L4       ML9044L4        full Weekly        
+ML9045L4       ML9045L4        full Monthly       
+ML9046L4       ML9046L4        full Weekly        
+ML9047L4       ML9047L4        full Weekly        HP@6.0.1
+ML9048L4       ML9048L4        full Weekly        
+ML9049L4       ML9049L4        full Weekly        
+ML9050L4       ML9050L4        full Monthly       
+ONO800L4       ONO800L4        full Monthly       
+ONO801L4       ONO801L4        full Monthly       
+ONO802L4       ONO802L4        full Monthly       
+ONO803L4       ONO803L4        full Monthly       
+ONO804L4       ONO804L4        full Weekly        
+ONO805L4       ONO805L4        full Yearly        
+ONO806L4       ONO806L4         30% Yearly        
+ONO807L4       ONO807L4        full Monthly       
+ONO808L4       ONO808L4        100% MonthlySQL    
+ONO809L4       ONO809L4        full Yearly        
+ONO810L4       ONO810L4        full PermanentArchive 
+ONO811L4       ONO811L4          6% PermanentArchive 
+ONO820L4       ONO820L4        full Weekly        
+ONO821L4       ONO821L4        full Daily         
+ONO822L4       ONO822L4        full Weekly        
+ONO823L4       ONO823L4        full Weekly        
+ONO824L4       ONO824L4        full Monthly       
+ONO825L4       ONO825L4        full Monthly       
+ONO826L4       ONO826L4        full Yearly        
+ONO827L4       ONO827L4        full WeeklySQL     
+ONO828L4       ONO828L4        full Weekly        
+ONO829L4       ONO829L4        full Monthly       
+ONO830L4       ONO830L4        full Monthly       
+ONO831L4       ONO831L4        full Weekly        
+ONO832L4       ONO832L4        full Monthly       
+ONO833L4       ONO833L4        full Monthly       
+ONO834L4       ONO834L4        full Weekly        
+ONO835L4       ONO835L4        full Monthly       
+ONO836L4       ONO836L4        full Monthly       
+ONO837L4       ONO837L4        full Weekly        
+ONO838L4       ONO838L4        full Yearly        
+ONO839L4       ONO839L4        full Yearly        
+TS0001L        TS0001L         full Weekly        
+TS0002L        TS0002L         full Weekly        
+TS0003L        TS0003L         full Weekly        
+TS0004L        TS0004L         full Weekly        
+TS0005L        TS0005L         full Weekly        
+TS0006L        TS0006L         full Weekly        
+TS0008L        TS0008L         full Monthly       
+TS0009L        TS0009L         full Monthly       
+TS0011L        TS0011L         full Weekly        
+TS0012L        TS0012L         full Weekly        
+TS0013L        TS0013L          67% Monthly       
+TS0014L        TS0014L         full Weekly        
+TS0015L        TS0015L         full Monthly       
+TS0016L        TS0016L         full Weekly        
+TS0017L        TS0017L         full Monthly       
+TS0018L        TS0018L         full Monthly       
+TS0019L        TS0019L         100% WeeklySQL     
+TS0020L        TS0020L         full Monthly       
+TS0021L        TS0021L         full Monthly       
+TS0022L        TS0022L         full Monthly       
+TS0046L        TS0046L         full Weekly        
+TS0047L        TS0047L         full Weekly        SPECTRA@14.0.1
+TS0048L        TS0048L         full Monthly       
+TS0049L        TS0049L         full Monthly       
+TS0050L        TS0050L         full Monthly       

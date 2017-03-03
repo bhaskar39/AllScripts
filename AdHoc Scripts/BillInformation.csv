@@ -1,0 +1,1001 @@
+"Resource Name","Resource Group","Type","Spent","Location","Meter Name","Meter Category","Meter SubCategory"
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","0.066402","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"kbportalvhdszbzl0n2ck0gz","Storage","0.003000","East Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"n5portalvhdswj63sl7hq72f","Storage","0.003000","Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"azureratecard","assessmentautomation","Microsoft.Sql/servers","0.166666666666666656","westus","Standard S0 Database Days","Data Services","SQL Database"
+,"teststorage90","Storage","0.003000","South Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+,"mmkkuu789","Storage","0.000010","West US","Standard IO - Table (GB)","Storage","Geo Redundant"
+,"wqportalvhds9q1bf8gs1ftq","Storage","0.000010","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"9yportalvhds5hm5fg5gr47m","Storage","0.000005","North Central US","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"mmkkuu789","Storage","0.011400","West US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","0.0012","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"divademo","divademorg","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+,"8yportalvhdsc30ms13v4zz2","Storage","0.000010","JA West","Standard IO - Table (GB)","Storage","Locally Redundant"
+"PublicIp","NRP-RG","Microsoft.Network/publicIPAddresses","6.99999999999999923","westus","IP Address Hours","Networking","Reserved IP"
+,"cspazuretest","Storage","0.000002","Central US","Standard IO - Table (GB)","Storage","Geo Redundant"
+"webapp3","default-applicationinsights-centralus","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+,"testmig2newportal","Storage","0.003000","East US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"9yportalvhds5hm5fg5gr47m","Storage","0.003000","North Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"automationsa","Storage","0.000010","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"frontendvnet","Virtual Network","1.000000","","Basic Gateway Hours","Networking","Virtual Network"
+,"8yportalvhdsc30ms13v4zz2","Storage","0.003000","JA West","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"DEVVM","RTECHRG","Microsoft.Compute/virtualMachines","0.007082","eastus2","Data Transfer In (GB)","Networking",
+,"automationsa","Storage","0.003000","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"poc3105","poc","Microsoft.Storage/storageAccounts","0.0022","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"asraz2azdiag610","asraz2az","Microsoft.Storage/storageAccounts","0.000002","euwest","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"RGUKTdemo","Virtual Network","1.000000","","Basic Gateway Hours","Networking","Virtual Network"
+"webapplication3","default-applicationinsights-centralus","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+,"rebondsstorage","Storage","0.003000","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"gopinath-testdc-ip","gopinath-bvrm--azurelabexam","Microsoft.Network/publicIPAddresses","6.99999999999999923","westus","IP Address Hours","Networking","Reserved IP"
+,"0fportalvhdsv7tlx8fmxv27","Storage","0.000010","JA West","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"HydNetwork","Virtual Network","1.000000","","Basic Gateway Hours","Networking","Virtual Network"
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","0.000199","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"0fportalvhdsv7tlx8fmxv27","Storage","0.003000","JA West","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"visualtestap","testrg8976","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+,"ThroughScript","Storage","0.000010","East US","Standard IO - Table (GB)","Storage","Geo Redundant"
+,"wqportalvhds9q1bf8gs1ftq","Storage","0.198425","Southeast Asia","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"MyTestVnet2","Virtual Network","1.000000","","Standard Gateway Hours","Networking","Virtual Network"
+,"2tportalvhdsdczqkv0r16sf","Storage","0.000005","West US","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"dgportalvhdsmg7c99qg0rtk","Storage","0.003000","South Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"0qportalvhdshc7f8phrh7ts","Storage","1.519780","East US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"testazurewebapp098","testwebrg","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"DEVVM","RTECHRG","Microsoft.Compute/virtualMachines","0.006736","eastus2","Data Transfer Out (GB)","Networking",
+,"automationsa","Storage","0.000020","Southeast Asia","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+,"vg1","Storage","0.000010","West US","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"2tportalvhdsdczqkv0r16sf","Storage","0.003000","West US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"teststorage90","Storage","0.000010","South Central US","Standard IO - Table (GB)","Storage","Geo Redundant"
+,"vg1","Storage","0.003000","West US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"testmig2newportal","Storage","0.000005","East US","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"RGUKTVNET","Virtual Network","1.000000","","Basic Gateway Hours","Networking","Virtual Network"
+"asraz2azdiag610","asraz2az","Microsoft.Storage/storageAccounts","0.0006","euwest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"poc3105","poc","Microsoft.Storage/storageAccounts","0.2784","apsoutheast","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"samincpaas","assessmentautomation","Microsoft.Sql/servers","0.208333333333333320","westus","Standard S0 Database Days","Data Services","SQL Database"
+"poc3105","poc","Microsoft.Storage/storageAccounts","0.061816","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"0qportalvhdshc7f8phrh7ts","Storage","0.000015","East US","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"rebondsstorage","Storage","0.000010","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"cspazuretest","Storage","0.003000","Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+,"wqportalvhds9q1bf8gs1ftq","Storage","0.003000","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"0qportalvhdshc7f8phrh7ts","Storage","0.003000","East US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"2tportalvhdsdczqkv0r16sf","Storage","0.100135","West US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"vg1","Storage","0.020900","West US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"dgportalvhdsmg7c99qg0rtk","Storage","0.000010","South Central US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"webapp123","default-applicationinsights-centralus","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+,"testmig2newportal","Storage","0.101435","East US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"ThroughScript","Storage","0.003000","East US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+,"classictwo","Storage","0.000010","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+"webapplication2","default-applicationinsights-centralus","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"poc3105","poc","Microsoft.Storage/storageAccounts","0.059487","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"kbportalvhdszbzl0n2ck0gz","Storage","0.000010","East Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"classictwo","Storage","0.003000","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"n5portalvhdswj63sl7hq72f","Storage","0.000002","Central US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"DEVVM","RTECHRG","Microsoft.Compute/virtualMachines","6.966806","eastus2","Compute Hours","Virtual Machines","Standard_D1_v2 VM (Windows)"
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","0.002118","apsoutheast","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"azureratecard","assessmentautomation","Microsoft.Sql/servers","0.999999999999999936","westus","Standard S0 Database Days","Data Services","SQL Database"
+"nelabdisks744","nelab","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storagebhaskar","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.413712","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"manjurgdisks751","manjurg","Microsoft.Storage/storageAccounts","0.462264","uscentral","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"0qportalvhdshc7f8phrh7ts","Storage","0.000600","East US","Standard IO - Block Blob Delete Operation Units (in 10,000s)","Data Management",
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","1.593648","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"ThroughScript","Storage","0.014600","East US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"DEVVM","RTECHRG","Microsoft.Compute/virtualMachines","20.950419","eastus2","Compute Hours","Virtual Machines","Standard_D1_v2 VM (Windows)"
+"rdslabrgdisksad276","rdslabrg","Microsoft.Storage/storageAccounts","0.0156","jawest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","6.6584","uswest","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+,"8yportalvhdsc30ms13v4zz2","Storage","0.014600","JA West","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"0qportalvhdshc7f8phrh7ts","Storage","3.137600","East US","Standard IO - Page Blob Read Operation Units (in 10,000s)","Data Management",
+"rtechrgdiag181","rtechrg","Microsoft.Storage/storageAccounts","0.000120","useast2","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.0146","euwest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.1443","uswest","Standard IO - Block Blob Delete Operation Units (in 10,000s)","Data Management",
+,"testmig2newportal","Storage","0.000044","East US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storagebhaskar","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"rebondsstorage","Storage","0.000048","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+"samincpaas","assessmentautomation","Microsoft.Sql/servers","0.999999999999999936","westus","Standard S0 Database Days","Data Services","SQL Database"
+"asraz2azdiag610","asraz2az","Microsoft.Storage/storageAccounts","0.000071","euwest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.001800","eunorth","Standard IO - Block Blob (GB)","Storage","Read-Access Geo Redundant"
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.0156","euwest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"rktestdemostrg","rktestdemorg","Microsoft.Storage/storageAccounts","0.0051","uksouth","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"kbportalvhdszbzl0n2ck0gz","Storage","0.000048","East Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+"visualtestap","testrg8976","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.000624","jawest","Data Transfer Out (GB)","Networking",
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.001083","apsoutheast","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+,"testmig2newportal","Storage","0.486888","East US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.0290","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.001081","jawest","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"AAccountClassic","resourcegrp-bhaskar","Microsoft.Automation/automationAccounts","10.416666666666666","zone1","Basic Automation Minutes","App Services","Automation"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.0289","jawest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","0.25344","apeast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"ramyarsv","ramya-bvrm-azurelabexam","Microsoft.RecoveryServices/vaults","1.511395","australiasoutheast","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"nelabdisks744","nelab","Microsoft.Storage/storageAccounts","0.0051","useast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"asraz2azdisks442","asraz2az","Microsoft.Storage/storageAccounts","0.032256","euwest","Premium Storage - Page Blob/P10 (Units)","Storage","Locally Redundant"
+"testmig2newportalv2","testmigratearm","Microsoft.Storage/storageAccounts","0.496992","useast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"teststoragehari","rgroup","Microsoft.Storage/storageAccounts","0.0145","ussouthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rktestdemostrg","rktestdemorg","Microsoft.Storage/storageAccounts","0.962520","uksouth","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"forsanjaydisks755","forsanjay","Microsoft.Storage/storageAccounts","3.665256","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"teststorageforlt","testresourcegroup","Microsoft.Storage/storageAccounts","0.000072","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","3.3292","euwest","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.0290","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"testrgpdisks781","testrgp","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","1.199268","useast2","Standard IO - Table (GB)","Storage","Locally Redundant"
+"labbackup","labexam2","Microsoft.RecoveryServices/vaults","0.461682","eastus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"pocstr","poc","Microsoft.Storage/storageAccounts","0.064512","apsoutheast","Premium Storage - Page Blob/P10 (Units)","Storage","Locally Redundant"
+"gopinathstorage2","gopinath-testrg","Microsoft.Storage/storageAccounts","0.000048","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.000120","jawest","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"asraz2azdiag610","asraz2az","Microsoft.Storage/storageAccounts","0.0177","euwest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgpdiag234","testrgp","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"labexam","labexam2","Microsoft.RecoveryServices/vaults","0.459867","southeastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.000528","uswestcentral","Data Transfer In (GB)","Networking",
+"scriptfile","scriptfiles","Microsoft.Storage/storageAccounts","0.000288","ussouthcentral","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"sudhakarp445","sudhakarprg832351","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"teststoragesql1","testrgsql1","Microsoft.Storage/storageAccounts","0.0146","useast2","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgatoreac303","testrg303","Microsoft.Storage/storageAccounts","0.000072","usnorthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testvault","testrg","Microsoft.RecoveryServices/vaults","0.003491","eastus2","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+,"ThroughScript","Storage","0.000048","East US","Standard IO - Table (GB)","Storage","Geo Redundant"
+"rdslabrgdiag897","rdslabrg","Microsoft.Storage/storageAccounts","0.000072","jawest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"dsamplelab3803","samplelabrg883310","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"gopinathrec","gopinath-bvrm--azurelabexam","Microsoft.RecoveryServices/vaults","2.318778","westus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"azurestorage123","azureservers","Microsoft.Storage/storageAccounts","0.44808","apeast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"teststorageforlt","testresourcegroup","Microsoft.Storage/storageAccounts","0.0146","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"testmig2newportal","Storage","0.014600","East US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"teststoreac666","testazurerg","Microsoft.Storage/storageAccounts","0.0145","ukwest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"rebondsstorage","Storage","0.014500","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgpdisks781","testrgp","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.7460","useast2","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"gopinathstorage2","gopinath-testrg","Microsoft.Storage/storageAccounts","0.0145","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testbackupvault","mytestresourcegroup","Microsoft.RecoveryServices/vaults","0.016129","southcentralus","Protected Instances","Recovery Services","Backup"
+"ASRVault","ASRservers","Microsoft.RecoveryServices/vaults","0.032258","eastasia","Protected Instances","Recovery Services","Backup"
+"PublicIp","NRP-RG","Microsoft.Network/publicIPAddresses","23.99999999999999736","westus","IP Address Hours","Networking","Reserved IP"
+"sudhakarp531","sudhakarprg832351","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.000528","eunorth","Data Transfer In (GB)","Networking",
+"forsanjaydiag678","forsanjay","Microsoft.Storage/storageAccounts","0.000144","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"gopinathteststorage2","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","1.744776","useast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.000699","uswest","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"testbackupvault9","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-South-Central-US","microsoft.backup/BackupVault","0.016129","southcentralus","Protected Instances","Recovery Services","Backup"
+,"RGUKTVNET","Virtual Network","24.000000","","Basic Gateway Hours","Networking","Virtual Network"
+,"vg1","Storage","0.014600","West US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.000552","uscentral","Data Transfer In (GB)","Networking",
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.045000","useast2","Standard IO - Files (GB)","Storage","Locally Redundant"
+"rktestdemostrg","rktestdemorg","Microsoft.Storage/storageAccounts","0.0146","uksouth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgatoreac303","testrg303","Microsoft.Storage/storageAccounts","0.0146","usnorthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"RGUKTBackup","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-Brazil-South","microsoft.backup/BackupVault","0.048387","brazilsouth","Protected Instances","Recovery Services","Backup"
+,"automationsa","Storage","0.000096","Southeast Asia","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"AutomationTest","forsample","Microsoft.Automation/automationAccounts","26.2","zone1","Basic Automation Minutes","App Services","Automation"
+"poc3105","poc","Microsoft.Storage/storageAccounts","1.483584","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"dsamplelab3803","samplelabrg883310","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgpdisks781","testrgp","Microsoft.Storage/storageAccounts","0.0051","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.2952","useast2","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.01728","ukwest","Data Transfer In (GB)","Networking",
+"nelabdisks744","nelab","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"RGUKTdemo","Virtual Network","24.000000","","Basic Gateway Hours","Networking","Virtual Network"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.0290","eunorth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"rtechrgdisks488","rtechrg","Microsoft.Storage/storageAccounts","4.603224","useast2","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rktestdemorgdisks805","rktestdemorg","Microsoft.Storage/storageAccounts","0.000055","uksouth","Standard IO - Table (GB)","Storage","Locally Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.0290","uscentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+,"cspazuretest","Storage","0.014600","Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"sudhakarp531","sudhakarprg832351","Microsoft.Storage/storageAccounts","0.0145","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgatoreac303","testrg303","Microsoft.Storage/storageAccounts","0.0054","usnorthcentral","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"automationsa","Storage","0.000048","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rtechrgdiag181","rtechrg","Microsoft.Storage/storageAccounts","0.069024","useast2","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"wqportalvhds9q1bf8gs1ftq","Storage","0.000048","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"9yportalvhds5hm5fg5gr47m","Storage","0.014500","North Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","3.3408","useast2","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","1.032984","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"asrserversdiag610","asrservers","Microsoft.Storage/storageAccounts","0.000072","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"asrserversdisks730","asrservers","Microsoft.Storage/storageAccounts","0.456936","apeast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"testrg303diag241","testrg303","Microsoft.Storage/storageAccounts","0.000072","usnorthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"wqportalvhds9q1bf8gs1ftq","Storage","0.952440","Southeast Asia","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rdsautostg","rdsauto","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testlaptopMARS","testlaptop","Microsoft.RecoveryServices/vaults","0.016129","southeastasia","Protected Instances","Recovery Services","Backup"
+"azurebvrm","azurebvrm","Microsoft.Storage/storageAccounts","1.888200","usnorthcentral","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testvmasr","ASRservers","Microsoft.RecoveryServices/vaults","0.016129","northeurope","Protected Instances","Recovery Services","Backup"
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","2.734464","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"mmkkuu789","Storage","0.057600","West US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"RGUKTBackup","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-Brazil-South","microsoft.backup/BackupVault","0.171945","brazilsouth","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"teststoragesql1","testrgsql1","Microsoft.Storage/storageAccounts","0.000264","useast2","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"forsample599","forsample","Microsoft.Storage/storageAccounts","1.801464","eunorth","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"asrserversdiag610","asrservers","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"teststorage190","testrg345","Microsoft.Storage/storageAccounts","0.000055","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"AutomationTest","resourcegrp-bhaskar","Microsoft.RecoveryServices/vaults","0.028174","eastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.001251","uscentral","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.001081","uswestcentral","Geo-Replicated Data Transfer (GB)","Data Management",
+"testrg303diag241","testrg303","Microsoft.Storage/storageAccounts","0.0146","usnorthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"2tportalvhdsdczqkv0r16sf","Storage","0.000024","West US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testmig2newportalv2","testmigratearm","Microsoft.Storage/storageAccounts","0.000048","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"dgportalvhdsmg7c99qg0rtk","Storage","0.000048","South Central US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"gopinath-testdc-ip","gopinath-bvrm--azurelabexam","Microsoft.Network/publicIPAddresses","23.99999999999999736","westus","IP Address Hours","Networking","Reserved IP"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","3.3408","uswest","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"forsanjaydisks755","forsanjay","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"n5portalvhdswj63sl7hq72f","Storage","0.000024","Central US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rdslabrgdisksad276","rdslabrg","Microsoft.Storage/storageAccounts","1.708104","jawest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"0qportalvhdshc7f8phrh7ts","Storage","0.000066","East US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststoragesql1","testrgsql1","Microsoft.Storage/storageAccounts","1.486632","useast2","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.000528","apsoutheast","Data Transfer In (GB)","Networking",
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.000624","jawest","Data Transfer Out (GB)","Networking",
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.0289","uswestcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"asraz2az","asraz2az","Microsoft.Storage/storageAccounts","0.000072","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"2tportalvhdsdczqkv0r16sf","Storage","0.480648","West US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.001081","jawest","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"Testvault","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-East-US","microsoft.backup/BackupVault","4.02398","eastus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"webapplication2","default-applicationinsights-centralus","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"azbckupvtrktest","bckrgrk","Microsoft.RecoveryServices/vaults","0.016129","southeastasia","Protected Instances","Recovery Services","Backup"
+"testrgpdiag234","testrgp","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testingvault","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-East-US","microsoft.backup/BackupVault","0.016129","eastus","Protected Instances","Recovery Services","Backup"
+,"kbportalvhdszbzl0n2ck0gz","Storage","0.014600","East Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"wqportalvhds9q1bf8gs1ftq","Storage","0.014600","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"alridgetest","aldridgetesting","Microsoft.Storage/storageAccounts","0.032256","apsoutheast","Premium Storage - Page Blob/P10 (Units)","Storage","Locally Redundant"
+"rkcateststrg","rkcagrp","Microsoft.Storage/storageAccounts","0.943488","uksouth","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.1958","useast2","Standard IO - Page Blob Read Operation Units (in 10,000s)","Data Management",
+"neportallogs","aautomationtest","Microsoft.Storage/storageAccounts","0.000072","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststorage190","testrg345","Microsoft.Storage/storageAccounts","0.0145","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.990792","ukwest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rdsautostg","rdsauto","Microsoft.Storage/storageAccounts","0.0258","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"rdslabrgdiag897","rdslabrg","Microsoft.Storage/storageAccounts","0.0146","jawest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"storagebhaskar","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.025776","apeast","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+,"cspazuretest","Storage","0.000024","Central US","Standard IO - Table (GB)","Storage","Geo Redundant"
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","1.6177","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","2.552976","euwest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"manjurgdisks751","manjurg","Microsoft.Storage/storageAccounts","0.000072","uscentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"asraz2az","asraz2az","Microsoft.Storage/storageAccounts","0.0146","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","0.004776","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"forsanjaydiag678","forsanjay","Microsoft.Storage/storageAccounts","0.000048","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","0.0051","apeast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"storagebhaskar","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","7.045152","apeast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.0471","uscentral","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"testmig2newportalv2","testmigratearm","Microsoft.Storage/storageAccounts","0.0051","useast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"neportallogs","aautomationtest","Microsoft.Storage/storageAccounts","0.0146","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"forsanjaydisks755","forsanjay","Microsoft.Storage/storageAccounts","0.0051","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"dgportalvhdsmg7c99qg0rtk","Storage","0.014600","South Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"DEVVM","RTECHRG","Microsoft.Compute/virtualMachines","0.019789","eastus2","Data Transfer In (GB)","Networking",
+,"frontendvnet","Virtual Network","24.000000","","Basic Gateway Hours","Networking","Virtual Network"
+"manjurgdisks751","manjurg","Microsoft.Storage/storageAccounts","0.0146","uscentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"0qportalvhdshc7f8phrh7ts","Storage","0.000600","East US","Standard IO - Block Blob Write Operation Units (in 10,000s)","Data Management",
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","3.3408","uscentral","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"rkcateststrg","rkcagrp","Microsoft.Storage/storageAccounts","0.0146","uksouth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testbackupvault9","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-South-Central-US","microsoft.backup/BackupVault","0.445124","southcentralus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"webapp3","default-applicationinsights-centralus","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"rtechrgdiag181","rtechrg","Microsoft.Storage/storageAccounts","0.0146","useast2","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testazurewebapp098","testwebrg","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.001083","eunorth","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","0.00168","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"classictwo","Storage","0.000048","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+"ramyarsv","ramya-bvrm-azurelabexam","Microsoft.RecoveryServices/vaults","0.048387","australiasoutheast","Protected Instances","Recovery Services","Backup"
+"manjurgdisks751","manjurg","Microsoft.Storage/storageAccounts","0.0051","uscentral","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.000120","apsoutheast","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"labbackup","labexam2","Microsoft.RecoveryServices/vaults","0.032258","eastus","Protected Instances","Recovery Services","Backup"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.000120","jawest","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+,"0fportalvhdsv7tlx8fmxv27","Storage","0.000048","JA West","Standard IO - Table (GB)","Storage","Locally Redundant"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.301392","uswest","Standard IO - Table (GB)","Storage","Geo Redundant"
+"rdsautostg","rdsauto","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"azurebvrm","azurebvrm","Microsoft.Storage/storageAccounts","0.000072","usnorthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"labexam","labexam2","Microsoft.RecoveryServices/vaults","0.016129","southeastasia","Protected Instances","Recovery Services","Backup"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.000528","jawest","Data Transfer In (GB)","Networking",
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.0289","jawest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"divademo","divademorg","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+,"0qportalvhdshc7f8phrh7ts","Storage","7.711443","East US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"0qportalvhdshc7f8phrh7ts","Storage","0.000600","East US","Standard IO - Block Blob List Operation Units (in 10,000s)","Data Management",
+"teststorageforlt","testresourcegroup","Microsoft.Storage/storageAccounts","0.470760","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"0qportalvhdshc7f8phrh7ts","Storage","3.143600","East US","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"testvault","testrg","Microsoft.RecoveryServices/vaults","0.032258","eastus2","Protected Instances","Recovery Services","Backup"
+,"automationsa","Storage","0.015400","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rktestdemostrg","rktestdemorg","Microsoft.Storage/storageAccounts","0.000072","uksouth","Standard IO - Table (GB)","Storage","Locally Redundant"
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.000120","apsoutheast","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"testrgpdisks781","testrgp","Microsoft.Storage/storageAccounts","0.458592","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"asamplelab9418","samplelabrg883310","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","1.6032","uswest","Standard IO - Page Blob Read Operation Units (in 10,000s)","Data Management",
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","4.747711","useast2","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"gopinathrec","gopinath-bvrm--azurelabexam","Microsoft.RecoveryServices/vaults","0.048387","westus","Protected Instances","Recovery Services","Backup"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","31.8232","useast2","Standard IO - Page Blob Write Operation Units (in 10,000s)","Data Management",
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.000528","apsoutheast","Data Transfer In (GB)","Networking",
+,"8yportalvhdsc30ms13v4zz2","Storage","0.000048","JA West","Standard IO - Table (GB)","Storage","Locally Redundant"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.000624","eunorth","Data Transfer Out (GB)","Networking",
+"testmig2newportalv2","testmigratearm","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.117048","ukwest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"forsanjaydisks755","forsanjay","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"azurestorage123","azureservers","Microsoft.Storage/storageAccounts","0.000072","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.000624","uscentral","Data Transfer Out (GB)","Networking",
+"scriptfile","scriptfiles","Microsoft.Storage/storageAccounts","0.000072","ussouthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testrgatoreac303","testrg303","Microsoft.Storage/storageAccounts","1.034664","usnorthcentral","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"test112345","testrg345","Microsoft.Storage/storageAccounts","0.000071","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","0.0102","apsoutheast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"nelabdisks744","nelab","Microsoft.Storage/storageAccounts","0.456792","useast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"gopinathteststorage2","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.7194","useast2","Standard IO - Block Blob Write Operation Units (in 10,000s)","Data Management",
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.000120","uswestcentral","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"DEVVM","RTECHRG","Microsoft.Compute/virtualMachines","0.019660","eastus2","Data Transfer Out (GB)","Networking",
+,"teststorage90","Storage","0.014600","South Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"azurebvrm","azurebvrm","Microsoft.Storage/storageAccounts","0.0210","usnorthcentral","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"2tportalvhdsdczqkv0r16sf","Storage","0.014600","West US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"poc3105","poc","Microsoft.Storage/storageAccounts","1.427688","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"mmkkuu789","Storage","0.000048","West US","Standard IO - Table (GB)","Storage","Geo Redundant"
+,"n5portalvhdswj63sl7hq72f","Storage","0.014500","Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"0qportalvhdshc7f8phrh7ts","Storage","0.014600","East US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.0054","ukwest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"testbackupvault","mytestresourcegroup","Microsoft.RecoveryServices/vaults","0.69147","southcentralus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"ASRVault","ASRservers","Microsoft.RecoveryServices/vaults","2.072959","eastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"rktestdemorgdisks805","rktestdemorg","Microsoft.Storage/storageAccounts","0.536904","uksouth","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"scriptfile","scriptfiles","Microsoft.Storage/storageAccounts","0.0146","ussouthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","3.3408","apeast","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"rtechrgdisks488","rtechrg","Microsoft.Storage/storageAccounts","0.000072","useast2","Standard IO - Table (GB)","Storage","Locally Redundant"
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","0.0279","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"forsanjaydiag678","forsanjay","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"gopinathteststorage2","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.0152","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.000120","eunorth","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","0.017688","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.095064","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Geo Redundant"
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","3.3408","ukwest","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"asrserversdisks730","asrservers","Microsoft.Storage/storageAccounts","0.000072","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"azurestorage123","azureservers","Microsoft.Storage/storageAccounts","0.0051","apeast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.015960","uscentral","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.000624","uswestcentral","Data Transfer Out (GB)","Networking",
+"poc3105","poc","Microsoft.Storage/storageAccounts","0.2181","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"HydNetwork","Virtual Network","24.000000","","Basic Gateway Hours","Networking","Virtual Network"
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.000096","apsoutheast","Standard IO - Hot Block Blob (GB)","Storage","Read-Access Geo Redundant"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.144","useast2","Standard IO - Block Blob Delete Operation Units (in 10,000s)","Data Management",
+"testrg303diag241","testrg303","Microsoft.Storage/storageAccounts","0.000096","usnorthcentral","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","0.661056","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststoragehari","rgroup","Microsoft.Storage/storageAccounts","0.000072","ussouthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","4.532496","uscentral","Standard IO - Page Blob/Disk (GB)","Storage","Read-Access Geo Redundant"
+"rdsautostg","rdsauto","Microsoft.Storage/storageAccounts","5.139624","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"AutomationTest","resourcegrp-bhaskar","Microsoft.RecoveryServices/vaults","0.016129","eastasia","Protected Instances","Recovery Services","Backup"
+"forsample599","forsample","Microsoft.Storage/storageAccounts","0.024168","eunorth","Standard IO - Table (GB)","Storage","Locally Redundant"
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","4.464384","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","0.0146","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.0003","uswest","Standard IO - Block Blob List Operation Units (in 10,000s)","Data Management",
+"asrserversdisks730","asrservers","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"MyTestVnet1","Virtual Network","24.000000","","Standard Gateway Hours","Networking","Virtual Network"
+"rktestdemorgdisks805","rktestdemorg","Microsoft.Storage/storageAccounts","0.0146","uksouth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"MyTestVnet2","Virtual Network","24.000000","","Standard Gateway Hours","Networking","Virtual Network"
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.000624","apsoutheast","Data Transfer Out (GB)","Networking",
+"testlaptopMARS","testlaptop","Microsoft.RecoveryServices/vaults","0.027635","southeastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"webapplication3","default-applicationinsights-centralus","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"testvmasr","ASRservers","Microsoft.RecoveryServices/vaults","0.442225","northeurope","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"sudhakarp445","sudhakarprg832351","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rdslabrgdisksad276","rdslabrg","Microsoft.Storage/storageAccounts","0.000072","jawest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"Testvault","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-East-US","microsoft.backup/BackupVault","0.064516","eastus","Protected Instances","Recovery Services","Backup"
+,"vg1","Storage","0.000048","West US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststoragesql1","testrgsql1","Microsoft.Storage/storageAccounts","0.02472","useast2","Standard IO - Table (GB)","Storage","Locally Redundant"
+"azurebvrm","azurebvrm","Microsoft.Storage/storageAccounts","0.0146","usnorthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"nelabdiag609","nelab","Microsoft.Storage/storageAccounts","0.000052","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.0146","ukwest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"poc3105","poc","Microsoft.Storage/storageAccounts","6.6584","apsoutheast","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"rdslabrgdiag897","rdslabrg","Microsoft.Storage/storageAccounts","0.000072","jawest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"teststorage90","Storage","0.000048","South Central US","Standard IO - Table (GB)","Storage","Geo Redundant"
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.000624","apsoutheast","Data Transfer Out (GB)","Networking",
+"asrserversdisks730","asrservers","Microsoft.Storage/storageAccounts","0.0051","apeast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"vg1","Storage","0.100320","West US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.018768","ukwest","Data Transfer Out (GB)","Networking",
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.0003","uswest","Standard IO - Block Blob Write Operation Units (in 10,000s)","Data Management",
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.144","uswest","Standard IO - Block Blob Delete Operation Units (in 10,000s)","Data Management",
+"forsample599","forsample","Microsoft.Storage/storageAccounts","0.0146","eunorth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"asamplelab9418","samplelabrg883310","Microsoft.Storage/storageAccounts","0.0151","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"asraz2az","asraz2az","Microsoft.Storage/storageAccounts","0.643128","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"asraz2az","asraz2az","Microsoft.Storage/storageAccounts","0.0064","apsoutheast","Standard IO - Block Blob List Operation Units (in 10,000s)","Data Management",
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.000528","jawest","Data Transfer In (GB)","Networking",
+,"classictwo","Storage","0.014600","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rdslabrgdisksad276","rdslabrg","Microsoft.Storage/storageAccounts","0.0146","jawest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"9yportalvhds5hm5fg5gr47m","Storage","0.000024","North Central US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"azurestorage123","azureservers","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"azbckupvtrktest","bckrgrk","Microsoft.RecoveryServices/vaults","0.000761","southeastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+,"0fportalvhdsv7tlx8fmxv27","Storage","0.014600","JA West","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","3.3290","apsoutheast","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"testingvault","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-East-US","microsoft.backup/BackupVault","0.002803","eastus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","0.0210","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.279096","euwest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststoreac666","testazurerg","Microsoft.Storage/storageAccounts","0.000072","ukwest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","0.050832","apsoutheast","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"rkcateststrg","rkcagrp","Microsoft.Storage/storageAccounts","0.000072","uksouth","Standard IO - Table (GB)","Storage","Locally Redundant"
+"nelabdiag609","nelab","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"webapp123","default-applicationinsights-centralus","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"rtechrgdisks488","rtechrg","Microsoft.Storage/storageAccounts","0.0200","useast2","Storage Transactions (in 10,000s)","Data Management",
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.001083","apsoutheast","Geo-Replicated Data Transfer (GB)","Data Management",
+"test112345","testrg345","Microsoft.Storage/storageAccounts","0.0152","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"azureratecard","assessmentautomation","Microsoft.Sql/servers","0.999999999999999936","westus","Standard S0 Database Days","Data Services","SQL Database"
+"nelabdisks744","nelab","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storagebhaskar","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.413712","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"manjurgdisks751","manjurg","Microsoft.Storage/storageAccounts","0.462264","uscentral","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"0qportalvhdshc7f8phrh7ts","Storage","0.000600","East US","Standard IO - Block Blob Delete Operation Units (in 10,000s)","Data Management",
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.0001","useast2","Standard IO - File Write Operation Units (in 10,000s)","Data Management",
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","1.593648","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"ThroughScript","Storage","0.014600","East US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"DEVVM","RTECHRG","Microsoft.Compute/virtualMachines","13.950279","eastus2","Compute Hours","Virtual Machines","Standard_D1_v2 VM (Windows)"
+"rdslabrgdisksad276","rdslabrg","Microsoft.Storage/storageAccounts","0.0156","jawest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","6.6700","uswest","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+,"8yportalvhdsc30ms13v4zz2","Storage","0.014600","JA West","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"0qportalvhdshc7f8phrh7ts","Storage","3.137600","East US","Standard IO - Page Blob Read Operation Units (in 10,000s)","Data Management",
+"rtechrgdiag181","rtechrg","Microsoft.Storage/storageAccounts","0.000120","useast2","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.0146","euwest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.144","uswest","Standard IO - Block Blob Delete Operation Units (in 10,000s)","Data Management",
+,"testmig2newportal","Storage","0.000048","East US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storagebhaskar","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"rebondsstorage","Storage","0.000048","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+"samincpaas","assessmentautomation","Microsoft.Sql/servers","0.999999999999999936","westus","Standard S0 Database Days","Data Services","SQL Database"
+"asraz2azdiag610","asraz2az","Microsoft.Storage/storageAccounts","0.000072","euwest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.001800","eunorth","Standard IO - Block Blob (GB)","Storage","Read-Access Geo Redundant"
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.0156","euwest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"rktestdemostrg","rktestdemorg","Microsoft.Storage/storageAccounts","0.0051","uksouth","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"kbportalvhdszbzl0n2ck0gz","Storage","0.000048","East Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+"visualtestap","testrg8976","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.000624","jawest","Data Transfer Out (GB)","Networking",
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.001083","apsoutheast","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+,"testmig2newportal","Storage","0.486888","East US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.0290","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.001081","jawest","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"AAccountClassic","resourcegrp-bhaskar","Microsoft.Automation/automationAccounts","10.133333333333333","zone1","Basic Automation Minutes","App Services","Automation"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.0289","jawest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","0.25344","apeast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"ramyarsv","ramya-bvrm-azurelabexam","Microsoft.RecoveryServices/vaults","1.511395","australiasoutheast","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"nelabdisks744","nelab","Microsoft.Storage/storageAccounts","0.0051","useast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"asraz2azdisks442","asraz2az","Microsoft.Storage/storageAccounts","0.032256","euwest","Premium Storage - Page Blob/P10 (Units)","Storage","Locally Redundant"
+"testmig2newportalv2","testmigratearm","Microsoft.Storage/storageAccounts","0.496992","useast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"teststoragehari","rgroup","Microsoft.Storage/storageAccounts","0.0145","ussouthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rktestdemostrg","rktestdemorg","Microsoft.Storage/storageAccounts","0.962520","uksouth","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"forsanjaydisks755","forsanjay","Microsoft.Storage/storageAccounts","3.665256","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"teststorageforlt","testresourcegroup","Microsoft.Storage/storageAccounts","0.000072","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","3.3290","euwest","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.0290","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"testrgpdisks781","testrgp","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","1.210992","useast2","Standard IO - Table (GB)","Storage","Locally Redundant"
+"labbackup","labexam2","Microsoft.RecoveryServices/vaults","0.461682","eastus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"pocstr","poc","Microsoft.Storage/storageAccounts","0.067200","apsoutheast","Premium Storage - Page Blob/P10 (Units)","Storage","Locally Redundant"
+"gopinathstorage2","gopinath-testrg","Microsoft.Storage/storageAccounts","0.000071","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.000120","jawest","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"asraz2azdiag610","asraz2az","Microsoft.Storage/storageAccounts","0.0249","euwest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgpdiag234","testrgp","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"labexam","labexam2","Microsoft.RecoveryServices/vaults","0.459867","southeastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.000528","uswestcentral","Data Transfer In (GB)","Networking",
+"scriptfile","scriptfiles","Microsoft.Storage/storageAccounts","0.000288","ussouthcentral","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"sudhakarp445","sudhakarprg832351","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"teststoragesql1","testrgsql1","Microsoft.Storage/storageAccounts","0.0146","useast2","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgatoreac303","testrg303","Microsoft.Storage/storageAccounts","0.000072","usnorthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testvault","testrg","Microsoft.RecoveryServices/vaults","0.003491","eastus2","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+,"ThroughScript","Storage","0.000048","East US","Standard IO - Table (GB)","Storage","Geo Redundant"
+"rdslabrgdiag897","rdslabrg","Microsoft.Storage/storageAccounts","0.000072","jawest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"dsamplelab3803","samplelabrg883310","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"gopinathrec","gopinath-bvrm--azurelabexam","Microsoft.RecoveryServices/vaults","2.318778","westus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"azurestorage123","azureservers","Microsoft.Storage/storageAccounts","0.44808","apeast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"teststorageforlt","testresourcegroup","Microsoft.Storage/storageAccounts","0.0162","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"testmig2newportal","Storage","0.014600","East US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"teststoreac666","testazurerg","Microsoft.Storage/storageAccounts","0.0145","ukwest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"rebondsstorage","Storage","0.015200","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgpdisks781","testrgp","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.7432","useast2","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"gopinathstorage2","gopinath-testrg","Microsoft.Storage/storageAccounts","0.0145","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testbackupvault","mytestresourcegroup","Microsoft.RecoveryServices/vaults","0.016129","southcentralus","Protected Instances","Recovery Services","Backup"
+"ASRVault","ASRservers","Microsoft.RecoveryServices/vaults","0.032258","eastasia","Protected Instances","Recovery Services","Backup"
+"PublicIp","NRP-RG","Microsoft.Network/publicIPAddresses","23.99999999999999736","westus","IP Address Hours","Networking","Reserved IP"
+"sudhakarp531","sudhakarprg832351","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.000528","eunorth","Data Transfer In (GB)","Networking",
+"forsanjaydiag678","forsanjay","Microsoft.Storage/storageAccounts","0.000144","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"gopinathteststorage2","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","1.744776","useast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.000699","uswest","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"testbackupvault9","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-South-Central-US","microsoft.backup/BackupVault","0.016129","southcentralus","Protected Instances","Recovery Services","Backup"
+,"RGUKTVNET","Virtual Network","24.000000","","Basic Gateway Hours","Networking","Virtual Network"
+,"vg1","Storage","0.014600","West US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.000552","uscentral","Data Transfer In (GB)","Networking",
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.045000","useast2","Standard IO - Files (GB)","Storage","Locally Redundant"
+"rktestdemostrg","rktestdemorg","Microsoft.Storage/storageAccounts","0.0147","uksouth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgatoreac303","testrg303","Microsoft.Storage/storageAccounts","0.0146","usnorthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"RGUKTBackup","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-Brazil-South","microsoft.backup/BackupVault","0.048387","brazilsouth","Protected Instances","Recovery Services","Backup"
+,"automationsa","Storage","0.000096","Southeast Asia","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"AutomationTest","forsample","Microsoft.Automation/automationAccounts","26.216666666666665","zone1","Basic Automation Minutes","App Services","Automation"
+"poc3105","poc","Microsoft.Storage/storageAccounts","1.298136","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"dsamplelab3803","samplelabrg883310","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgpdisks781","testrgp","Microsoft.Storage/storageAccounts","0.0051","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.2950","useast2","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.01728","ukwest","Data Transfer In (GB)","Networking",
+"nelabdisks744","nelab","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"RGUKTdemo","Virtual Network","24.000000","","Basic Gateway Hours","Networking","Virtual Network"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.0290","eunorth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"rtechrgdisks488","rtechrg","Microsoft.Storage/storageAccounts","4.603224","useast2","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rktestdemorgdisks805","rktestdemorg","Microsoft.Storage/storageAccounts","0.000048","uksouth","Standard IO - Table (GB)","Storage","Locally Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.0290","uscentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+,"cspazuretest","Storage","0.014600","Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"sudhakarp531","sudhakarprg832351","Microsoft.Storage/storageAccounts","0.0145","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgatoreac303","testrg303","Microsoft.Storage/storageAccounts","0.0054","usnorthcentral","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"automationsa","Storage","0.000048","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rtechrgdiag181","rtechrg","Microsoft.Storage/storageAccounts","0.069024","useast2","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"wqportalvhds9q1bf8gs1ftq","Storage","0.000048","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"9yportalvhds5hm5fg5gr47m","Storage","0.014500","North Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","3.3406","useast2","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","1.032984","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"asrserversdiag610","asrservers","Microsoft.Storage/storageAccounts","0.000072","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"asrserversdisks730","asrservers","Microsoft.Storage/storageAccounts","0.456936","apeast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"testrg303diag241","testrg303","Microsoft.Storage/storageAccounts","0.000072","usnorthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.0001","useast2","Standard IO - File Protocol Operation Units (in 10,000s)","Data Management",
+,"wqportalvhds9q1bf8gs1ftq","Storage","0.952440","Southeast Asia","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rdsautostg","rdsauto","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testlaptopMARS","testlaptop","Microsoft.RecoveryServices/vaults","0.016129","southeastasia","Protected Instances","Recovery Services","Backup"
+"azurebvrm","azurebvrm","Microsoft.Storage/storageAccounts","1.888200","usnorthcentral","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testvmasr","ASRservers","Microsoft.RecoveryServices/vaults","0.016129","northeurope","Protected Instances","Recovery Services","Backup"
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","2.734464","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"mmkkuu789","Storage","0.058800","West US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"RGUKTBackup","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-Brazil-South","microsoft.backup/BackupVault","0.171945","brazilsouth","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"teststoragesql1","testrgsql1","Microsoft.Storage/storageAccounts","0.000264","useast2","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"forsample599","forsample","Microsoft.Storage/storageAccounts","1.801464","eunorth","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"asrserversdiag610","asrservers","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"teststorage190","testrg345","Microsoft.Storage/storageAccounts","0.000048","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"AutomationTest","resourcegrp-bhaskar","Microsoft.RecoveryServices/vaults","0.028201","eastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.001251","uscentral","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.001081","uswestcentral","Geo-Replicated Data Transfer (GB)","Data Management",
+"testrg303diag241","testrg303","Microsoft.Storage/storageAccounts","0.0146","usnorthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"2tportalvhdsdczqkv0r16sf","Storage","0.000045","West US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testmig2newportalv2","testmigratearm","Microsoft.Storage/storageAccounts","0.000061","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"dgportalvhdsmg7c99qg0rtk","Storage","0.000048","South Central US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"gopinath-testdc-ip","gopinath-bvrm--azurelabexam","Microsoft.Network/publicIPAddresses","23.99999999999999736","westus","IP Address Hours","Networking","Reserved IP"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","3.3408","uswest","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"forsanjaydisks755","forsanjay","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"n5portalvhdswj63sl7hq72f","Storage","0.000024","Central US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rdslabrgdisksad276","rdslabrg","Microsoft.Storage/storageAccounts","1.708104","jawest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"0qportalvhdshc7f8phrh7ts","Storage","0.000048","East US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststoragesql1","testrgsql1","Microsoft.Storage/storageAccounts","1.486632","useast2","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.000528","apsoutheast","Data Transfer In (GB)","Networking",
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.000624","jawest","Data Transfer Out (GB)","Networking",
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.0289","uswestcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"asraz2az","asraz2az","Microsoft.Storage/storageAccounts","0.000072","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"2tportalvhdsdczqkv0r16sf","Storage","0.480648","West US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.001123","jawest","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"Testvault","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-East-US","microsoft.backup/BackupVault","3.981903","eastus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"webapplication2","default-applicationinsights-centralus","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"azbckupvtrktest","bckrgrk","Microsoft.RecoveryServices/vaults","0.016129","southeastasia","Protected Instances","Recovery Services","Backup"
+"testrgpdiag234","testrgp","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testingvault","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-East-US","microsoft.backup/BackupVault","0.016129","eastus","Protected Instances","Recovery Services","Backup"
+,"kbportalvhdszbzl0n2ck0gz","Storage","0.014600","East Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"wqportalvhds9q1bf8gs1ftq","Storage","0.014600","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"alridgetest","aldridgetesting","Microsoft.Storage/storageAccounts","0.032256","apsoutheast","Premium Storage - Page Blob/P10 (Units)","Storage","Locally Redundant"
+"rkcateststrg","rkcagrp","Microsoft.Storage/storageAccounts","0.943488","uksouth","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.3157","useast2","Standard IO - Page Blob Read Operation Units (in 10,000s)","Data Management",
+"neportallogs","aautomationtest","Microsoft.Storage/storageAccounts","0.000072","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststorage190","testrg345","Microsoft.Storage/storageAccounts","0.0145","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.990792","ukwest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rdsautostg","rdsauto","Microsoft.Storage/storageAccounts","0.0258","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"rdslabrgdiag897","rdslabrg","Microsoft.Storage/storageAccounts","0.0146","jawest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"storagebhaskar","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.025776","apeast","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+,"cspazuretest","Storage","0.000024","Central US","Standard IO - Table (GB)","Storage","Geo Redundant"
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.0107","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","2.552976","euwest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"manjurgdisks751","manjurg","Microsoft.Storage/storageAccounts","0.000072","uscentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"asraz2az","asraz2az","Microsoft.Storage/storageAccounts","0.0146","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","0.004776","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"forsanjaydiag678","forsanjay","Microsoft.Storage/storageAccounts","0.000071","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","0.0051","apeast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"storagebhaskar","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","7.045152","apeast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.6077","uscentral","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"testmig2newportalv2","testmigratearm","Microsoft.Storage/storageAccounts","0.0051","useast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"neportallogs","aautomationtest","Microsoft.Storage/storageAccounts","0.0146","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"forsanjaydisks755","forsanjay","Microsoft.Storage/storageAccounts","0.0051","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"dgportalvhdsmg7c99qg0rtk","Storage","0.014600","South Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"DEVVM","RTECHRG","Microsoft.Compute/virtualMachines","0.020212","eastus2","Data Transfer In (GB)","Networking",
+,"frontendvnet","Virtual Network","24.000000","","Basic Gateway Hours","Networking","Virtual Network"
+"manjurgdisks751","manjurg","Microsoft.Storage/storageAccounts","0.0146","uscentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"0qportalvhdshc7f8phrh7ts","Storage","0.000600","East US","Standard IO - Block Blob Write Operation Units (in 10,000s)","Data Management",
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","3.3176","uscentral","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"rkcateststrg","rkcagrp","Microsoft.Storage/storageAccounts","0.0152","uksouth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testbackupvault9","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-South-Central-US","microsoft.backup/BackupVault","0.445124","southcentralus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"webapp3","default-applicationinsights-centralus","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"rtechrgdiag181","rtechrg","Microsoft.Storage/storageAccounts","0.0146","useast2","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testazurewebapp098","testwebrg","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.001083","eunorth","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","0.001679","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"classictwo","Storage","0.000048","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+"ramyarsv","ramya-bvrm-azurelabexam","Microsoft.RecoveryServices/vaults","0.048387","australiasoutheast","Protected Instances","Recovery Services","Backup"
+"manjurgdisks751","manjurg","Microsoft.Storage/storageAccounts","0.0943","uscentral","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.000120","apsoutheast","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"labbackup","labexam2","Microsoft.RecoveryServices/vaults","0.032258","eastus","Protected Instances","Recovery Services","Backup"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.000120","jawest","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+,"0fportalvhdsv7tlx8fmxv27","Storage","0.000048","JA West","Standard IO - Table (GB)","Storage","Locally Redundant"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.301392","uswest","Standard IO - Table (GB)","Storage","Geo Redundant"
+"rdsautostg","rdsauto","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"azurebvrm","azurebvrm","Microsoft.Storage/storageAccounts","0.000072","usnorthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"labexam","labexam2","Microsoft.RecoveryServices/vaults","0.016129","southeastasia","Protected Instances","Recovery Services","Backup"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.000528","jawest","Data Transfer In (GB)","Networking",
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.0295","jawest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"divademo","divademorg","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+,"0qportalvhdshc7f8phrh7ts","Storage","7.821048","East US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"0qportalvhdshc7f8phrh7ts","Storage","0.000600","East US","Standard IO - Block Blob List Operation Units (in 10,000s)","Data Management",
+"teststorageforlt","testresourcegroup","Microsoft.Storage/storageAccounts","0.470760","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"0qportalvhdshc7f8phrh7ts","Storage","3.143600","East US","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"testvault","testrg","Microsoft.RecoveryServices/vaults","0.032258","eastus2","Protected Instances","Recovery Services","Backup"
+,"automationsa","Storage","0.014600","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rktestdemostrg","rktestdemorg","Microsoft.Storage/storageAccounts","0.000072","uksouth","Standard IO - Table (GB)","Storage","Locally Redundant"
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.000120","apsoutheast","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"testrgpdisks781","testrgp","Microsoft.Storage/storageAccounts","0.458592","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"asamplelab9418","samplelabrg883310","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","4.747685","useast2","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"gopinathrec","gopinath-bvrm--azurelabexam","Microsoft.RecoveryServices/vaults","0.048387","westus","Protected Instances","Recovery Services","Backup"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","30.6543","useast2","Standard IO - Page Blob Write Operation Units (in 10,000s)","Data Management",
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.000528","apsoutheast","Data Transfer In (GB)","Networking",
+,"8yportalvhdsc30ms13v4zz2","Storage","0.000048","JA West","Standard IO - Table (GB)","Storage","Locally Redundant"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.000624","eunorth","Data Transfer Out (GB)","Networking",
+"testmig2newportalv2","testmigratearm","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.117048","ukwest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"forsanjaydisks755","forsanjay","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"azurestorage123","azureservers","Microsoft.Storage/storageAccounts","0.000072","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.000624","uscentral","Data Transfer Out (GB)","Networking",
+"scriptfile","scriptfiles","Microsoft.Storage/storageAccounts","0.000072","ussouthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testrgatoreac303","testrg303","Microsoft.Storage/storageAccounts","1.034664","usnorthcentral","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"test112345","testrg345","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","0.0102","apsoutheast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"nelabdisks744","nelab","Microsoft.Storage/storageAccounts","0.456792","useast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"gopinathteststorage2","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.7191","useast2","Standard IO - Block Blob Write Operation Units (in 10,000s)","Data Management",
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.000120","uswestcentral","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"DEVVM","RTECHRG","Microsoft.Compute/virtualMachines","0.021768","eastus2","Data Transfer Out (GB)","Networking",
+,"teststorage90","Storage","0.014600","South Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"azurebvrm","azurebvrm","Microsoft.Storage/storageAccounts","0.2218","usnorthcentral","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"2tportalvhdsdczqkv0r16sf","Storage","0.014600","West US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"poc3105","poc","Microsoft.Storage/storageAccounts","1.427688","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"mmkkuu789","Storage","0.000048","West US","Standard IO - Table (GB)","Storage","Geo Redundant"
+,"n5portalvhdswj63sl7hq72f","Storage","0.014500","Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"0qportalvhdshc7f8phrh7ts","Storage","0.014600","East US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.0054","ukwest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"testbackupvault","mytestresourcegroup","Microsoft.RecoveryServices/vaults","0.69147","southcentralus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"ASRVault","ASRservers","Microsoft.RecoveryServices/vaults","2.072959","eastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"rktestdemorgdisks805","rktestdemorg","Microsoft.Storage/storageAccounts","0.536904","uksouth","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"scriptfile","scriptfiles","Microsoft.Storage/storageAccounts","0.0159","ussouthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","3.3292","apeast","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"rtechrgdisks488","rtechrg","Microsoft.Storage/storageAccounts","0.000072","useast2","Standard IO - Table (GB)","Storage","Locally Redundant"
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","0.0639","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"forsanjaydiag678","forsanjay","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"gopinathteststorage2","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.000120","eunorth","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","0.017688","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.095064","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Geo Redundant"
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","3.3408","ukwest","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"asrserversdisks730","asrservers","Microsoft.Storage/storageAccounts","0.000072","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"azurestorage123","azureservers","Microsoft.Storage/storageAccounts","0.0051","apeast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.015960","uscentral","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.000624","uswestcentral","Data Transfer Out (GB)","Networking",
+"poc3105","poc","Microsoft.Storage/storageAccounts","0.1923","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"HydNetwork","Virtual Network","24.000000","","Basic Gateway Hours","Networking","Virtual Network"
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.000096","apsoutheast","Standard IO - Hot Block Blob (GB)","Storage","Read-Access Geo Redundant"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.1439","useast2","Standard IO - Block Blob Delete Operation Units (in 10,000s)","Data Management",
+"testrg303diag241","testrg303","Microsoft.Storage/storageAccounts","0.000096","usnorthcentral","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","0.661056","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststoragehari","rgroup","Microsoft.Storage/storageAccounts","0.000072","ussouthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","4.532496","uscentral","Standard IO - Page Blob/Disk (GB)","Storage","Read-Access Geo Redundant"
+"rdsautostg","rdsauto","Microsoft.Storage/storageAccounts","5.139624","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"AutomationTest","resourcegrp-bhaskar","Microsoft.RecoveryServices/vaults","0.016129","eastasia","Protected Instances","Recovery Services","Backup"
+"forsample599","forsample","Microsoft.Storage/storageAccounts","0.024168","eunorth","Standard IO - Table (GB)","Storage","Locally Redundant"
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","4.464384","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","0.0146","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"asrserversdisks730","asrservers","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"MyTestVnet1","Virtual Network","23.000000","","Standard Gateway Hours","Networking","Virtual Network"
+"rktestdemorgdisks805","rktestdemorg","Microsoft.Storage/storageAccounts","0.0146","uksouth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"MyTestVnet2","Virtual Network","23.000000","","Standard Gateway Hours","Networking","Virtual Network"
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.000624","apsoutheast","Data Transfer Out (GB)","Networking",
+"testlaptopMARS","testlaptop","Microsoft.RecoveryServices/vaults","0.027635","southeastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"webapplication3","default-applicationinsights-centralus","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"testvmasr","ASRservers","Microsoft.RecoveryServices/vaults","0.442225","northeurope","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"sudhakarp445","sudhakarprg832351","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rdslabrgdisksad276","rdslabrg","Microsoft.Storage/storageAccounts","0.000072","jawest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"Testvault","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-East-US","microsoft.backup/BackupVault","0.064516","eastus","Protected Instances","Recovery Services","Backup"
+,"vg1","Storage","0.000048","West US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststoragesql1","testrgsql1","Microsoft.Storage/storageAccounts","0.02472","useast2","Standard IO - Table (GB)","Storage","Locally Redundant"
+"azurebvrm","azurebvrm","Microsoft.Storage/storageAccounts","0.0146","usnorthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"nelabdiag609","nelab","Microsoft.Storage/storageAccounts","0.000048","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.0146","ukwest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"poc3105","poc","Microsoft.Storage/storageAccounts","6.6584","apsoutheast","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"rdslabrgdiag897","rdslabrg","Microsoft.Storage/storageAccounts","0.000072","jawest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"teststorage90","Storage","0.000048","South Central US","Standard IO - Table (GB)","Storage","Geo Redundant"
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.000624","apsoutheast","Data Transfer Out (GB)","Networking",
+"asrserversdisks730","asrservers","Microsoft.Storage/storageAccounts","0.0051","apeast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"vg1","Storage","0.100320","West US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.018768","ukwest","Data Transfer Out (GB)","Networking",
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.1439","uswest","Standard IO - Block Blob Delete Operation Units (in 10,000s)","Data Management",
+"forsample599","forsample","Microsoft.Storage/storageAccounts","0.0146","eunorth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"asamplelab9418","samplelabrg883310","Microsoft.Storage/storageAccounts","0.0145","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"asraz2az","asraz2az","Microsoft.Storage/storageAccounts","0.643128","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"asraz2az","asraz2az","Microsoft.Storage/storageAccounts","0.0066","apsoutheast","Standard IO - Block Blob List Operation Units (in 10,000s)","Data Management",
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.000528","jawest","Data Transfer In (GB)","Networking",
+,"classictwo","Storage","0.014100","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rdslabrgdisksad276","rdslabrg","Microsoft.Storage/storageAccounts","0.0146","jawest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"9yportalvhds5hm5fg5gr47m","Storage","0.000024","North Central US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"azurestorage123","azureservers","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"azbckupvtrktest","bckrgrk","Microsoft.RecoveryServices/vaults","0.000761","southeastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+,"0fportalvhdsv7tlx8fmxv27","Storage","0.014600","JA West","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","3.3408","apsoutheast","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"testingvault","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-East-US","microsoft.backup/BackupVault","0.002803","eastus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","0.0210","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.279096","euwest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststoreac666","testazurerg","Microsoft.Storage/storageAccounts","0.000072","ukwest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","0.050832","apsoutheast","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"rkcateststrg","rkcagrp","Microsoft.Storage/storageAccounts","0.000072","uksouth","Standard IO - Table (GB)","Storage","Locally Redundant"
+"nelabdiag609","nelab","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"webapp123","default-applicationinsights-centralus","microsoft.insights/components","0.032258064516129031","eastus2","Free Apps","Visual Studio","Application Insights"
+"rtechrgdisks488","rtechrg","Microsoft.Storage/storageAccounts","0.0200","useast2","Storage Transactions (in 10,000s)","Data Management",
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.001083","apsoutheast","Geo-Replicated Data Transfer (GB)","Data Management",
+"test112345","testrg345","Microsoft.Storage/storageAccounts","0.0161","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"azureratecard","assessmentautomation","Microsoft.Sql/servers","0.833333333333333280","westus","Standard S0 Database Days","Data Services","SQL Database"
+"nelabdisks744","nelab","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storagebhaskar","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.413712","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"manjurgdisks751","manjurg","Microsoft.Storage/storageAccounts","0.462264","uscentral","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"0qportalvhdshc7f8phrh7ts","Storage","0.000600","East US","Standard IO - Block Blob Delete Operation Units (in 10,000s)","Data Management",
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","1.527246","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"ThroughScript","Storage","0.011600","East US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"rdslabrgdisksad276","rdslabrg","Microsoft.Storage/storageAccounts","0.0156","jawest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","6.6584","uswest","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+,"8yportalvhdsc30ms13v4zz2","Storage","0.011600","JA West","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.0146","euwest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.144","uswest","Standard IO - Block Blob Delete Operation Units (in 10,000s)","Data Management",
+,"testmig2newportal","Storage","0.000038","East US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storagebhaskar","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"rebondsstorage","Storage","0.000038","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+"samincpaas","assessmentautomation","Microsoft.Sql/servers","0.833333333333333280","westus","Standard S0 Database Days","Data Services","SQL Database"
+"asraz2azdiag610","asraz2az","Microsoft.Storage/storageAccounts","0.000072","euwest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.001800","eunorth","Standard IO - Block Blob (GB)","Storage","Read-Access Geo Redundant"
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.3256","euwest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"rktestdemostrg","rktestdemorg","Microsoft.Storage/storageAccounts","0.1303","uksouth","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"kbportalvhdszbzl0n2ck0gz","Storage","0.000038","East Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.001083","apsoutheast","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+,"testmig2newportal","Storage","0.385453","East US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.0290","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.001081","jawest","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"AAccountClassic","resourcegrp-bhaskar","Microsoft.Automation/automationAccounts","10.1","zone1","Basic Automation Minutes","App Services","Automation"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.0289","jawest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","0.25344","apeast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"nelabdisks744","nelab","Microsoft.Storage/storageAccounts","0.1907","useast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"asraz2azdisks442","asraz2az","Microsoft.Storage/storageAccounts","0.032256","euwest","Premium Storage - Page Blob/P10 (Units)","Storage","Locally Redundant"
+"teststoragehari","rgroup","Microsoft.Storage/storageAccounts","0.0145","ussouthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rktestdemostrg","rktestdemorg","Microsoft.Storage/storageAccounts","0.962520","uksouth","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"forsanjaydisks755","forsanjay","Microsoft.Storage/storageAccounts","3.665256","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"teststorageforlt","testresourcegroup","Microsoft.Storage/storageAccounts","0.000072","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","3.3408","euwest","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.0290","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"testrgpdisks781","testrgp","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","1.224282","useast2","Standard IO - Table (GB)","Storage","Locally Redundant"
+"labbackup","labexam2","Microsoft.RecoveryServices/vaults","0.461682","eastus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"pocstr","poc","Microsoft.Storage/storageAccounts","0.067200","apsoutheast","Premium Storage - Page Blob/P10 (Units)","Storage","Locally Redundant"
+"gopinathstorage2","gopinath-testrg","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.000120","jawest","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"asraz2azdiag610","asraz2az","Microsoft.Storage/storageAccounts","0.0183","euwest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgpdiag234","testrgp","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"labexam","labexam2","Microsoft.RecoveryServices/vaults","0.459867","southeastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.000528","uswestcentral","Data Transfer In (GB)","Networking",
+"scriptfile","scriptfiles","Microsoft.Storage/storageAccounts","0.000288","ussouthcentral","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"sudhakarp445","sudhakarprg832351","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"teststoragesql1","testrgsql1","Microsoft.Storage/storageAccounts","0.0146","useast2","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgatoreac303","testrg303","Microsoft.Storage/storageAccounts","0.000072","usnorthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testvault","testrg","Microsoft.RecoveryServices/vaults","0.003491","eastus2","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+,"ThroughScript","Storage","0.000038","East US","Standard IO - Table (GB)","Storage","Geo Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.0073","uscentral","Standard IO - Block Blob Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"rdslabrgdiag897","rdslabrg","Microsoft.Storage/storageAccounts","0.000072","jawest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"dsamplelab3803","samplelabrg883310","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"gopinathrec","gopinath-bvrm--azurelabexam","Microsoft.RecoveryServices/vaults","2.318778","westus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"azurestorage123","azureservers","Microsoft.Storage/storageAccounts","0.44808","apeast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"teststorageforlt","testresourcegroup","Microsoft.Storage/storageAccounts","0.0146","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"testmig2newportal","Storage","0.011600","East US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"teststoreac666","testazurerg","Microsoft.Storage/storageAccounts","0.0145","ukwest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"rebondsstorage","Storage","0.011500","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgpdisks781","testrgp","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.7441","useast2","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"gopinathstorage2","gopinath-testrg","Microsoft.Storage/storageAccounts","0.0145","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testbackupvault","mytestresourcegroup","Microsoft.RecoveryServices/vaults","0.016129","southcentralus","Protected Instances","Recovery Services","Backup"
+"ASRVault","ASRservers","Microsoft.RecoveryServices/vaults","0.032258","eastasia","Protected Instances","Recovery Services","Backup"
+"PublicIp","NRP-RG","Microsoft.Network/publicIPAddresses","16.99999999999999813","westus","IP Address Hours","Networking","Reserved IP"
+"sudhakarp531","sudhakarprg832351","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.000528","eunorth","Data Transfer In (GB)","Networking",
+"forsanjaydiag678","forsanjay","Microsoft.Storage/storageAccounts","0.000144","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"TestvmExchange","MANJURG","Microsoft.Compute/virtualMachines","0.000607","centralus","Data Transfer Out (GB)","Networking",
+"gopinathteststorage2","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","1.744776","useast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.000699","uswest","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"testbackupvault9","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-South-Central-US","microsoft.backup/BackupVault","0.016129","southcentralus","Protected Instances","Recovery Services","Backup"
+,"RGUKTVNET","Virtual Network","23.000000","","Basic Gateway Hours","Networking","Virtual Network"
+,"vg1","Storage","0.011600","West US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.000552","uscentral","Data Transfer In (GB)","Networking",
+"rktestdemostrg","rktestdemorg","Microsoft.Storage/storageAccounts","0.0146","uksouth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgatoreac303","testrg303","Microsoft.Storage/storageAccounts","0.0146","usnorthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"RGUKTBackup","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-Brazil-South","microsoft.backup/BackupVault","0.048387","brazilsouth","Protected Instances","Recovery Services","Backup"
+,"automationsa","Storage","0.000076","Southeast Asia","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"AutomationTest","forsample","Microsoft.Automation/automationAccounts","27.9","zone1","Basic Automation Minutes","App Services","Automation"
+"dsamplelab3803","samplelabrg883310","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testrgpdisks781","testrgp","Microsoft.Storage/storageAccounts","0.1919","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.7359","useast2","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.01728","ukwest","Data Transfer In (GB)","Networking",
+"nelabdisks744","nelab","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"RGUKTdemo","Virtual Network","23.000000","","Basic Gateway Hours","Networking","Virtual Network"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.0290","eunorth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"rktestdemorgdisks805","rktestdemorg","Microsoft.Storage/storageAccounts","0.000048","uksouth","Standard IO - Table (GB)","Storage","Locally Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.0290","uscentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+,"cspazuretest","Storage","0.011600","Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"sudhakarp531","sudhakarprg832351","Microsoft.Storage/storageAccounts","0.0145","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.0036","uscentral","Standard IO - Block Blob Delete Operation Units (in 10,000s)","Data Management",
+"testrgatoreac303","testrg303","Microsoft.Storage/storageAccounts","0.0724","usnorthcentral","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"automationsa","Storage","0.000038","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rtechrgdiag181","rtechrg","Microsoft.Storage/storageAccounts","0.069024","useast2","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"wqportalvhds9q1bf8gs1ftq","Storage","0.000038","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"9yportalvhds5hm5fg5gr47m","Storage","0.011500","North Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","3.3406","useast2","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"asrserversdiag610","asrservers","Microsoft.Storage/storageAccounts","0.000072","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"asrserversdisks730","asrservers","Microsoft.Storage/storageAccounts","0.456936","apeast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"testrg303diag241","testrg303","Microsoft.Storage/storageAccounts","0.000072","usnorthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"wqportalvhds9q1bf8gs1ftq","Storage","0.754015","Southeast Asia","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rdsautostg","rdsauto","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testlaptopMARS","testlaptop","Microsoft.RecoveryServices/vaults","0.016129","southeastasia","Protected Instances","Recovery Services","Backup"
+"azurebvrm","azurebvrm","Microsoft.Storage/storageAccounts","1.888200","usnorthcentral","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testvmasr","ASRservers","Microsoft.RecoveryServices/vaults","0.016129","northeurope","Protected Instances","Recovery Services","Backup"
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","2.734464","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"mmkkuu789","Storage","0.046900","West US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"RGUKTBackup","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-Brazil-South","microsoft.backup/BackupVault","0.171945","brazilsouth","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"teststoragesql1","testrgsql1","Microsoft.Storage/storageAccounts","0.000264","useast2","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"forsample599","forsample","Microsoft.Storage/storageAccounts","1.801464","eunorth","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"asrserversdiag610","asrservers","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"teststorage190","testrg345","Microsoft.Storage/storageAccounts","0.000048","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"AutomationTest","resourcegrp-bhaskar","Microsoft.RecoveryServices/vaults","0.028201","eastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","1.356880","uscentral","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.001081","uswestcentral","Geo-Replicated Data Transfer (GB)","Data Management",
+"testrg303diag241","testrg303","Microsoft.Storage/storageAccounts","0.0146","usnorthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"2tportalvhdsdczqkv0r16sf","Storage","0.000038","West US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"testmig2newportalv2","testmigratearm","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"dgportalvhdsmg7c99qg0rtk","Storage","0.000038","South Central US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"gopinath-testdc-ip","gopinath-bvrm--azurelabexam","Microsoft.Network/publicIPAddresses","16.99999999999999813","westus","IP Address Hours","Networking","Reserved IP"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","3.2594","uswest","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"forsanjaydisks755","forsanjay","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"n5portalvhdswj63sl7hq72f","Storage","0.000020","Central US","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"0qportalvhdshc7f8phrh7ts","Storage","0.000038","East US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.000528","apsoutheast","Data Transfer In (GB)","Networking",
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.0289","uswestcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"asraz2az","asraz2az","Microsoft.Storage/storageAccounts","0.000072","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"2tportalvhdsdczqkv0r16sf","Storage","0.380513","West US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.001081","jawest","Data transfer - Geo-Replication (GB)","Networking","Geo Redundant"
+"Testvault","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-East-US","microsoft.backup/BackupVault","3.971841","eastus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","6.6173","uscentral","Standard IO - Page Blob Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"azbckupvtrktest","bckrgrk","Microsoft.RecoveryServices/vaults","0.016129","southeastasia","Protected Instances","Recovery Services","Backup"
+"testrgpdiag234","testrgp","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testingvault","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-East-US","microsoft.backup/BackupVault","0.016129","eastus","Protected Instances","Recovery Services","Backup"
+,"kbportalvhdszbzl0n2ck0gz","Storage","0.011600","East Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"wqportalvhds9q1bf8gs1ftq","Storage","0.011600","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"alridgetest","aldridgetesting","Microsoft.Storage/storageAccounts","0.032256","apsoutheast","Premium Storage - Page Blob/P10 (Units)","Storage","Locally Redundant"
+"rkcateststrg","rkcagrp","Microsoft.Storage/storageAccounts","0.943488","uksouth","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"neportallogs","aautomationtest","Microsoft.Storage/storageAccounts","0.000072","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststorage190","testrg345","Microsoft.Storage/storageAccounts","0.0145","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.990792","ukwest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rdsautostg","rdsauto","Microsoft.Storage/storageAccounts","0.3520","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"rdslabrgdiag897","rdslabrg","Microsoft.Storage/storageAccounts","0.0146","jawest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"storagebhaskar","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.025776","apeast","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+,"cspazuretest","Storage","0.000019","Central US","Standard IO - Table (GB)","Storage","Geo Redundant"
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.5005","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"manjurgdisks751","manjurg","Microsoft.Storage/storageAccounts","0.000072","uscentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"asraz2az","asraz2az","Microsoft.Storage/storageAccounts","0.0146","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","0.004566","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"forsanjaydiag678","forsanjay","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","0.2533","apeast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","1.2798","uscentral","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"testmig2newportalv2","testmigratearm","Microsoft.Storage/storageAccounts","0.0721","useast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"neportallogs","aautomationtest","Microsoft.Storage/storageAccounts","0.0146","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"forsanjaydisks755","forsanjay","Microsoft.Storage/storageAccounts","0.0721","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"dgportalvhdsmg7c99qg0rtk","Storage","0.011600","South Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"DEVVM","RTECHRG","Microsoft.Compute/virtualMachines","0.015602","eastus2","Data Transfer In (GB)","Networking",
+,"frontendvnet","Virtual Network","23.000000","","Basic Gateway Hours","Networking","Virtual Network"
+"manjurgdisks751","manjurg","Microsoft.Storage/storageAccounts","0.0146","uscentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"0qportalvhdshc7f8phrh7ts","Storage","0.000600","East US","Standard IO - Block Blob Write Operation Units (in 10,000s)","Data Management",
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","3.3292","uscentral","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"rkcateststrg","rkcagrp","Microsoft.Storage/storageAccounts","0.0146","uksouth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testbackupvault9","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-South-Central-US","microsoft.backup/BackupVault","0.445124","southcentralus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"rtechrgdiag181","rtechrg","Microsoft.Storage/storageAccounts","0.0146","useast2","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","0.001652","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"classictwo","Storage","0.000038","Southeast Asia","Standard IO - Table (GB)","Storage","Locally Redundant"
+"manjurgdisks751","manjurg","Microsoft.Storage/storageAccounts","0.3813","uscentral","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"saitest","testsai","Microsoft.Storage/storageAccounts","0.000120","apsoutheast","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"labbackup","labexam2","Microsoft.RecoveryServices/vaults","0.032258","eastus","Protected Instances","Recovery Services","Backup"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.000120","jawest","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+,"0fportalvhdsv7tlx8fmxv27","Storage","0.000038","JA West","Standard IO - Table (GB)","Storage","Locally Redundant"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.301392","uswest","Standard IO - Table (GB)","Storage","Geo Redundant"
+"rdsautostg","rdsauto","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"TestvmExchange","MANJURG","Microsoft.Compute/virtualMachines","0.616679","centralus","Compute Hours","Virtual Machines","Standard_A2m_v2 VM (Windows)"
+"azurebvrm","azurebvrm","Microsoft.Storage/storageAccounts","0.000072","usnorthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"labexam","labexam2","Microsoft.RecoveryServices/vaults","0.016129","southeastasia","Protected Instances","Recovery Services","Backup"
+"rajiv123","rdslabrg","Microsoft.Storage/storageAccounts","0.000528","jawest","Data Transfer In (GB)","Networking",
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.0289","jawest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+,"0qportalvhdshc7f8phrh7ts","Storage","6.191663","East US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+,"0qportalvhdshc7f8phrh7ts","Storage","3.143500","East US","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"testvault","testrg","Microsoft.RecoveryServices/vaults","0.032258","eastus2","Protected Instances","Recovery Services","Backup"
+,"automationsa","Storage","0.012400","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rktestdemostrg","rktestdemorg","Microsoft.Storage/storageAccounts","0.000072","uksouth","Standard IO - Table (GB)","Storage","Locally Redundant"
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.000120","apsoutheast","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"asamplelab9418","samplelabrg883310","Microsoft.Storage/storageAccounts","0.000072","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"gopinathrec","gopinath-bvrm--azurelabexam","Microsoft.RecoveryServices/vaults","0.048387","westus","Protected Instances","Recovery Services","Backup"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","29.9908","useast2","Standard IO - Page Blob Write Operation Units (in 10,000s)","Data Management",
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.000528","apsoutheast","Data Transfer In (GB)","Networking",
+,"8yportalvhdsc30ms13v4zz2","Storage","0.000038","JA West","Standard IO - Table (GB)","Storage","Locally Redundant"
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.000624","eunorth","Data Transfer Out (GB)","Networking",
+"testmig2newportalv2","testmigratearm","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.117048","ukwest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"forsanjaydisks755","forsanjay","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"azurestorage123","azureservers","Microsoft.Storage/storageAccounts","0.000072","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.000624","uscentral","Data Transfer Out (GB)","Networking",
+"scriptfile","scriptfiles","Microsoft.Storage/storageAccounts","0.000072","ussouthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"test112345","testrg345","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","0.2378","apsoutheast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"nelabdisks744","nelab","Microsoft.Storage/storageAccounts","0.456792","useast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"gopinathteststorage2","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.7188","useast2","Standard IO - Block Blob Write Operation Units (in 10,000s)","Data Management",
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.000120","uswestcentral","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"DEVVM","RTECHRG","Microsoft.Compute/virtualMachines","0.018025","eastus2","Data Transfer Out (GB)","Networking",
+,"teststorage90","Storage","0.011600","South Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"azurebvrm","azurebvrm","Microsoft.Storage/storageAccounts","1.2534","usnorthcentral","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"2tportalvhdsdczqkv0r16sf","Storage","0.011600","West US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"poc3105","poc","Microsoft.Storage/storageAccounts","1.308714","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+,"mmkkuu789","Storage","0.000038","West US","Standard IO - Table (GB)","Storage","Geo Redundant"
+,"n5portalvhdswj63sl7hq72f","Storage","0.011500","Central US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"0qportalvhdshc7f8phrh7ts","Storage","0.011600","East US","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.2194","ukwest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"testbackupvault","mytestresourcegroup","Microsoft.RecoveryServices/vaults","0.69147","southcentralus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"ASRVault","ASRservers","Microsoft.RecoveryServices/vaults","2.072959","eastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"rktestdemorgdisks805","rktestdemorg","Microsoft.Storage/storageAccounts","0.536904","uksouth","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"scriptfile","scriptfiles","Microsoft.Storage/storageAccounts","0.0146","ussouthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"TestvmExchange","MANJURG","Microsoft.Compute/virtualMachines","0.000086","centralus","Data Transfer In (GB)","Networking",
+"storageasr10","asrservers","Microsoft.Storage/storageAccounts","3.2712","apeast","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"rtechrgdisks488","rtechrg","Microsoft.Storage/storageAccounts","0.000072","useast2","Standard IO - Table (GB)","Storage","Locally Redundant"
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","0.0504","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"forsanjaydiag678","forsanjay","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"gopinathteststorage2","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"neazurepack","nepartners","Microsoft.Storage/storageAccounts","0.000120","eunorth","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","0.017688","apsoutheast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.095064","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Geo Redundant"
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","3.3408","ukwest","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"asrserversdisks730","asrservers","Microsoft.Storage/storageAccounts","0.000072","apeast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"azurestorage123","azureservers","Microsoft.Storage/storageAccounts","0.2559","apeast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","0.015960","uscentral","Standard IO - Table (GB)","Storage","Read-Access Geo Redundant"
+"blobazurene","testhotstorage","Microsoft.Storage/storageAccounts","0.000624","uswestcentral","Data Transfer Out (GB)","Networking",
+"poc3105","poc","Microsoft.Storage/storageAccounts","0.3010","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"HydNetwork","Virtual Network","23.000000","","Basic Gateway Hours","Networking","Virtual Network"
+"sketchdemo","sketchdemo","Microsoft.Storage/storageAccounts","0.000096","apsoutheast","Standard IO - Hot Block Blob (GB)","Storage","Read-Access Geo Redundant"
+"rtechstr","rtechrg","Microsoft.Storage/storageAccounts","0.144","useast2","Standard IO - Block Blob Delete Operation Units (in 10,000s)","Data Management",
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","0.661056","uswest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststoragehari","rgroup","Microsoft.Storage/storageAccounts","0.000072","ussouthcentral","Standard IO - Table (GB)","Storage","Locally Redundant"
+"manjustorageaccount","manjurg","Microsoft.Storage/storageAccounts","4.838432","uscentral","Standard IO - Page Blob/Disk (GB)","Storage","Read-Access Geo Redundant"
+"AutomationTest","resourcegrp-bhaskar","Microsoft.RecoveryServices/vaults","0.016129","eastasia","Protected Instances","Recovery Services","Backup"
+"forsample599","forsample","Microsoft.Storage/storageAccounts","0.024168","eunorth","Standard IO - Table (GB)","Storage","Locally Redundant"
+"gopinathstorage","gopinath-bvrm--azurelabexam","Microsoft.Storage/storageAccounts","4.464384","uswest","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","0.0146","apsoutheast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"asrserversdisks730","asrservers","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rktestdemorgdisks805","rktestdemorg","Microsoft.Storage/storageAccounts","0.0152","uksouth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"testlaptopMARS","testlaptop","Microsoft.RecoveryServices/vaults","0.027635","southeastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"testvmasr","ASRservers","Microsoft.RecoveryServices/vaults","0.442225","northeurope","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"sudhakarp445","sudhakarprg832351","Microsoft.Storage/storageAccounts","0.000072","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"rdslabrgdisksad276","rdslabrg","Microsoft.Storage/storageAccounts","0.000072","jawest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"Testvault","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-East-US","microsoft.backup/BackupVault","0.064516","eastus","Protected Instances","Recovery Services","Backup"
+,"vg1","Storage","0.000038","West US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststoragesql1","testrgsql1","Microsoft.Storage/storageAccounts","0.02472","useast2","Standard IO - Table (GB)","Storage","Locally Redundant"
+"azurebvrm","azurebvrm","Microsoft.Storage/storageAccounts","0.0146","usnorthcentral","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"nelabdiag609","nelab","Microsoft.Storage/storageAccounts","0.000071","useast","Standard IO - Table (GB)","Storage","Locally Redundant"
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.0146","ukwest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"poc3105","poc","Microsoft.Storage/storageAccounts","6.1248","apsoutheast","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+,"teststorage90","Storage","0.000038","South Central US","Standard IO - Table (GB)","Storage","Geo Redundant"
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"asrserversdisks730","asrservers","Microsoft.Storage/storageAccounts","0.1991","apeast","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+,"vg1","Storage","0.079420","West US","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.0146","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management","Geo Redundant"
+"hydrsggrpdiag901","hydrsggrp","Microsoft.Storage/storageAccounts","0.018768","ukwest","Data Transfer Out (GB)","Networking",
+"vistaragateway11","vistaratest","Microsoft.Storage/storageAccounts","0.144","uswest","Standard IO - Block Blob Delete Operation Units (in 10,000s)","Data Management",
+"forsample599","forsample","Microsoft.Storage/storageAccounts","0.0146","eunorth","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"asamplelab9418","samplelabrg883310","Microsoft.Storage/storageAccounts","0.0145","uswest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"asraz2az","asraz2az","Microsoft.Storage/storageAccounts","0.643128","apsoutheast","Standard IO - Page Blob/Disk (GB)","Storage","Locally Redundant"
+"rdsstor","rdslabrg","Microsoft.Storage/storageAccounts","0.000528","jawest","Data Transfer In (GB)","Networking",
+,"classictwo","Storage","0.011600","Southeast Asia","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rdslabrgdisksad276","rdslabrg","Microsoft.Storage/storageAccounts","0.0146","jawest","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+,"9yportalvhds5hm5fg5gr47m","Storage","0.000026","North Central US","Standard IO - Table (GB)","Storage","Locally Redundant"
+"azurestorage123","azureservers","Microsoft.Storage/storageAccounts","0.0146","apeast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"azbckupvtrktest","bckrgrk","Microsoft.RecoveryServices/vaults","0.000761","southeastasia","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+,"0fportalvhdsv7tlx8fmxv27","Storage","0.011600","JA West","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"storageonprem","onpremservers","Microsoft.Storage/storageAccounts","3.3408","apsoutheast","Standard IO - Table Read Operation Units (in 10,000s)","Data Management",
+"testingvault","RecoveryServices-OYHMCRMRCP5UBMX7MXPWWTHKYHZVBSBTFGZVASHG3TFLTZDGMK5Q-East-US","microsoft.backup/BackupVault","0.002803","eastus","Standard IO - Block Blob (GB)","Storage","Geo Redundant"
+"britecstorage","britecsage","Microsoft.Storage/storageAccounts","0.9316","uswest","Standard IO - Block Blob Read Operation Units (in 10,000s)","Data Management",
+"storageforautomation","resourcegrp-bhaskar","Microsoft.Storage/storageAccounts","0.279096","euwest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"teststoreac666","testazurerg","Microsoft.Storage/storageAccounts","0.000072","ukwest","Standard IO - Table (GB)","Storage","Locally Redundant"
+"automationtest","automationtest","Microsoft.Storage/storageAccounts","0.048714","apsoutheast","Standard IO - Block Blob (GB)","Storage","Locally Redundant"
+"rkcateststrg","rkcagrp","Microsoft.Storage/storageAccounts","0.000072","uksouth","Standard IO - Table (GB)","Storage","Locally Redundant"
+"nelabdiag609","nelab","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
+"rtechrgdisks488","rtechrg","Microsoft.Storage/storageAccounts","0.2624","useast2","Storage Transactions (in 10,000s)","Data Management",
+"test112345","testrg345","Microsoft.Storage/storageAccounts","0.0146","useast","Standard IO - Table Write Operation Units (in 10,000s)","Data Management",
