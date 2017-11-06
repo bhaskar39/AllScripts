@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters":
@@ -9,7 +9,6 @@
                 "description":"the general details"
             }
         },
-
         "location":
         {
             "type": "string",
@@ -41,10 +40,9 @@
                 "description":"The offer details of the CosmoDB"
             }
 		},
-
         "apiVersions":{
             "type":"object",
-            "management":{
+            "metadata":{
                 "description":"All api details"
             }
         }
