@@ -1,0 +1,51 @@
+{
+    "$schema": "http://schemas.microsoft.org/azure/deploymentTemplate?api-version=2015-01-01-preview#",
+    "contentVersion": "1.0",
+    "parameters": {
+        "general" : {
+            "type" : "object",
+            "metadata":{
+                "description" : "The General information for automation account"
+            }
+        },
+
+        "automationAccountName": {
+            "type": "string",
+            "metadata": {
+                "description": " Name of the automation account."
+            }
+        },
+        "location":{
+            "type":"string",
+            "metadata":{
+                "description" : "The automation account location"
+            }
+        },
+
+        "apiVersions": {
+            "type":"object",
+            "metadata":{
+                "description":"The api version details"
+            }            
+        }
+
+    },
+    
+    "variables": { },
+
+    "resources": [
+      {
+        "comments":"The automation account",
+        "name": "[parameters('automationAccountName')]",
+        "type": "Microsoft.Automation/automationAccounts",
+        "apiVersion": "[parameters('apiVersions').automation]",
+        "location": "[parameters('location')]",
+        "tags": { },
+        "properties": {
+          "sku": {
+            "name": "[parameters('general').sku]"
+          }
+        }
+	}
+	]
+}
