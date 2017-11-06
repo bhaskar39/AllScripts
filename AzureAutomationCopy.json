@@ -1,6 +1,6 @@
 {
     "$schema": "http://schemas.microsoft.org/azure/deploymentTemplate?api-version=2015-01-01-preview#",
-    "contentVersion": "1.0",
+    "contentVersion": "1.0.0.0",
     "parameters": {
         "general" : {
             "type" : "object",
@@ -8,7 +8,12 @@
                 "description" : "The General information for automation account"
             }
         },
-
+        "sku" : {
+            "type" : "string",
+            "metadata":{
+                "description" : "The General information for automation account"
+            }
+        },        
         "automationAccountName": {
             "type": "string",
             "metadata": {
@@ -43,7 +48,7 @@
         "tags": { },
         "properties": {
           "sku": {
-            "name": "[parameters('general').sku]"
+            "name": "[parameters('sku')]"
           }
         }
 	}
