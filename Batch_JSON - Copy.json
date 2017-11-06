@@ -1,0 +1,86 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "general":{
+        "type":"object",
+        "metadata":{
+          "description":"The general details of the batch account"
+        }
+      },
+
+      "batchAccountName": {
+        "type": "string",
+        "metadata": {
+          "description": "Batch Account Name"
+        }
+      },
+
+      "storageAccountName":{
+        "type":"string",
+	       "metadata": {
+          "description": "Storage Account Name"
+          }
+      },
+      
+      "storageAccountsku": {
+        "type": "string",
+        "defaultValue": "Standard_LRS",
+        "allowedValues": [
+          "Standard_LRS",
+          "Standard_GRS",
+          "Standard_ZRS",
+          "Premium_LRS"
+        ],
+        "metadata": {
+          "description": "Storage Account type"
+        }
+      },
+
+      "location":{
+        "type":"string",
+        "metadata":{
+          "description":"storage and batch location"
+        }
+      },
+
+      "apiVersions":{
+        "type":"object",
+        "metadata":{
+          "description":"app version details"
+        }
+      }
+  },
+  "variables": {
+  },
+  "resources": [{
+      "type": "Microsoft.Storage/storageAccounts",
+      "name": "[parameters('storageAccountName')]",
+      "apiVersion": "[parameters('apiVersions').storage]",
+      "location": "[parameters('location')]",
+      "comments": "This storage account is used to associate to a batch account",
+      "sku": {
+        "name": "[parameters('storageAccountsku')]"
+      },
+      "kind": "Storage",
+      "tags": {
+        "ObjectName": "[parameters('storageAccountName')]"
+      },
+      "properties": {}
+    },
+    {
+      "type": "Microsoft.Batch/batchAccounts",
+      "name": "[parameters('batchAccountName')]",
+      "apiVersion": "[parameters('apiVersions').batch]",
+      "location": "[parameters('location')]",
+      "tags": {
+        "ObjectName": "[parameters('batchAccountName')]"
+      },
+      "properties": {
+        "autoStorage": {
+          "storageAccountId": "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountName'))]"
+        }
+      },
+    }
+  ],
+}

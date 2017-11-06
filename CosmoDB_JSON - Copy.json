@@ -1,0 +1,66 @@
+﻿{
+    "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters":
+    {
+        "general":{
+            "type":"object",
+            "metadata":{
+                "description":"the general details"
+            }
+        },
+
+        "location":
+        {
+            "type": "string",
+            "allowedValues": [
+            "Central US",
+            "East Asia",
+            "East US",
+            "Japan East",
+            "Japan West",
+            "North Europe",
+            "South Central US",
+            "Southeast Asia",
+            "West Europe",
+            "West US"
+            ]
+        }
+        ,
+        "databaseAccountName":
+        {
+            "type": "string",
+            "metadata":{
+                "description":"the name of database account name"
+            }
+        },
+
+		"Offer_Type":{
+			"type": "string",
+            "metadata":{
+                "description":"The offer details of the CosmoDB"
+            }
+		},
+
+        "apiVersions":{
+            "type":"object",
+            "management":{
+                "description":"All api details"
+            }
+        }
+    }
+    ,
+    "resources": [
+    {
+        "apiVersion": "[parameters('apiVersions').cosmo]",
+        "type": "Microsoft.DocumentDb/databaseAccounts",
+        "name": "[parameters('databaseAccountName')]", 
+        "location": "[parameters('Location')]", 
+        "properties":
+        {
+            "name": "[parameters('databaseAccountName')]",
+            "databaseAccountOfferType":  "[parameters('Offer_Type')]"
+        }
+    }
+    ]
+}
