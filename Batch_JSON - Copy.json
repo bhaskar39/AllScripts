@@ -56,7 +56,7 @@
   "resources": [{
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[parameters('storageAccountName')]",
-      "apiVersion": "[parameters('apiVersions').storage]",
+      "apiVersion": "[parameters('apiVersions').store]",
       "location": "[parameters('location')]",
       "comments": "This storage account is used to associate to a batch account",
       "sku": {
